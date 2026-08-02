@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>toc-002</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
+
+  /* 斜めコーナー（左上・右下） */
+  .corner-tl{position:absolute;left:0;top:0;width:1280px;height:720px;background:#dcdcdc;clip-path:polygon(0 0,470px 0,0 230px)}
+  .corner-br{position:absolute;left:0;top:0;width:1280px;height:720px;background:#dcdcdc;clip-path:polygon(957px 720px,1280px 540px,1280px 720px)}
+
+  /* 左上ロゴ */
+  .logo{position:absolute;left:48px;top:92px;transform:translateY(-50%);font-size:26px;font-weight:700;color:#fff}
+  /* 左：INDEX */
+  .index{position:absolute;left:0;width:456px;top:356px;transform:translateY(-50%);text-align:center;font-size:46px;color:#999}
+
+  /* 中央の縦罫 */
+  .rule{position:absolute;left:456px;top:77px;width:1px;height:553px;background:#ccc}
+
+  /* 目次リスト */
+  .lv1{position:absolute;left:496px;transform:translateY(-50%);font-size:17px;font-weight:700;color:#4d4d4d;white-space:nowrap}
+  .lv2{position:absolute;left:570px;transform:translateY(-50%);font-size:14px;font-weight:700;color:#4d4d4d;white-space:nowrap}
+  .lv2 em{display:inline-block;width:35px;font-style:normal}
+  .pg{position:absolute;right:243px;transform:translateY(-50%);font-size:13px;font-weight:700;color:#4d4d4d}
+  .dot{position:absolute;height:1px;transform:translateY(-50%);border-top:1px dotted #999}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="corner-tl"></div>
+    <div class="corner-br"></div>
+    <div class="logo">LOGO</div>
+    <div class="index">INDEX</div>
+    <div class="rule"></div>
+
+    <div class="lv1" style="top:89px">1. ダミー名</div>
+    <div class="dot" style="left:614px;width:400px;top:89px"></div>
+    <div class="pg" style="top:89px">02</div>
+
+    <div class="lv1" style="top:136px">2. ダミー見出しの〔20XX年度～20XX年度〕のダミー名</div>
+
+    <div class="lv2" style="top:169px"><em>2-1.</em>20XX年度のダミー名</div>
+    <div class="dot" style="left:772px;width:242px;top:169px"></div>
+    <div class="pg" style="top:169px">03</div>
+
+    <div class="lv2" style="top:193px"><em>2-2.</em>ダミーテキストの項目名称</div>
+    <div class="dot" style="left:800px;width:214px;top:193px"></div>
+    <div class="pg" style="top:193px">04</div>
+
+    <div class="lv2" style="top:219px"><em>2-3.</em>ダミーテキスト名称</div>
+    <div class="dot" style="left:758px;width:256px;top:219px"></div>
+    <div class="pg" style="top:219px">05</div>
+
+    <div class="lv2" style="top:248px"><em>2-4.</em>ダミーのテキストが入る項目の名称です</div>
+    <div class="dot" style="left:884px;width:130px;top:248px"></div>
+    <div class="pg" style="top:248px">08</div>
+
+    <div class="lv1" style="top:300px">3. ダミー見出し名〔20XX年度～20XX年度〕</div>
+
+    <div class="lv2" style="top:330px"><em>3-1.</em>ダミーテキストの項目名称</div>
+    <div class="dot" style="left:800px;width:214px;top:330px"></div>
+    <div class="pg" style="top:330px">09</div>
+
+    <div class="lv2" style="top:357px"><em>3-2.</em>ダミー名・項目名称</div>
+    <div class="dot" style="left:758px;width:256px;top:357px"></div>
+    <div class="pg" style="top:357px">10</div>
+
+    <div class="lv2" style="top:383px"><em>3-3.</em>ダミー名（20XX年度）</div>
+    <div class="dot" style="left:772px;width:242px;top:383px"></div>
+    <div class="pg" style="top:383px">11</div>
+
+    <div class="lv2" style="top:409px"><em>3-4.</em>項目名称</div>
+    <div class="dot" style="left:688px;width:326px;top:409px"></div>
+    <div class="pg" style="top:409px">12</div>
+
+    <div class="lv2" style="top:435px"><em>3-5.</em>ダミー項目名</div>
+    <div class="dot" style="left:716px;width:298px;top:435px"></div>
+    <div class="pg" style="top:435px">16</div>
+
+    <div class="lv2" style="top:461px"><em>3-6.</em>ダミーの項目</div>
+    <div class="dot" style="left:716px;width:298px;top:461px"></div>
+    <div class="pg" style="top:461px">17</div>
+
+    <div class="lv2" style="top:487px"><em>3-7.</em>ダミー名</div>
+    <div class="dot" style="left:688px;width:326px;top:487px"></div>
+    <div class="pg" style="top:487px">18</div>
+
+    <div class="lv2" style="top:513px"><em>3-8.</em>ダミーテキスト項目名</div>
+    <div class="dot" style="left:772px;width:242px;top:513px"></div>
+    <div class="pg" style="top:513px">19</div>
+
+    <div class="lv2" style="top:539px"><em>3-9.</em>ダミー名</div>
+    <div class="dot" style="left:688px;width:326px;top:539px"></div>
+    <div class="pg" style="top:539px">20</div>
+
+    <div class="lv2" style="left:562px;top:565px"><em style="width:43px">3-10.</em>ダミー方針名</div>
+    <div class="dot" style="left:716px;width:298px;top:565px"></div>
+    <div class="pg" style="top:565px">23</div>
+
+    <div class="lv1" style="top:614px">4. ダミーテキスト・ダミーが入る見出しになります</div>
+    <div class="dot" style="left:920px;width:94px;top:614px"></div>
+    <div class="pg" style="top:614px">24</div>
+
+    <div style="position:absolute;right:60px;top:700px;transform:translateY(-50%);font-size:9px;color:#4d4d4d">© 20XX DUMMY TEXT000000000 CO.,LTD.</div>
+    <div style="position:absolute;right:40px;top:700px;transform:translateY(-50%);font-size:11px;font-weight:700;color:#4d4d4d">1</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

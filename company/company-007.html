@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>company-007</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
+
+  /* 上部：ナビゲーション */
+  .nav{position:absolute;left:0;width:1280px;top:37px;transform:translateY(-50%);display:flex;justify-content:center;align-items:center;font-size:14px;line-height:1;color:#8c8c8c}
+  .nav span{margin-right:41px;white-space:nowrap}
+  .nav .on{margin-right:0;font-weight:700;color:#1a1a1a}
+
+  /* 左：見出し */
+  .eyebrow{position:absolute;left:48px;top:119px;transform:translateY(-50%);font-size:14px;line-height:1;color:#8c8c8c}
+  .title{position:absolute;left:48px;top:158px;transform:translateY(-50%);font-size:41px;line-height:1;font-weight:700;color:#1a1a1a}
+
+  /* 左：定義リスト */
+  .lb{position:absolute;left:61px;transform:translateY(-50%);font-size:15px;line-height:1;font-weight:700;color:#1a1a1a}
+  .vl{position:absolute;left:195px;transform:translateY(-50%);font-size:15px;line-height:1;color:#1a1a1a}
+  .li{position:absolute;left:202px;transform:translateY(-50%);font-size:15px;line-height:1;color:#1a1a1a}
+  .li::before{content:"・";margin-left:-15px}
+  .rule{position:absolute;left:61px;width:585px;height:1px;background:#e0e0e0}
+
+  /* 右下：ロゴ */
+  .logo{position:absolute;right:49px;top:627px;transform:translateY(-50%);font-size:120px;line-height:1;font-weight:700;letter-spacing:-.02em;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+
+    <div class="nav">
+      <span>Dummy01</span>
+      <span>Dummy Text 02</span>
+      <span>Dummy03</span>
+      <span>Dummy04</span>
+      <span class="on">Dummy Text</span>
+    </div>
+
+    <div class="eyebrow">Dummy Overview</div>
+    <div class="title">項目名称</div>
+
+    <div class="lb" style="top:244px">項目名</div>
+    <div class="vl" style="top:244px">ダミーテキスト株式会社</div>
+    <div class="rule" style="top:276px"></div>
+
+    <div class="lb" style="top:306px">項目名</div>
+    <div class="vl" style="top:306px">〒000-0000</div>
+    <div class="vl" style="top:327px">ダミー県ダミー市ダミー区ダミー町0</div>
+    <div class="vl" style="top:347px">ダミーテキストビル0階</div>
+    <div class="rule" style="top:378px"></div>
+
+    <div class="lb" style="top:408px">項目</div>
+    <div class="vl" style="top:408px">20XX年X月X日</div>
+    <div class="rule" style="top:440px"></div>
+
+    <div class="lb" style="top:471px">項目名</div>
+    <div class="vl" style="top:471px">0億円</div>
+    <div class="rule" style="top:503px"></div>
+
+    <div class="lb" style="top:534px">項目名</div>
+    <div class="vl" style="top:534px">ダミー 名</div>
+    <div class="rule" style="top:566px"></div>
+
+    <div class="lb" style="top:593px">ダミー項目</div>
+    <div class="li" style="top:598px">ダミーテキスト許可番号：00-ダ-000000（ダミーテキスト大臣許可）</div>
+    <div class="li" style="top:617px">ダミーテキスト免許番号：ダミーテキスト大臣（0）第00000号</div>
+    <div class="rule" style="top:649px"></div>
+
+    <div class="logo">LOGO</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

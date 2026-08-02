@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>company-005</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
+
+  /* 左：ベタ面のパネル */
+  .panel{position:absolute;left:0;top:0;width:434px;height:720px;background:#757575}
+  /* 右：全高の写真 */
+  .photo{position:absolute;left:434px;top:0;width:846px;height:720px;background:#d0d0d0;display:grid;place-items:center;font-size:16px;letter-spacing:.2em;color:#8c8c8c}
+
+  /* パネル内：見出し＋リスト（項目数に応じて上下中央に自動配置） */
+  .side{position:absolute;left:85px;top:0;width:320px;height:720px;display:flex;flex-direction:column;justify-content:center;gap:34px}
+
+  /* 見出し（先頭に縦バー） */
+  .title{position:relative;font-size:24px;line-height:1;font-weight:700;color:#fff}
+  .title::before{content:"";position:absolute;left:-15px;top:50%;transform:translateY(-50%);width:3px;height:22px;background:#fff}
+
+  /* 項目リスト */
+  .list{display:flex;flex-direction:column;gap:22px}
+  .lb{font-size:16px;line-height:1;color:#fff}
+  .vl{margin-top:12px;font-size:23px;line-height:1;font-weight:700;color:#fff}
+  .vs{font-size:15px;font-weight:400}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="panel"></div>
+    <div class="photo">IMAGE</div>
+
+    <div class="side">
+      <div class="title">項目名称</div>
+
+      <div class="list">
+        <div class="row">
+          <div class="lb">項目名</div>
+          <div class="vl">ダミーテキスト名</div>
+        </div>
+        <div class="row">
+          <div class="lb">項目名称</div>
+          <div class="vl">ダミー 名</div>
+        </div>
+        <div class="row">
+          <div class="lb">ダミー項目名称</div>
+          <div class="vl">000名 <span class="vs">（20XX年X月末時点）</span></div>
+        </div>
+        <div class="row">
+          <div class="lb">項目</div>
+          <div class="vl">ダミー</div>
+        </div>
+        <div class="row">
+          <div class="lb">項目</div>
+          <div class="vl">20XX年XX月XX日</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

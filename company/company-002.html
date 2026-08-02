@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>company-002</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
+
+  .eyebrow-dot{position:absolute;left:66px;top:40px;transform:translateY(-50%);width:9px;height:9px;border-radius:50%;background:#b3b3b3}
+  .eyebrow{position:absolute;left:86px;top:40px;transform:translateY(-50%);font-size:15px;color:#8c8c8c}
+  .title{position:absolute;left:63px;top:88px;transform:translateY(-50%);font-size:38px;font-weight:700;color:#1a1a1a}
+  .logo{position:absolute;right:33px;top:88px;transform:translateY(-50%);font-size:26px;font-weight:700;color:#1a1a1a}
+
+  .lb{position:absolute;left:79px;transform:translateY(-50%);font-size:16px;font-weight:700;color:#6b6b6b}
+  .vl{position:absolute;left:244px;transform:translateY(-50%);font-size:16px;line-height:1.75;color:#1a1a1a}
+
+  /* 右：写真エリア */
+  .photo{position:absolute;left:676px;top:155px;width:604px;height:508px;background:#d0d0d0}
+  .photo-label{position:absolute;left:978px;top:409px;transform:translate(-50%,-50%);font-size:14px;letter-spacing:.2em;color:#8c8c8c}
+
+  .copy{position:absolute;left:43px;top:700px;transform:translateY(-50%);font-size:10px;color:#8c8c8c}
+  .pagec{position:absolute;left:1223px;top:671px;width:100px;height:100px;border-radius:50%;background:#7a7a7a}
+  .page{position:absolute;left:1258px;top:698px;transform:translate(-50%,-50%);font-size:12px;color:#fff}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="eyebrow-dot"></div>
+    <div class="eyebrow">Dummy Text Item0000</div>
+    <div class="title">項目名称</div>
+    <div class="logo">LOGO</div>
+
+    <div class="lb" style="top:172px">項目名</div>
+    <div class="vl" style="top:172px">ダミーテキスト名株式会社</div>
+
+    <div class="lb" style="top:257px">項目名</div>
+    <div class="vl" style="top:271px">ダミーダミーダミーダミーダミ0丁目00-0<br>ダミーダミーダミ 0F</div>
+
+    <div class="lb" style="top:370px">項目名称</div>
+    <div class="vl" style="top:370px">dummy0によるダミーテキスト</div>
+
+    <div class="lb" style="top:455px">項目名</div>
+    <div class="vl" style="top:455px">000,000円</div>
+
+    <div class="lb" style="top:540px">項目名称</div>
+    <div class="vl" style="top:540px">20XX年XX月</div>
+
+    <div class="photo"></div>
+    <div class="photo-label">IMAGE</div>
+
+    <div class="copy">© Dummy000. Inc.</div>
+    <div class="pagec"></div>
+    <div class="page">2</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

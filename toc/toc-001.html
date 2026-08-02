@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>toc-001</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#6b6b6b;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
+
+  /* 左：大きなグラフィック（ウォーターマーク） */
+  .graphic{position:absolute;left:-10px;top:200px;width:520px;height:470px;background:rgba(255,255,255,.16);display:grid;place-items:center;font-size:16px;letter-spacing:.2em;color:rgba(255,255,255,.75)}
+
+  /* 左上ロゴ */
+  .logo{position:absolute;left:36px;top:31px;transform:translateY(-50%);font-size:26px;font-weight:700;color:#fff}
+
+  /* 右：目次リスト */
+  .num{position:absolute;left:608px;transform:translateY(-50%);font-size:15px;color:rgba(255,255,255,.85)}
+  .row{position:absolute;left:679px;transform:translateY(-50%);display:flex;align-items:baseline;gap:26px;white-space:nowrap}
+  .row b{font-size:34px;font-weight:600;color:#fff}
+  .row span{font-size:15px;color:#fff}
+  .sep{position:absolute;left:679px;width:569px;height:1px;background:rgba(255,255,255,.35)}
+
+  /* 下部 */
+  .copy{position:absolute;left:34px;top:697px;transform:translateY(-50%);font-size:11px;color:rgba(255,255,255,.9)}
+  .page{position:absolute;right:32px;top:697px;transform:translateY(-50%);font-size:11px;color:rgba(255,255,255,.9)}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+
+    <div class="graphic">GRAPHIC</div>
+
+    <div class="logo">LOGO</div>
+
+    <div class="num" style="top:168px">01</div>
+    <div class="row" style="top:168px"><b>Dummy 01</b><span>項目名称</span></div>
+    <div class="sep" style="top:207px"></div>
+
+    <div class="num" style="top:247px">02</div>
+    <div class="row" style="top:247px"><b>Dummy 02</b><span>項目</span></div>
+    <div class="sep" style="top:286px"></div>
+
+    <div class="num" style="top:326px">03</div>
+    <div class="row" style="top:326px"><b>Dummy Text01</b><span>名称</span></div>
+    <div class="sep" style="top:365px"></div>
+
+    <div class="num" style="top:405px">04</div>
+    <div class="row" style="top:405px"><b>Dummy Text Item01</b><span>ダミーの項目名</span></div>
+    <div class="sep" style="top:444px"></div>
+
+    <div class="num" style="top:484px">05</div>
+    <div class="row" style="top:484px"><b>Dummy01</b><span>項目</span></div>
+    <div class="sep" style="top:523px"></div>
+
+    <div class="num" style="top:563px">06</div>
+    <div class="row" style="top:563px"><b>Dummy Text1</b><span>ダミー項目名</span></div>
+
+    <div class="copy">© Dummy0 Inc. 20XX</div>
+    <div class="page">02</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

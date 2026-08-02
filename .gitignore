@@ -1,0 +1,7 @@
+.DS_Store
+*.png
+*.jpg
+*.jpeg
+*.webp
+_prev_*.html
+_layout-check.html

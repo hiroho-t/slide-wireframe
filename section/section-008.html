@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>section-008</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#ededed;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
+
+  /* 左上：英字大見出し＋和文 */
+  .title-en{position:absolute;left:62px;top:128px;transform:translateY(-50%);font-size:105px;line-height:1;font-weight:700;letter-spacing:-.01em;color:#1a1a1a}
+  .title-jp{position:absolute;left:60px;top:216px;transform:translateY(-50%);font-size:35px;line-height:1;font-weight:700;color:#1a1a1a}
+
+  /* 左下：ラベル＋番号 */
+  .label{position:absolute;left:59px;top:577px;transform:translateY(-50%);font-size:23px;line-height:1;font-weight:700;color:#1a1a1a}
+  .no{position:absolute;left:61px;top:634px;transform:translateY(-50%);font-size:92px;line-height:1;font-weight:700;color:#1a1a1a}
+
+  .bar{position:absolute;left:0;bottom:0;width:1280px;height:3px;background:#d0d0d0}
+  .bar::before{content:"";position:absolute;left:0;top:0;width:396px;height:3px;background:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+
+    <div class="title-en">SAMPLE</div>
+    <div class="title-jp">ダミー事業名</div>
+
+    <div class="label">Section</div>
+    <div class="no">02</div>
+
+    <div class="bar"></div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

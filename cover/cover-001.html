@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cover-001</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
+
+
+  /* 左上：会社名ラベル */
+  .brand-left{position:absolute;left:32px;top:36px;font-size:12px;color:#8c8c8c}
+  /* 右上：ロゴ */
+  .brand-right{position:absolute;right:36px;top:30px;font-size:22px;font-weight:700;color:#1a1a1a}
+
+  /* センターのタイトル群 */
+  .sub{position:absolute;left:0;width:1280px;top:264px;transform:translateY(-50%);text-align:center;font-size:30px;font-weight:700;color:#333}
+  .title{position:absolute;left:0;width:1280px;top:338px;transform:translateY(-50%);text-align:center;font-size:63px;font-weight:700;color:#1a1a1a}
+  .caption{position:absolute;left:0;width:1280px;top:412px;transform:translateY(-50%);text-align:center;font-size:24px;color:#4d4d4d}
+
+  /* 下部：プロフィールのピル */
+  .pill{position:absolute;left:367px;top:576px;width:546px;height:48px;border:1px solid #d9d9d9;border-radius:24px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  .pill span{position:absolute;top:50%;transform:translateY(-50%);font-size:17px;white-space:nowrap}
+  .dot{position:absolute;left:17px;top:50%;transform:translateY(-50%);width:9px;height:9px;border-radius:50%;background:#b3b3b3}
+  .lb{font-weight:700;color:#1a1a1a}
+  .vl{color:#666}
+  .p1{left:40px}.p2{left:115px}.p3{left:276px}.p4{left:318px}.p5{left:408px}.p6{left:450px}
+
+  /* 右下：更新日 */
+  .meta{position:absolute;right:36px;top:668px;font-size:12px;color:#b3b3b3}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+
+    <div class="brand-left">Company name</div>
+    <div class="brand-right">LOGO</div>
+
+    <div class="sub">ダミーのサブタイトルです。</div>
+    <div class="title">ダミータイトル文字</div>
+    <div class="caption">ここにはダミーの補足テキストが入ります。</div>
+
+    <div class="pill">
+      <i class="dot"></i>
+      <span class="p1 lb">項目名称</span>
+      <span class="p2 vl">DUMMY TEXT01</span>
+      <span class="p3 lb">項目</span>
+      <span class="p4 vl">ダミー</span>
+      <span class="p5 lb">名称</span>
+      <span class="p6 vl">ダミー名</span>
+    </div>
+
+    <div class="meta">Last updated：20XX.00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

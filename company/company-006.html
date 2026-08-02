@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>company-006</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
+
+  /* 左上：ロゴ＋区切り線＋ページ見出し */
+  .brand{position:absolute;left:28px;top:41px;transform:translateY(-50%);font-size:21px;font-weight:700;color:#1a1a1a}
+  .rule{position:absolute;left:132px;top:41px;transform:translateY(-50%);width:1px;height:29px;background:#d0d0d0}
+  .head{position:absolute;left:147px;top:41px;transform:translateY(-50%);font-size:16px;font-weight:700;color:#1a1a1a}
+
+  /* 左：大きめのロゴ */
+  .logo{position:absolute;left:142px;top:361px;transform:translateY(-50%);font-size:64px;font-weight:700;color:#1a1a1a}
+
+  /* 右：角丸パネル（右端は画面外まで伸ばす） */
+  .panel{position:absolute;left:508px;top:114px;width:812px;height:483px;background:#f2f2f2;border-radius:21px}
+
+  /* パネル内：項目リスト（項目数に応じて上下中央に自動配置） */
+  .list{position:absolute;left:508px;top:114px;width:772px;height:483px;display:flex;flex-direction:column;justify-content:center;gap:31px}
+  .row{display:flex;align-items:flex-start}
+  .lb{flex:none;width:182px;padding-right:30px;text-align:right;font-size:17px;line-height:1;font-weight:700;color:#1a1a1a}
+  .vl{font-size:16px;line-height:1;color:#1a1a1a}
+  .vl + .vl{margin-top:11px}
+
+  /* 右下：ページ番号 */
+  .page{position:absolute;right:53px;top:669px;transform:translateY(-50%);font-size:16px;color:#8c8c8c}
+  /* 最下部：フルワイドのバー */
+  .bar{position:absolute;left:0;bottom:0;width:1280px;height:4px;background:#e0e0e0}
+  .bar::before{content:"";position:absolute;left:0;top:0;width:153px;height:4px;background:#b3b3b3}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+
+    <div class="brand">LOGO</div>
+    <div class="rule"></div>
+    <div class="head">項目名称</div>
+
+    <div class="logo">LOGO</div>
+
+    <div class="panel"></div>
+    <div class="list">
+      <div class="row">
+        <div class="lb">項目名</div>
+        <div>
+          <div class="vl">ダミー・ダミーテキスト株式会社</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lb">項目名称</div>
+        <div>
+          <div class="vl">ダミー 名</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lb">項目</div>
+        <div>
+          <div class="vl">20XX年X月X日</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lb">項目名</div>
+        <div>
+          <div class="vl">0億0000万円（ダミーテキスト株式会社000%ダミー）</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lb">ダミー項目</div>
+        <div>
+          <div class="vl">ダミー・ダミーに関するダミーテキストを活用したサービス、</div>
+          <div class="vl">その他ダミーテキスト関連サービスの提供</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lb">項目名称</div>
+        <div>
+          <div class="vl">00名（20XX年X月現在）</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="lb">項目名</div>
+        <div>
+          <div class="vl">〒000-0000</div>
+          <div class="vl">ダミーテキスト0-0-0 ダミーテキストダミー 00F</div>
+          <div class="vl">（ダミーテキスト：ダミーテキスト0-0-00）</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">00</div>
+    <div class="bar"></div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
