@@ -13,22 +13,25 @@
   .stage{position:fixed;inset:0;overflow:hidden}
   .slide{position:relative;width:1280px;height:720px;background:#757575;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
 
-  /* 中央左：番号＋縦バー＋見出し */
-  .no{position:absolute;left:85px;top:346px;transform:translateY(-50%);font-size:54px;line-height:1;font-weight:700;color:#fff}
-  .bar{position:absolute;left:192px;top:323px;width:3px;height:51px;background:#fff}
-  .ttl{position:absolute;left:240px;top:349px;transform:translateY(-50%);font-size:50px;line-height:1;font-weight:700;color:#fff}
+  /* 中央左：番号＋縦バー＋見出し（桁数や文字数が変わっても崩れないよう横並びで組む） */
+  .row{position:absolute;left:85px;top:346px;transform:translateY(-50%);display:flex;align-items:center}
+  .no{flex:none;width:107px;font-size:54px;line-height:1;font-weight:700;color:#fff}
+  .bar{flex:none;width:3px;height:51px;margin-right:45px;background:#fff}
+  .ttl{font-size:50px;line-height:1;font-weight:700;white-space:nowrap;color:#fff}
 
-  /* 左下：ロゴ */
-  .logo{position:absolute;left:78px;top:635px;transform:translateY(-50%);font-size:40px;line-height:1;font-weight:700;color:#fff}
+  /* 左下：見出しと左端を揃える */
+  .logo{position:absolute;left:240px;top:635px;transform:translateY(-50%);font-size:40px;line-height:1;font-weight:700;color:#fff}
 </style>
 </head>
 <body>
 <div class="stage">
   <div class="slide">
 
-    <div class="no">01</div>
-    <div class="bar"></div>
-    <div class="ttl">項目名称</div>
+    <div class="row">
+      <div class="no">01</div>
+      <i class="bar"></i>
+      <div class="ttl">項目名称</div>
+    </div>
 
     <div class="logo">LOGO</div>
   </div>
