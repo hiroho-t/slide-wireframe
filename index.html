@@ -29,8 +29,18 @@
   .cmd button{flex:none;width:64px;border:0;border-left:1px solid #ddd;background:#f0f0f0;
     font-size:10px;font-weight:700;letter-spacing:.04em;color:#1a1a1a;cursor:pointer;font-family:inherit}
   .cmd button:hover{background:#e4e4e4}
+  /* カテゴリーナビ（スクロールで上部に追従） */
+  .catnav{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:8px;
+    padding:13px 40px;background:rgba(240,240,240,.94);backdrop-filter:blur(8px);
+    border-bottom:1px solid #ddd}
+  .catnav a{display:inline-flex;align-items:baseline;gap:7px;padding:7px 14px;
+    border:1px solid #ccc;background:#fff;font-size:12px;font-weight:700;letter-spacing:.04em;
+    color:#1a1a1a;text-decoration:none;transition:border-color .15s}
+  .catnav a:hover{border-color:#1a1a1a}
+  .catnav a span{font-size:10px;font-weight:400;color:#999;letter-spacing:0}
+
   main{padding:0 40px 64px}
-  section{padding-top:44px}
+  section{padding-top:44px;scroll-margin-top:var(--nav,56px)}
   h2{font-size:15px;font-weight:700;letter-spacing:.1em;padding-bottom:14px;border-bottom:1px solid #ccc}
   h2 span{font-size:11px;font-weight:400;color:#999;margin-left:12px;letter-spacing:.04em}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px;margin-top:24px}
@@ -74,6 +84,7 @@
     </div>
   </div>
 </header>
+<nav class="catnav" id="catnav"></nav>
 <main id="app"></main>
 
 <script>
@@ -141,7 +152,7 @@ const DATA = [
 ];
 
 document.getElementById('app').innerHTML = DATA.map(([label, dir, items]) => `
-  <section>
+  <section id="${dir}">
     <h2>${label}<span>${dir}/ ・ ${items.length}種</span></h2>
     <div class="grid">
       ${items.map(([id, memo]) => `
@@ -154,6 +165,14 @@ document.getElementById('app').innerHTML = DATA.map(([label, dir, items]) => `
         </div>`).join('')}
     </div>
   </section>`).join('');
+
+const nav = document.getElementById('catnav');
+nav.innerHTML = DATA.map(([label, dir, items]) =>
+  `<a href="#${dir}">${label}<span>${items.length}</span></a>`).join('');
+
+// アンカー先が追従ナビに隠れないよう、ナビの実高さを反映
+const setNavH = () => document.documentElement.style.setProperty('--nav', nav.offsetHeight + 'px');
+addEventListener('resize', setNavH); setNavH();
 
 document.getElementById('app').addEventListener('click', async (e) => {
   const btn = e.target.closest('.id');
