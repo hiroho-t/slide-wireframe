@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>toc-012</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .panel{position:absolute;left:23px;top:23px;width:1236px;height:670px;background:#f0f0f0}
+  .logo{position:absolute;right:32px;top:63px;transform:translateY(-50%);font-size:26px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+
+  .dot{position:absolute;left:164px;top:152px;transform:translateY(-50%);width:8px;height:8px;border-radius:50%;background:#8c8c8c}
+  .lb{position:absolute;left:178px;top:152px;transform:translateY(-50%);font-size:12px;font-weight:700;color:#4d4d4d}
+  .ja{position:absolute;left:163px;top:201px;transform:translateY(-50%);font-size:40px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+
+  .badge{position:absolute;left:417px;transform:translateY(-50%);width:18px;height:18px;border-radius:50%;background:#7a7a7a;
+    display:grid;place-items:center;font-size:9px;font-weight:700;color:#fff}
+  .ttl{position:absolute;left:450px;transform:translateY(-50%);font-size:17px;font-weight:700;letter-spacing:.02em;color:#4d4d4d}
+  .sub{position:absolute;left:450px;transform:translateY(-50%);font-size:12px;font-weight:700;color:#8c8c8c}
+  .ldr{position:absolute;height:1px;border-top:1px dotted #b3b3b3}
+  .pg{position:absolute;left:985px;width:30px;text-align:right;transform:translateY(-50%);font-size:18px;font-weight:700;color:#4d4d4d}
+
+  .page{position:absolute;right:26px;top:667px;transform:translateY(-50%);font-size:12px;color:#b3b3b3}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="panel"></div>
+    <div class="logo">LOGO</div>
+
+    <i class="dot"></i>
+    <div class="lb">Agenda</div>
+    <div class="ja">目次</div>
+
+    <div class="badge" style="top:164px">1</div>
+    <div class="ttl" style="top:164px">ダミーテキストダミーテ</div>
+    <div class="ldr" style="left:695px;width:270px;top:164px"></div>
+    <div class="pg" style="top:164px">10</div>
+    <div class="sub" style="top:197px">Story</div>
+
+    <div class="badge" style="top:259px">2</div>
+    <div class="ttl" style="top:259px">ダミーテキストダミ</div>
+    <div class="ldr" style="left:660px;width:305px;top:259px"></div>
+    <div class="pg" style="top:259px">18</div>
+    <div class="sub" style="top:292px">Products &amp; Services</div>
+
+    <div class="badge" style="top:353px">3</div>
+    <div class="ttl" style="top:353px">ダミーテキストダミーテキス</div>
+    <div class="ldr" style="left:730px;width:235px;top:353px"></div>
+    <div class="pg" style="top:353px">26</div>
+    <div class="sub" style="top:386px">Market Landscape</div>
+
+    <div class="badge" style="top:447px">4</div>
+    <div class="ttl" style="top:447px">ダミーテキ･スト</div>
+    <div class="ldr" style="left:610px;width:355px;top:447px"></div>
+    <div class="pg" style="top:447px">31</div>
+    <div class="sub" style="top:480px">Work Environment</div>
+
+    <div class="badge" style="top:541px">5</div>
+    <div class="ttl" style="top:541px">ダミーテ</div>
+    <div class="ldr" style="left:565px;width:400px;top:541px"></div>
+    <div class="pg" style="top:541px">45</div>
+    <div class="sub" style="top:574px">Recrutment</div>
+
+    <div class="page">09</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
