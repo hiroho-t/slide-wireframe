@@ -15,9 +15,9 @@
   header code{background:#f0f0f0;padding:2px 6px;font-size:11px}
 
   /* 取得ボタン */
-  .get{flex:none;width:400px;border:1px solid #ccc;padding:16px 20px;background:#fafafa}
-  .btns{display:flex;gap:10px}
-  .btn{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:40px;
+  .get{flex:1 1 340px;min-width:0;max-width:400px;border:1px solid #ccc;padding:16px 20px;background:#fafafa}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{flex:1 1 140px;display:flex;align-items:center;justify-content:center;gap:8px;height:40px;
     font-size:12px;font-weight:700;letter-spacing:.04em;text-decoration:none;
     border:1px solid #1a1a1a;background:#1a1a1a;color:#fff;transition:opacity .15s}
   .btn.sub{background:#fff;color:#1a1a1a}
@@ -29,6 +29,13 @@
   .cmd button{flex:none;width:64px;border:0;border-left:1px solid #ddd;background:#f0f0f0;
     font-size:10px;font-weight:700;letter-spacing:.04em;color:#1a1a1a;cursor:pointer;font-family:inherit}
   .cmd button:hover{background:#e4e4e4}
+
+  @media (max-width:900px){
+    header{padding:32px 24px 22px;gap:24px}
+    .get{flex:1 1 100%;max-width:none}
+    main{padding:0 24px 48px}
+    .catnav{padding:11px 24px}
+  }
   /* カテゴリーナビ（スクロールで上部に追従） */
   .catnav{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:8px;
     padding:13px 40px;background:rgba(240,240,240,.94);backdrop-filter:blur(8px);
@@ -58,7 +65,8 @@
   .id:hover i{color:#1a1a1a}
   .id.done{color:#888}
   .id.done i{color:#888}
-  .memo{font-size:10px;color:#888;text-align:right;line-height:1.6}
+  .dl{font-size:10px;color:#888;text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
+  .dl:hover{color:#1a1a1a}
 </style>
 </head>
 <body>
@@ -96,58 +104,78 @@ document.getElementById('copy').addEventListener('click', async (e) => {
   setTimeout(() => btn.textContent = 'コピー', 1600);
 });
 
+const REPO = 'https://github.com/hiroho-t/slide-wireframe';
+
 const DATA = [
   ["表紙", "cover", [
-    ["cover-001","白／中央揃え・サブ＋大タイトル"],
-    ["cover-002","濃色／斜めコーナー＋中央見出し"],
-    ["cover-003","濃色／左揃え・英字大タイトル"],
-    ["cover-004","白／ロゴ＋大タイトルのみ"],
-    ["cover-005","濃色／巨大ロゴ中央"],
-    ["cover-006","明グレー／斜めシェイプ＋英字特大"],
-    ["cover-007","グラデ／最小構成"],
-    ["cover-008","黒／中央ロゴ"]
+    "cover-001",
+    "cover-002",
+    "cover-003",
+    "cover-004",
+    "cover-005",
+    "cover-006",
+    "cover-007",
+    "cover-008"
   ]],
   ["目次", "toc", [
-    ["toc-001","濃色／左グラフィック＋右リスト"],
-    ["toc-002","白／2階層・リーダー線（項目多）"],
-    ["toc-003","白／カード＋リーダー線"],
-    ["toc-004","白／番号＋項目のみ"],
-    ["toc-005","白＋濃色パネル／番号大"],
-    ["toc-006","白／2カラム（長い項目名）"]
+    "toc-001",
+    "toc-002",
+    "toc-003",
+    "toc-004",
+    "toc-005",
+    "toc-006"
   ]],
   ["中見出し", "section", [
-    ["section-001","濃色／多角形写真＋巨大数字"],
-    ["section-002","濃色／六角バッジ中央"],
-    ["section-003","濃色／円バッジ中央"],
-    ["section-004","中間色／1行のみ"],
-    ["section-005","白／角丸パネル"],
-    ["section-006","濃色／左揃え番号＋見出し"],
-    ["section-007","濃色／番号＋バー＋大見出し"],
-    ["section-008","明グレー／英字特大＋番号"],
-    ["section-009","グラデ／最小構成"]
+    "section-001",
+    "section-002",
+    "section-003",
+    "section-004",
+    "section-005",
+    "section-006",
+    "section-007",
+    "section-008",
+    "section-009"
   ]],
   ["会社概要", "company", [
-    ["company-001","白／罫線テーブル＋写真3点"],
-    ["company-002","白／5項目＋大写真"],
-    ["company-003","白／中央見出し＋2カラム会社情報"],
-    ["company-004","白／項目リスト＋全高写真"],
-    ["company-005","白＋濃色パネル／写真主役"],
-    ["company-006","白／特大ロゴ＋パネル7項目"],
-    ["company-007","白／上部ナビ＋罫線リスト"]
+    "company-001",
+    "company-002",
+    "company-003",
+    "company-004",
+    "company-005",
+    "company-006",
+    "company-007"
   ]],
   ["社長挨拶・メッセージ", "message", [
-    ["message-001","白／英字大見出し＋帯背景"],
-    ["message-002","白／長文12行＋全高写真"],
-    ["message-003","白／大リード＋縦長写真"],
-    ["message-004","白／角丸写真＋右に本文"]
+    "message-001",
+    "message-002",
+    "message-003",
+    "message-004",
+    "message-005",
+    "message-006",
+    "message-007",
+    "message-008"
   ]],
   ["メンバー紹介", "member", [
-    ["member-001","白／3カラム人物カード"],
-    ["member-002","白／記事3カード"],
-    ["member-003","白／縦型カード（略歴長め）"]
+    "member-001",
+    "member-002",
+    "member-003"
+  ]],
+  ["導入企業・実績", "clients", [
+    "clients-001",
+    "clients-002",
+    "clients-003",
+    "clients-004",
+    "clients-005",
+    "clients-006"
+  ]],
+  ["お客様の声", "voc", [
+    "voc-001"
+  ]],
+  ["メディア掲載", "media", [
+    "media-001"
   ]],
   ["よくある質問", "faq", [
-    ["faq-001","白／Q帯＋A本文 ×4"]
+    "faq-001"
   ]]
 ];
 
@@ -155,12 +183,12 @@ document.getElementById('app').innerHTML = DATA.map(([label, dir, items]) => `
   <section id="${dir}">
     <h2>${label}<span>${dir}/ ・ ${items.length}種</span></h2>
     <div class="grid">
-      ${items.map(([id, memo]) => `
+      ${items.map(id => `
         <div class="card">
           <a class="thumb" href="${dir}/${id}.html" target="_blank" rel="noopener"><iframe src="${dir}/${id}.html" loading="lazy" scrolling="no" title="${id}"></iframe></a>
           <div class="cap">
             <button type="button" class="id" data-id="${id}" title="IDをコピー">${id}<i class="fa-regular fa-copy"></i></button>
-            <span class="memo">${memo}</span>
+            <a class="dl" href="${REPO}/blob/main/${dir}/${id}.html" target="_blank" rel="noopener">コードをダウンロード</a>
           </div>
         </div>`).join('')}
     </div>
