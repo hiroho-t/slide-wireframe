@@ -29,12 +29,15 @@ cd ~/.claude/skills/slide-wireframe && git pull
 
 | カテゴリ | 数 |
 |---|---|
-| `cover/` 表紙 | 8 |
-| `toc/` 目次 | 6 |
-| `section/` 中見出し | 9 |
-| `company/` 会社概要 | 7 |
-| `message/` 社長挨拶・メッセージ | 4 |
-| `member/` メンバー紹介 | 3 |
+| `cover/` 表紙 | 19 |
+| `toc/` 目次 | 14 |
+| `section/` 中見出し | 18 |
+| `company/` 会社概要 | 16 |
+| `message/` 社長挨拶・メッセージ | 10 |
+| `member/` メンバー紹介 | 11 |
+| `clients/` 導入企業・実績 | 6 |
+| `voc/` お客様の声 | 1 |
+| `media/` メディア掲載 | 1 |
 | `faq/` よくある質問 | 1 |
 
 型の一覧と選び方は [SKILL.md](SKILL.md) を参照。
