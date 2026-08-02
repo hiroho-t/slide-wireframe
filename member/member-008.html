@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>member-008</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .brand{position:absolute;left:35px;top:23px;transform:translateY(-50%);font-size:12px;font-weight:700;letter-spacing:.04em;color:#4d4d4d}
+  .dot{position:absolute;left:128px;top:23px;transform:translateY(-50%);width:4px;height:4px;border-radius:50%;background:#b3b3b3}
+  .deck{position:absolute;left:145px;top:23px;transform:translateY(-50%);font-size:12px;letter-spacing:.04em;color:#8c8c8c}
+
+  .title{position:absolute;left:107px;top:102px;transform:translateY(-50%);font-size:28px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+
+  .ph{position:absolute;top:183px;width:502px;height:234px;background:#d0d0d0;border-radius:10px;
+    display:grid;place-items:center;font-size:14px;letter-spacing:.2em;color:#8c8c8c}
+  .role{position:absolute;top:440px;transform:translateY(-50%);font-size:12px;color:#8c8c8c}
+  .name{position:absolute;top:469px;transform:translateY(-50%);font-size:30px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .en{position:absolute;top:491px;transform:translateY(-50%);font-size:12px;color:#8c8c8c}
+  .desc{position:absolute;top:508px;width:502px;font-size:13px;line-height:27px;color:#1a1a1a}
+
+  .page{position:absolute;right:29px;top:700px;transform:translateY(-50%);font-size:11px;letter-spacing:.2em;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="brand">LOGO</div>
+    <i class="dot"></i>
+    <div class="deck">Ddummyd Uumm</div>
+
+    <div class="title">BOARD MEMBER</div>
+
+    <div class="ph" style="left:107px">IMAGE</div>
+    <div class="role" style="left:107px">ダミーテキDUM</div>
+    <div class="name" style="left:107px">ダミ ーテ</div>
+    <div class="en" style="left:107px">Ddummy Udummyd</div>
+    <div class="desc" style="left:107px">ダミーテキストダミー。0テキス。<br>ダミーテキストDUMMYDダミー。テキストダミーテキストダミーテキストダミー、テキストダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストダミーテキストダミーテキストダミ「ーテキストダミ」ーテキストダ、0000ミーテキストダミーテキストダミーテキストダミーテキストダミー。テキストダミーテ。</div>
+
+    <div class="ph" style="left:670px">IMAGE</div>
+    <div class="role" style="left:670px">ダミーDUM</div>
+    <div class="name" style="left:670px">ダミー テキ</div>
+    <div class="en" style="left:670px">Ddumm Uydum</div>
+    <div class="desc" style="left:670px">ダミーテキストダミーテキストダミーテキスト。<br>ダミーテキストDUMMYDダミー。テキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキス。<br>0000ダミーテキストダミーテキストダミーテキストダ「ミーテキストダ」ミーテキスト、0000ダミーテキストダミーテキストダミーテキスト、ダミーテキス。</div>
+
+    <div class="page">・7</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
