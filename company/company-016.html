@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>company-016</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .side{position:absolute;left:69px;top:57px;transform:translateX(-50%);writing-mode:vertical-rl;
+    font-size:20px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+
+  .lb{position:absolute;left:149px;transform:translateY(-50%);font-size:15px;font-weight:700;color:#1a1a1a}
+  .vl{position:absolute;left:281px;transform:translateY(-50%);font-size:15px;line-height:25px;color:#1a1a1a}
+
+  .photo{position:absolute;left:743px;top:0;width:537px;height:720px;background:#d0d0d0;
+    display:grid;place-items:center;font-size:16px;letter-spacing:.2em;color:#8c8c8c}
+  .page{position:absolute;right:12px;top:700px;transform:translateY(-50%);font-size:11px;color:#fff}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="side">Company</div>
+
+    <div class="lb" style="top:186px">ダミー</div>
+    <div class="vl" style="top:186px">ダミーテキストダミーテキストダ</div>
+
+    <div class="lb" style="top:237px">ダミー</div>
+    <div class="vl" style="top:237px">ダミーテキストダミーテキ0-00-0 DUMMストダYDミ0U</div>
+
+    <div class="lb" style="top:289px">ダミ</div>
+    <div class="vl" style="top:289px">0000ダ</div>
+
+    <div class="lb" style="top:341px">ダミー</div>
+    <div class="vl" style="top:341px">0,000ダミ</div>
+
+    <div class="lb" style="top:391px">ダミー</div>
+    <div class="vl" style="top:391px">ダミーテキストダ ミー</div>
+
+    <div class="lb" style="top:444px">ダミーテ</div>
+    <div class="vl" style="top:469px">ダミーテキストダミーテキスト<br>DUダミーテキス<br>ダミーテ・キストダ</div>
+
+    <div class="lb" style="top:543px">ダミー</div>
+    <div class="vl" style="top:543px">00ダ（ミーテキストダミ）</div>
+
+    <div class="photo">IMAGE</div>
+    <div class="page">4</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
