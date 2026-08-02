@@ -20,6 +20,11 @@ git clone https://github.com/hiroho-t/slide-wireframe.git ~/.claude/skills/slide
 cd ~/.claude/skills/slide-wireframe && git pull
 ```
 
+## 一覧を見る
+
+- ローカル：`index.html` をブラウザで開く（サーバー不要）
+- Web：https://hiroho-t.github.io/slide-wireframe/
+
 ## 収録
 
 | カテゴリ | 数 |

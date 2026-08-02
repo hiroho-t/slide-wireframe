@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>slide-wireframe｜レイアウト一覧</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#f0f0f0;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;color:#1a1a1a;-webkit-font-smoothing:antialiased}
+  header{padding:44px 40px 28px;border-bottom:1px solid #ddd;background:#fff}
+  h1{font-size:22px;font-weight:700;letter-spacing:.04em}
+  header p{font-size:12px;color:#777;margin-top:10px;line-height:1.9}
+  header code{background:#f0f0f0;padding:2px 6px;font-size:11px}
+  main{padding:0 40px 64px}
+  section{padding-top:44px}
+  h2{font-size:15px;font-weight:700;letter-spacing:.1em;padding-bottom:14px;border-bottom:1px solid #ccc}
+  h2 span{font-size:11px;font-weight:400;color:#999;margin-left:12px;letter-spacing:.04em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px;margin-top:24px}
+  a.card{display:block;text-decoration:none;color:inherit}
+  .thumb{position:relative;width:100%;aspect-ratio:16/9;background:#fff;border:1px solid #ddd;overflow:hidden}
+  .thumb iframe{width:100%;height:100%;border:0;pointer-events:none;display:block}
+  .thumb::after{content:"";position:absolute;inset:0}
+  a.card:hover .thumb{border-color:#1a1a1a}
+  .cap{display:flex;justify-content:space-between;align-items:baseline;margin-top:9px}
+  .id{font-size:12px;font-weight:700;letter-spacing:.06em}
+  .memo{font-size:10px;color:#888;text-align:right;line-height:1.6;padding-left:12px}
+</style>
+</head>
+<body>
+<header>
+  <h1>slide-wireframe｜レイアウト一覧</h1>
+  <p>
+    16:9スライドのワイヤーフレーム 38種。白・黒・グレーのみ、テキストはダミー。サムネイルをクリックすると原寸（1280×720）で開きます。<br>
+    型の選び方は <code>SKILL.md</code> を参照。
+  </p>
+</header>
+<main id="app"></main>
+
+<script>
+const DATA = [
+  ["表紙", "cover", [
+    ["cover-001","白／中央揃え・登壇者ピル"],
+    ["cover-002","濃色／斜めコーナー＋中央"],
+    ["cover-003","濃色／左揃え・認証ラベル"],
+    ["cover-004","白／ロゴ＋大タイトルのみ"],
+    ["cover-005","濃色／巨大ロゴ中央"],
+    ["cover-006","明グレー／斜めシェイプ＋英字特大"],
+    ["cover-007","グラデ／最小構成"],
+    ["cover-008","黒／中央ロゴ"]
+  ]],
+  ["目次", "toc", [
+    ["toc-001","濃色／左グラフィック＋右リスト"],
+    ["toc-002","白／2階層・リーダー線（項目多）"],
+    ["toc-003","白／カード＋リーダー線"],
+    ["toc-004","白／番号＋項目のみ"],
+    ["toc-005","白＋濃色パネル／番号大"],
+    ["toc-006","白／2カラム（長い項目名）"]
+  ]],
+  ["中見出し", "section", [
+    ["section-001","濃色／多角形写真＋巨大数字"],
+    ["section-002","濃色／六角バッジ中央"],
+    ["section-003","濃色／円バッジ中央"],
+    ["section-004","中間色／1行のみ"],
+    ["section-005","白／角丸パネル"],
+    ["section-006","濃色／左揃え番号＋見出し"],
+    ["section-007","濃色／番号＋バー＋大見出し"],
+    ["section-008","明グレー／英字特大＋番号"],
+    ["section-009","グラデ／最小構成"]
+  ]],
+  ["会社概要", "company", [
+    ["company-001","白／罫線テーブル＋写真3点"],
+    ["company-002","白／5項目＋大写真"],
+    ["company-003","白／2カラム＋役員2名（情報量最大）"],
+    ["company-004","白／項目リスト＋全高写真"],
+    ["company-005","白＋濃色パネル／写真主役"],
+    ["company-006","白／特大ロゴ＋パネル7項目"],
+    ["company-007","白／上部ナビ＋罫線リスト"]
+  ]],
+  ["社長挨拶・メッセージ", "message", [
+    ["message-001","白／英字大見出し＋帯背景"],
+    ["message-002","白／長文12行＋全高写真"],
+    ["message-003","白／大リード＋縦長写真"],
+    ["message-004","白／角丸写真＋右に本文"]
+  ]],
+  ["メンバー紹介", "member", [
+    ["member-001","白／3カラム人物カード"],
+    ["member-002","白／記事3カード＋バナー"],
+    ["member-003","白／縦型カード（略歴長め）"]
+  ]],
+  ["よくある質問", "faq", [
+    ["faq-001","白／Q帯＋A本文 ×4"]
+  ]]
+];
+
+document.getElementById('app').innerHTML = DATA.map(([label, dir, items]) => `
+  <section>
+    <h2>${label}<span>${dir}/ ・ ${items.length}種</span></h2>
+    <div class="grid">
+      ${items.map(([id, memo]) => `
+        <a class="card" href="${dir}/${id}.html" target="_blank" rel="noopener">
+          <div class="thumb"><iframe src="${dir}/${id}.html" loading="lazy" scrolling="no" title="${id}"></iframe></div>
+          <div class="cap"><span class="id">${id}</span><span class="memo">${memo}</span></div>
+        </a>`).join('')}
+    </div>
+  </section>`).join('');
+</script>
+</body>
+</html>
