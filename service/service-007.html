@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>service-007</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .logo{position:absolute;left:34px;top:55px;transform:translateY(-50%);font-size:26px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .title{position:absolute;left:91px;top:137px;transform:translateY(-50%);font-size:34px;font-weight:700;letter-spacing:.02em;color:#4d4d4d}
+  .sub{position:absolute;left:93px;top:176px;font-size:20px;line-height:35px;letter-spacing:.02em;color:#1a1a1a}
+
+  .card{position:absolute;top:277px;width:259px;height:352px;border:1px solid #ddd;border-radius:12px;overflow:hidden}
+  .ch{position:absolute;top:315px;width:259px;transform:translateY(-50%);text-align:center;font-size:14px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .cl{position:absolute;top:348px;width:259px;height:178px;background:#f2f2f2;
+    display:grid;place-items:center;font-size:20px;font-weight:700;letter-spacing:.06em;color:#8c8c8c}
+  .cd{position:absolute;top:543px;width:259px;text-align:center;font-size:12px;line-height:25px;color:#1a1a1a}
+
+  .foot{position:absolute;left:32px;top:688px;transform:translateY(-50%);font-size:13px;color:#1a1a1a}
+  .foot i{font-style:normal;margin:0 10px;color:#b3b3b3}
+  .copy{position:absolute;right:22px;top:688px;transform:translateY(-50%);font-size:13px;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="logo">LOGO</div>
+    <div class="title">DdummUダ0ミーテキ</div>
+    <div class="sub">DdummUダ、「ミーテキストダミー、テキストダミー。」テキストダミーテキスMMトダミーテキス。<br>ダミーテキストダミーテキストダミーテキスト、DUダミーテキストダミーテキストダミーテキストダミーテ。</div>
+
+    <div class="card" style="left:93px"></div>
+    <div class="ch" style="left:93px">ダミーテキス</div>
+    <div class="cl" style="left:93px">LOGO</div>
+    <div class="cd" style="left:93px">ダミーテキストダミ<br>DUダミーテキストダミー</div>
+
+    <div class="card" style="left:374px"></div>
+    <div class="ch" style="left:374px">Dd Uummydummダミ</div>
+    <div class="cl" style="left:374px">LOGO</div>
+    <div class="cd" style="left:374px">ダミーテキストダミー<br>DUダミーテキストダ</div>
+
+    <div class="card" style="left:655px"></div>
+    <div class="ch" style="left:655px">Ddummydダミ</div>
+    <div class="cl" style="left:655px">LOGO</div>
+    <div class="cd" style="left:655px">ダミーテキストダ<br>DUMMYDU（ダミーテ）</div>
+
+    <div class="card" style="left:936px"></div>
+    <div class="ch" style="left:936px">Ddummyduダミ</div>
+    <div class="cl" style="left:936px">LOGO</div>
+    <div class="cd" style="left:936px">DUダミーテキストダミ<br>ダミーテキストダミーテキ</div>
+
+    <div class="foot">17<i>｜</i>DdummUダミー･テキストダ</div>
+    <div class="copy">© 20XX Company.</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
