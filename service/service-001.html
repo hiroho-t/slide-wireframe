@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>service-001</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .h-en{position:absolute;left:34px;top:29px;transform:translateY(-50%);font-size:14px;font-weight:700;letter-spacing:.02em;color:#4d4d4d}
+  .h-bar{position:absolute;left:130px;top:18px;width:1px;height:22px;background:#c4c4c4}
+  .h-ja{position:absolute;left:146px;top:29px;transform:translateY(-50%);font-size:12px;font-weight:700;color:#1a1a1a}
+  .logo{position:absolute;right:25px;top:27px;transform:translateY(-50%);font-size:24px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+
+  .title{position:absolute;left:68px;top:95px;font-size:37px;font-weight:700;line-height:56px;letter-spacing:.02em;color:#1a1a1a}
+
+  .sh{position:absolute;top:299px;transform:translateY(-50%);font-size:30px;font-weight:700;letter-spacing:.01em;color:#1a1a1a}
+  .ph{position:absolute;top:334px;height:222px;background:#d0d0d0;
+    display:grid;place-items:center;font-size:16px;letter-spacing:.2em;color:#8c8c8c}
+  .li{position:absolute;top:577px;font-size:12px;line-height:24px;color:#1a1a1a}
+  .li div{position:relative;padding-left:18px}
+  .li div:before{content:"";position:absolute;left:2px;top:9px;width:5px;height:5px;border-radius:50%;background:#4d4d4d}
+
+  .copy{position:absolute;left:34px;top:693px;transform:translateY(-50%);font-size:11px;color:#8c8c8c}
+  .page{position:absolute;right:32px;top:693px;transform:translateY(-50%);font-size:11px;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="h-en">Business</div>
+    <div class="h-bar"></div>
+    <div class="h-ja">DduUダミーテ - キストダ</div>
+    <div class="logo">LOGO</div>
+
+    <div class="title">ダミーテキストダミーDduUテキストダミー、<br>ダミーテキストダミーテキス</div>
+
+    <div class="sh" style="left:23px">DduUMmmyd</div>
+    <div class="ph" style="left:0;width:621px">IMAGE</div>
+    <div class="li" style="left:32px;width:538px">
+      <div>ダミーテキストダミーテキスDduU</div>
+      <div>ダミーテ・キストダ・ミー・テキ・DUM/MYDスト・ダミーテキストダミーテ</div>
+      <div>ダミーテキストダミーテキストダミーテ、キストダミーテキストダミーテキストダ</div>
+    </div>
+
+    <div class="sh" style="left:694px">DduU</div>
+    <div class="ph" style="left:669px;width:611px">IMAGE</div>
+    <div class="li" style="left:705px;width:384px">
+      <div>ダミーテキストダミーテキストダミーテキストダミーテキス</div>
+      <div>ダミーテキストダミーテキ、ストダミーテキストダミーテキスト</div>
+      <div>ダミーテキストダミーテキストダミーテキスト</div>
+    </div>
+
+    <div class="copy">© 20XX Company.</div>
+    <div class="page">24</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
