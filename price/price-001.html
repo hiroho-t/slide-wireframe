@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>price-001</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .title{position:absolute;left:47px;top:71px;transform:translateY(-50%);font-size:38px;font-weight:700;letter-spacing:.02em;color:#4d4d4d}
+
+  table{position:absolute;top:117px;border-collapse:collapse;font-size:12px;color:#1a1a1a;table-layout:fixed}
+  th,td{border:1px solid #e0dcd2;text-align:center;padding:3px 4px;line-height:1.35}
+  thead th{height:23px;background:#8c8c8c;color:#fff;font-size:10px;font-weight:700;letter-spacing:.12em;border-color:#8c8c8c}
+  tbody th{background:#faf7f1;font-weight:400}
+  tbody tr{height:23.5px}
+
+  .t1{left:43px;width:579px}
+  .t2{left:665px;width:575px}
+
+  .band{position:absolute;left:0;top:679px;width:1280px;height:41px;background:#c9c9c9}
+  .logo{position:absolute;right:24px;top:700px;transform:translateY(-50%);font-size:20px;font-weight:700;letter-spacing:.06em;color:#fff}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="title">ダミーテキ ストダ</div>
+
+    <table class="t1">
+      <colgroup><col style="width:170px"><col style="width:195px"><col style="width:110px"><col style="width:104px"></colgroup>
+      <thead><tr><th>ダミ</th><th>ダミーテ</th><th>ダミ</th><th>ダミーテキス</th></tr></thead>
+      <tbody>
+        <tr><th rowspan="5">ダミーテキストダミ<br>（ダミーテキスト）</th><td>ダミーテキ</td><td rowspan="5">−</td><td>00ダ</td></tr>
+        <tr><td>ダミーテ</td><td>00ダ</td></tr>
+        <tr><td>ダミー</td><td>00ダ</td></tr>
+        <tr><td>ダミーテキス</td><td>000ダ</td></tr>
+        <tr><td>ダミーテキスト／0ダ</td><td>00ダ</td></tr>
+
+        <tr><th rowspan="6">ダミーテキストダミ<br>（ダミーテ）</th><td>ダミーテ</td><td>0ダミーテ</td><td>00ダ</td></tr>
+        <tr><td>ダミーテ キスト</td><td>0ダミーテ</td><td>0ダ</td></tr>
+        <tr><td>ダミーテ キストダ<br>（0〜00ダ）</td><td rowspan="4">0ダミーテ</td><td rowspan="4">0ダ</td></tr>
+        <tr><td>ダミーテ キストダ<br>（00ダ〜000ミ）</td></tr>
+        <tr><td>ダミーテ キストダ<br>（000〜000ダ）</td></tr>
+        <tr><td>ダミーテ キストダ<br>（000ダ〜）</td></tr>
+
+        <tr><th rowspan="5">ダミーテキ</th><td>0ダミー</td><td rowspan="5">−</td><td>0ダ</td></tr>
+        <tr><td>0ダミー</td><td>00ダ</td></tr>
+        <tr><td>0ダミー</td><td>00ダ</td></tr>
+        <tr><td>ダミーテキス</td><td>00ダ</td></tr>
+        <tr><td>ダミーテ</td><td>0ダ</td></tr>
+
+        <tr><th rowspan="3">ダミーテキス</th><td>ダミーテキストダミ</td><td rowspan="2">−</td><td rowspan="2">00ダ</td></tr>
+        <tr><td>ダミーテキストダ</td></tr>
+        <tr><td>ダミーテキ</td><td>0ダミーテ</td><td>0ダ</td></tr>
+      </tbody>
+    </table>
+
+    <table class="t2">
+      <colgroup><col style="width:165px"><col style="width:201px"><col style="width:106px"><col style="width:103px"></colgroup>
+      <thead><tr><th>ダミ</th><th>ダミーテ</th><th>ダミ</th><th>ダミーテキス</th></tr></thead>
+      <tbody>
+        <tr><th rowspan="6">ダミーテキ<br>ダミーテキストダミ</th><td rowspan="6">ダミーテキ</td><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>00000ダ</td><td>000ダ</td></tr>
+
+        <tr><th rowspan="6">ダミーテキス<br>ダミーテ</th><td>ダミ</td><td rowspan="6">−</td><td>000ダ</td></tr>
+        <tr><td>ダミーテキス</td><td rowspan="2">000ダ</td></tr>
+        <tr><td>ダミ（ーテキ）</td></tr>
+        <tr><td>ダミーテキス（トダミ）</td><td>000ダ</td></tr>
+        <tr><td>ダミ（ーテキスト）</td><td>000ダ</td></tr>
+        <tr><td>ダミーテキス（トダミーテ）</td><td>000ダ</td></tr>
+
+        <tr><th rowspan="10">DUダミーテキス</th><td rowspan="10">−</td><td>000ダ</td><td>0ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>0000ダ</td><td>00ダ</td></tr>
+        <tr><td>00000ダ</td><td>00ダ</td></tr>
+      </tbody>
+    </table>
+
+    <div class="band"></div>
+    <div class="logo">LOGO</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
