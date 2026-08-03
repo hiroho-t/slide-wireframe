@@ -4,19 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>clients-002</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
   .stage{position:fixed;inset:0;overflow:hidden}
-  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
 
-  .eyebrow{position:absolute;left:78px;top:68px;transform:translateY(-50%);font-size:14px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
-  .title{position:absolute;left:77px;top:109px;transform:translateY(-50%);font-size:38px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .eyebrow{position:absolute;left:78px;top:68px;transform:translateY(-50%);font-size:14px;font-weight:700;color:#1a1a1a}
+  .title{position:absolute;left:77px;top:109px;transform:translateY(-50%);font-size:38px;font-weight:700;color:#1a1a1a}
 
   /* ロゴを2行、中央揃えで並べる */
   .row{position:absolute;left:150px;width:1009px;display:flex;justify-content:center;gap:83px}
   .row i{width:190px;height:46px;background:#ededed;border:1px solid #e0e0e0;
-    display:grid;place-items:center;font-size:11px;font-style:normal;letter-spacing:.12em;color:#8c8c8c}
+    display:grid;place-items:center;font-size:11px;font-style:normal;color:#8c8c8c}
 </style>
 </head>
 <body>

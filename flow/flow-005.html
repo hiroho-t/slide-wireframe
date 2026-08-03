@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>flow-005</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#f7f8f9;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .v-rule{position:absolute;left:28px;top:14px;width:1px;height:14px;background:#8c8c8c}
+  .v-lb{position:absolute;left:28px;top:46px;transform:translateX(-50%);writing-mode:vertical-rl;font-size:11px;letter-spacing:.2em;color:#4d4d4d}
+
+  .tag{position:absolute;left:87px;top:84px;transform:translateY(-50%);font-size:12px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .head{position:absolute;left:255px;top:84px;transform:translateY(-50%);font-size:24px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+
+  .card{position:absolute;left:93px;top:124px;width:1095px;height:525px;background:#fff;border-radius:20px}
+  .big{position:absolute;left:199px;top:208px;transform:translateY(-50%);font-size:28px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+
+  /* シェブロン4段 */
+  .seg{position:absolute;top:270px;width:242px;height:64px;
+    clip-path:polygon(0 0,212px 0,242px 32px,212px 64px,0 64px,30px 32px)}
+  .seg:first-of-type{clip-path:polygon(0 0,212px 0,242px 32px,212px 64px,0 64px)}
+  .lb{position:absolute;top:302px;transform:translateY(-50%);width:242px;text-align:center;font-size:14px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .ds{position:absolute;top:352px;width:280px;text-align:center;font-size:12px;line-height:25px;color:#1a1a1a}
+
+  .box{position:absolute;left:146px;top:453px;width:993px;height:132px;border:1px solid #ddd}
+  .box-h{position:absolute;left:196px;top:518px;transform:translateY(-50%);font-size:16px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .li{position:absolute;left:527px;font-size:12px;line-height:27px;color:#1a1a1a}
+  .li div{position:relative;padding-left:20px}
+  .li div:before{content:"";position:absolute;left:0;top:11px;width:7px;height:7px;border-radius:50%;background:#9e9e9e}
+
+  .page{position:absolute;left:18px;top:690px;transform:translateY(-50%);font-size:11px;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="v-rule"></div>
+    <div class="v-lb">ダミーテキス</div>
+
+    <div class="tag">［ ダミーテキストダミ ］</div>
+    <div class="head">ダミーテキスト</div>
+
+    <div class="card"></div>
+    <div class="big">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ。</div>
+
+    <div class="seg" style="left:171px;background:#c9c9c9"></div>
+    <div class="seg" style="left:407px;background:#bdbdbd"></div>
+    <div class="seg" style="left:643px;background:#b0b0b0"></div>
+    <div class="seg" style="left:879px;background:#a3a3a3"></div>
+
+    <div class="lb" style="left:171px">ダミ</div>
+    <div class="lb" style="left:407px">ダミ・ーテキス</div>
+    <div class="lb" style="left:643px">ダミーテ</div>
+    <div class="lb" style="left:879px">ダミーテキ</div>
+
+    <div class="ds" style="left:145px">ダミーテキ<br>ダミーテキ・ストダミーテ<br>“ダミー”テキストダミー</div>
+    <div class="ds" style="left:383px">ダミーテキストダミーテキ<br>ダミーテキ、ストダミー</div>
+    <div class="ds" style="left:622px">ダミーテキストダミーテ</div>
+    <div class="ds" style="left:857px">ダミーテキ<br>ダミーテキストダミー<br>ダミーテキストダ</div>
+
+    <div class="box"></div>
+    <div class="box-h">ダミーテキストダミーテキス</div>
+    <div class="li" style="top:492px">
+      <div>ダミーテキストダミーテ、キストダミーテキストダミーテキストダミーテキ</div>
+      <div>ダミーテキストダミーテキストダミーテキストダミーテキストダ</div>
+    </div>
+
+    <div class="page">20/47</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

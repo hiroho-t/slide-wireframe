@@ -4,26 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>contact-002</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
   .stage{position:fixed;inset:0;overflow:hidden}
   .slide{position:relative;width:1280px;height:720px;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);
-    background:linear-gradient(120deg,#fbfbfc 0%,#f6f7f9 60%,#eff1f4 100%)}
+    background:linear-gradient(120deg,#fbfbfc 0%,#f6f7f9 60%,#eff1f4 100%);letter-spacing:.8px}
 
-  .title{position:absolute;left:118px;top:96px;font-size:30px;font-weight:700;line-height:55px;letter-spacing:.02em;color:#1a1a1a}
-  .logo{position:absolute;left:122px;top:234px;transform:translateY(-50%);font-size:26px;font-weight:700;letter-spacing:.12em;color:#1a1a1a}
+  .title{position:absolute;left:118px;top:96px;font-size:30px;font-weight:700;line-height:55px;color:#1a1a1a}
+  .logo{position:absolute;left:122px;top:234px;transform:translateY(-50%);font-size:26px;font-weight:700;color:#1a1a1a}
 
   .body{position:absolute;left:499px;top:138px;width:680px;font-size:17px;line-height:28px;color:#1a1a1a}
   .body p{margin-top:28px}
   .body p:first-child{margin-top:0}
 
   .tab{position:absolute;left:558px;top:303px;width:178px;height:36px;background:#2b3a8c;
-    display:grid;place-items:center;font-size:13px;font-weight:700;letter-spacing:.02em;color:#fff}
+    display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff}
   .card{position:absolute;left:558px;top:334px;width:567px;height:288px;background:#eef0f5;border-radius:8px}
   .card-h{position:absolute;left:558px;width:567px;top:378px;transform:translateY(-50%);text-align:center;font-size:14px;font-weight:700;color:#1a1a1a}
   .qr{position:absolute;left:771px;top:416px;width:138px;height:136px;background:#fff;
-    display:grid;place-items:center;font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+    display:grid;place-items:center;font-size:11px;color:#8c8c8c}
   .url{position:absolute;left:558px;width:567px;top:587px;transform:translateY(-50%);text-align:center;font-size:13px;color:#1a1a1a}
   .url span{text-decoration:underline;text-underline-offset:3px;color:#4d4d4d}
 </style>

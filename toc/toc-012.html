@@ -4,22 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>toc-012</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..800&family=Poppins:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  html,body{height:100%;background:#e9e9e9;font-family:"Poppins","Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
   .stage{position:fixed;inset:0;overflow:hidden}
-  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
 
   .panel{position:absolute;left:23px;top:23px;width:1236px;height:670px;background:#f0f0f0}
-  .logo{position:absolute;right:32px;top:63px;transform:translateY(-50%);font-size:26px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .logo{position:absolute;right:32px;top:63px;transform:translateY(-50%);font-size:26px;font-weight:700;color:#1a1a1a}
 
   .dot{position:absolute;left:164px;top:152px;transform:translateY(-50%);width:8px;height:8px;border-radius:50%;background:#8c8c8c}
   .lb{position:absolute;left:178px;top:152px;transform:translateY(-50%);font-size:12px;font-weight:700;color:#4d4d4d}
-  .ja{position:absolute;left:163px;top:201px;transform:translateY(-50%);font-size:40px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .ja{position:absolute;left:163px;top:201px;transform:translateY(-50%);font-size:40px;font-weight:700;color:#1a1a1a}
 
   .badge{position:absolute;left:417px;transform:translateY(-50%);width:18px;height:18px;border-radius:50%;background:#7a7a7a;
     display:grid;place-items:center;font-size:9px;font-weight:700;color:#fff}
-  .ttl{position:absolute;left:450px;transform:translateY(-50%);font-size:17px;font-weight:700;letter-spacing:.02em;color:#4d4d4d}
+  .ttl{position:absolute;left:450px;transform:translateY(-50%);font-size:17px;font-weight:700;color:#4d4d4d}
   .sub{position:absolute;left:450px;transform:translateY(-50%);font-size:12px;font-weight:700;color:#8c8c8c}
   .ldr{position:absolute;height:1px;border-top:1px dotted #b3b3b3}
   .pg{position:absolute;left:985px;width:30px;text-align:right;transform:translateY(-50%);font-size:18px;font-weight:700;color:#4d4d4d}
