@@ -36,9 +36,10 @@ cd ~/.claude/skills/slide-wireframe && git pull
 | `message/` 社長挨拶・メッセージ | 11 |
 | `member/` メンバー紹介 | 12 |
 | `service/` サービス紹介 | 14 |
+| `problem/` 課題提起 | 1 |
 | `flow/` フロー・体制 | 8 |
 | `price/` 料金 | 3 |
-| `clients/` 導入企業・実績 | 6 |
+| `clients/` 導入企業・実績 | 8 |
 | `voc/` お客様の声 | 1 |
 | `media/` メディア掲載 | 1 |
 | `faq/` よくある質問 | 1 |

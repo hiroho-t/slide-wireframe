@@ -28,9 +28,10 @@
   .down{position:absolute;width:0;height:0;border-left:9.5px solid transparent;border-right:9.5px solid transparent;border-top:14px solid #1a1a1a}
   .right{position:absolute;width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:15px solid #1a1a1a}
 
-  .pill{position:absolute;left:346px;top:454px;width:92px;height:24px;background:#1a1a1a;border-radius:12px;
-    display:grid;place-items:center;font-size:11px;font-weight:700;color:#fff;overflow:hidden}
-  .an{position:absolute;left:450px;top:465px;transform:translateY(-50%);font-size:14px;font-weight:700;color:#1a1a1a}
+  .arow{position:absolute;left:346px;top:465px;transform:translateY(-50%);display:flex;align-items:center;gap:12px}
+  .pill{min-width:92px;height:24px;padding:0 16px;background:#1a1a1a;border-radius:12px;
+    display:grid;place-items:center;font-size:11px;font-weight:700;color:#fff;white-space:nowrap}
+  .an{font-size:14px;font-weight:700;color:#1a1a1a;white-space:nowrap}
 
   .copy{position:absolute;left:40px;top:693px;transform:translateY(-50%);font-size:14px;color:#1a1a1a}
   .num{position:absolute;right:43px;top:693px;transform:translateY(-50%);font-size:13px;color:#1a1a1a}
@@ -63,8 +64,10 @@
 
     <div class="hl" style="left:230px;top:465px;width:85px"></div>
     <div class="right" style="left:315px;top:458px"></div>
-    <div class="pill">Ddummydumm</div>
-    <div class="an">ダミーテキストダミ、ーテキストダミーテキストダミーテキ</div>
+    <div class="arow">
+      <div class="pill">Ddummydumm</div>
+      <div class="an">ダミーテキストダミ、ーテキストダミーテキストダミーテキ</div>
+    </div>
 
     <div class="box" style="top:504px"></div>
     <div class="div" style="top:504px;height:78px"></div>
