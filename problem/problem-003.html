@@ -17,31 +17,22 @@
   .pl{position:absolute;top:165px;height:35px;background:#8c8c8c;border-radius:18px;padding:0 22px;
     display:grid;place-items:center;font-size:16px;font-weight:700;color:#fff;white-space:nowrap;transform:translateX(-50%)}
 
-  .pa{position:absolute;top:182px;background:#e2e4e9;border-radius:16px}
-  .pb{position:absolute;top:179px;background:#fff;border-radius:16px}
+  /* パネル：内側コンテンツ幅は 90%（左右に 5% ずつのパディング） */
+  .pa{position:absolute;left:71px;top:182px;width:380px;height:474px;padding:0 19px;background:#e2e4e9;border-radius:16px}
+  .pb{position:absolute;left:470px;top:179px;width:737px;height:477px;padding:0 37px;background:#fff;border-radius:16px}
 
-  .li{position:absolute;left:143px;font-size:15px;line-height:20.6px;color:#1a1a1a;white-space:nowrap}
+  .li{position:absolute;left:108px;top:216px;font-size:15px;line-height:20.6px;color:#1a1a1a;white-space:nowrap}
   .li div{position:relative}
   .li div:before{content:"";position:absolute;left:-18px;top:6px;width:9px;height:9px;border-radius:50%;background:#8c8c8c}
 
-  .doc{position:absolute;left:149px;top:344px;width:174px;height:287px;background:#fff;border:1px solid #ddd;
+  .doc{position:absolute;left:90px;top:330px;width:342px;height:300px;background:#fff;border:1px solid #ddd;
     display:grid;place-items:center;font-size:12px;letter-spacing:.2em;color:#8c8c8c}
-  .ar{position:absolute;top:423px;width:0;height:0;transform:translateY(-50%);
+  .ar{position:absolute;left:451px;top:423px;width:0;height:0;transform:translateY(-50%);
     border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:18px solid #c8cbd4}
 
-  .ch{position:absolute;height:29px;background:#e6e8ee;border-radius:6px;display:grid;place-items:center;
-    font-size:14px;font-weight:700;color:#1a1a1a;white-space:nowrap}
-
-  .tbl{position:absolute;left:597px;top:305px;width:490px;height:268px;background:#f2f2f2;border:1px solid #ddd;
+  .tbl{position:absolute;left:507px;top:235px;width:663px;height:310px;background:#f2f2f2;border:1px solid #ddd;
     display:grid;place-items:center;font-size:13px;letter-spacing:.2em;color:#8c8c8c}
-  .cal{position:absolute;background:#8c8c8c;border-radius:8px;display:grid;place-items:center;text-align:center;
-    font-size:11px;font-weight:700;line-height:16px;color:#fff}
-
-  .hr{position:absolute;top:589px;height:1px;background:#999}
-  .ht{position:absolute;left:494px;width:699px;top:589px;transform:translateY(-50%);text-align:center;font-size:16px;font-weight:700;color:#1a1a1a}
-  .ht span{background:#fff;padding:0 14px}
-  .tp{position:absolute;top:613px;height:27px;background:#e6e8ee;border-radius:6px;display:grid;place-items:center;
-    font-size:13px;font-weight:700;color:#1a1a1a;white-space:nowrap}
+  .bd{position:absolute;left:507px;top:568px;width:663px;font-size:14px;line-height:24px;color:#1a1a1a}
 </style>
 </head>
 <body>
@@ -51,13 +42,13 @@
     <div class="logo">LOGO</div>
     <div class="title">ダミーテキストダミーテ・キス・トダミーテ</div>
 
-    <div class="pa" style="left:71px;width:380px;height:474px"></div>
-    <div class="pb" style="left:470px;width:737px;height:477px"></div>
+    <div class="pa"></div>
+    <div class="pb"></div>
 
     <div class="pl" style="left:263px">ダミ</div>
     <div class="pl" style="left:838px">Dd Uummydummダミーテ</div>
 
-    <div class="li" style="top:216px">
+    <div class="li">
       <div>ダミーテキ、スト・ダミーテキストダミ</div>
       <div>ダミーテキストダDUMミーテキストダミーテ</div>
       <div>ダミーテキスト・ダミーテキストダ</div>
@@ -65,27 +56,10 @@
     </div>
 
     <div class="doc">IMAGE</div>
-    <div class="ar" style="left:390px"></div>
-    <div class="ar" style="left:420px"></div>
-    <div class="ar" style="left:450px"></div>
-
-    <div class="ch" style="left:494px;top:222px;width:341px">ダミーテキストダミーテキス・トダミ</div>
-    <div class="ch" style="left:845px;top:222px;width:348px">Ddummダミーテキストダミーテキストダ</div>
-    <div class="ch" style="left:494px;top:262px;width:341px">ダミーテキストダミ、ーテ・キストダミー</div>
-    <div class="ch" style="left:845px;top:262px;width:348px">ダミーテキストダミーテキストダミ</div>
+    <div class="ar"></div>
 
     <div class="tbl">IMAGE</div>
-    <div class="cal" style="left:808px;top:333px;width:70px;height:30px">ダミーテ</div>
-    <div class="cal" style="left:923px;top:305px;width:112px;height:48px">ダミーテキスト<br>ダミーテキ</div>
-    <div class="cal" style="left:597px;top:508px;width:330px;height:48px">ダミーテキストダミーテキストダミー<br>テキストダミーテキスト</div>
-
-    <div class="hr" style="left:494px;width:220px"></div>
-    <div class="hr" style="left:786px;width:407px"></div>
-    <div class="ht"><span>ダミーテキスト</span></div>
-
-    <div class="tp" style="left:497px;width:220px">ダミーテキストダミーテキスト</div>
-    <div class="tp" style="left:732px;width:223px">DUMダミーテキストダミ・ーテキス</div>
-    <div class="tp" style="left:970px;width:209px">ダミーテキストダミーテキストダミ</div>
+    <div class="bd">ダミーテキストダミーテキス・トダミ、ダミーテキストダミーテキストダミーテキス。<br>ダミーテキストダミ、ーテ・キストダミーテキストダミーテキストダミ。</div>
   </div>
 </div>
 <script>
