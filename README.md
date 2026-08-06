@@ -30,13 +30,13 @@ cd ~/.claude/skills/slide-wireframe && git pull
 | カテゴリ | 数 |
 |---|---|
 | `cover/` 表紙 | 19 |
-| `toc/` 目次 | 14 |
+| `toc/` 目次 | 15 |
 | `section/` 中見出し | 18 |
-| `company/` 会社概要 | 16 |
-| `message/` 社長挨拶・メッセージ | 10 |
-| `member/` メンバー紹介 | 11 |
-| `service/` サービス紹介 | 11 |
-| `flow/` フロー・体制 | 7 |
+| `company/` 会社概要 | 17 |
+| `message/` 社長挨拶・メッセージ | 11 |
+| `member/` メンバー紹介 | 12 |
+| `service/` サービス紹介 | 14 |
+| `flow/` フロー・体制 | 8 |
 | `price/` 料金 | 3 |
 | `clients/` 導入企業・実績 | 6 |
 | `voc/` お客様の声 | 1 |

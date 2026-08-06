@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>service-014</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .head{position:absolute;left:40px;top:39px;transform:translateY(-50%);font-size:15px;font-weight:700;color:#1a1a1a}
+  .head i{font-style:normal;margin:0 7px;color:#b3b3b3}
+  .logo{position:absolute;right:41px;top:39px;transform:translateY(-50%);font-size:18px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+
+  .title{position:absolute;left:65px;top:94px;font-size:21px;font-weight:700;line-height:35.7px;letter-spacing:.02em;color:#1a1a1a;white-space:nowrap}
+
+  .card{position:absolute;border:1px solid #ccc;border-radius:20px}
+  .cap{position:absolute;width:217px;height:41px;background:#262626;display:grid;place-items:center;
+    font-size:17px;font-weight:700;letter-spacing:.02em;color:#fff;white-space:nowrap}
+
+  .lg{position:absolute;background:#e4e4e4;border-radius:12px;display:grid;place-items:center;
+    font-size:10px;font-weight:700;letter-spacing:.14em;color:#8c8c8c}
+  .lb{position:absolute;width:140px;transform:translate(-50%,-50%);text-align:center;font-size:14px;font-weight:700;color:#1a1a1a}
+
+  .copy{position:absolute;left:40px;top:691px;transform:translateY(-50%);font-size:14px;color:#1a1a1a}
+  .num{position:absolute;right:42px;top:691px;transform:translateY(-50%);font-size:14px;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="head">ダミーテキストダミー<i>｜</i>ダミーテキ</div>
+    <div class="logo">LOGO</div>
+
+    <div class="title">ダミーテ、キストダミーテキストダ、ミーテキストダミーテキ、ストダミーテキスト、ダミーテキストダミーテキス<br>ダミーテキストダミーテキストダミーテキストダミ。</div>
+
+    <div class="card" style="left:82px;top:230px;width:361px;height:175px"></div>
+    <div class="card" style="left:466px;top:230px;width:360px;height:175px"></div>
+    <div class="card" style="left:850px;top:230px;width:360px;height:175px"></div>
+    <div class="card" style="left:82px;top:450px;width:1128px;height:191px"></div>
+
+    <div class="cap" style="left:154px;top:209px">ダミーテキスト</div>
+    <div class="cap" style="left:537px;top:209px">ダミーテキス</div>
+    <div class="cap" style="left:921px;top:209px">ダミーテ</div>
+    <div class="cap" style="left:537px;top:429px">ダミーテキスト</div>
+
+    <!-- 1段目 -->
+    <div class="lg" style="left:225px;top:274px;width:76px;height:77px">LOGO</div>
+    <div class="lb" style="left:263px;top:376px">Ddummyd</div>
+
+    <div class="lg" style="left:499px;top:274px;width:76px;height:77px">LOGO</div>
+    <div class="lb" style="left:537px;top:376px">Ddummy</div>
+    <div class="lg" style="left:608px;top:274px;width:76px;height:77px">LOGO</div>
+    <div class="lb" style="left:646px;top:376px">Ddummy</div>
+    <div class="lg" style="left:712px;top:274px;width:76px;height:77px">LOGO</div>
+    <div class="lb" style="left:750px;top:376px">Ddum</div>
+
+    <div class="lg" style="left:927px;top:274px;width:76px;height:77px">LOGO</div>
+    <div class="lb" style="left:965px;top:376px">DUM</div>
+    <div class="lg" style="left:1065px;top:274px;width:76px;height:77px">LOGO</div>
+    <div class="lb" style="left:1103px;top:376px">Ddumm</div>
+
+    <!-- 2段目 -->
+    <div class="lg" style="left:308px;top:496px;width:80px;height:80px">LOGO</div>
+    <div class="lb" style="left:348px;top:611px">Ddummy</div>
+    <div class="lg" style="left:460px;top:496px;width:80px;height:80px">LOGO</div>
+    <div class="lb" style="left:500px;top:611px">Ddumm</div>
+    <div class="lg" style="left:612px;top:496px;width:80px;height:80px">LOGO</div>
+    <div class="lb" style="left:652px;top:611px">Ddum</div>
+    <div class="lg" style="left:764px;top:496px;width:80px;height:80px">LOGO</div>
+    <div class="lb" style="left:804px;top:611px">DUMMYD</div>
+    <div class="lg" style="left:915px;top:496px;width:80px;height:80px">LOGO</div>
+    <div class="lb" style="left:955px;top:611px">Ddumm</div>
+
+    <div class="copy">© 20XX Company.</div>
+    <div class="num">(22)</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

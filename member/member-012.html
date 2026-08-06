@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>member-012</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .head{position:absolute;left:40px;top:40px;transform:translateY(-50%);font-size:15px;font-weight:700;color:#1a1a1a}
+  .head i{font-style:normal;margin:0 6px;color:#b3b3b3}
+  .logo{position:absolute;right:42px;top:40px;transform:translateY(-50%);font-size:18px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+
+  .col{position:absolute;top:102px;width:300px}
+  .ph{width:300px;height:213px;background:#dcdcdc;border-radius:8px;display:grid;place-items:center;
+    font-size:14px;letter-spacing:.2em;color:#8c8c8c}
+  .nm{position:absolute;top:350px;font-size:18px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .ro{position:absolute;top:383px;font-size:13px;font-weight:700;color:#1a1a1a}
+  .bio{position:absolute;top:412px;width:302px;font-size:11.5px;line-height:20.45px;color:#1a1a1a;white-space:nowrap}
+  .edu{position:absolute;top:596px;width:302px;font-size:11.5px;line-height:21px;color:#1a1a1a;white-space:nowrap}
+
+  .copy{position:absolute;left:40px;top:698px;transform:translateY(-50%);font-size:14px;color:#1a1a1a}
+  .num{position:absolute;right:43px;top:698px;transform:translateY(-50%);font-size:14px;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="head">ダミーテキス<i>｜</i>ダミーテキスト</div>
+    <div class="logo">LOGO</div>
+
+    <div class="col" style="left:84px"><div class="ph">IMAGE</div></div>
+    <div class="col" style="left:489px"><div class="ph">IMAGE</div></div>
+    <div class="col" style="left:894px"><div class="ph">IMAGE</div></div>
+
+    <div class="nm" style="left:84px">ダミーテキ スト</div>
+    <div class="ro" style="left:84px">Dd-Uummydu / MMY</div>
+    <div class="bio" style="left:84px">ダミーテ・キストダミーテ, キストダミーテキストダミ<br>ダミーテキスト、ダミーテキストダミーテキストダミ<br>00ダミーテ。キスト、Ddummydダミー0テキ、ストダミ<br>ダミーテキスト・ダミーテ・キストダミーテキストダ<br>ダ、ミーテキストダミー。0000テキストダミーテキス<br>ダミーテキス Ddummyduトダミ。ーテキストダミーテキ<br>ダミーテキ、ストダミーテキストダミー。0000テ<br>Ddummydumダミーテキス。</div>
+    <div class="edu" style="left:84px">ダミーテキストダミーテキストダミーテキスト<br>ダミーテキストダミーテキ(DUM)</div>
+
+    <div class="nm" style="left:489px">ダミーテキ</div>
+    <div class="ro" style="left:489px">Dd-Uummydu / MMY</div>
+    <div class="bio" style="left:489px">ダミーテキスト、DUMM YDUMMYDUダミーテキスト<br>ダ、ミーテキストダミーテキス・トダミーテキスト<br>ダ・ミーテキストダミーテ00キストダ。ミーテ、<br>Ddummyd Uummyダミ、ー0テキ、MMYD, UMMY, DU<br>DUMMYダミーテキストダミーテキストダミーテ、DUキ<br>ダ・ミーテキストダミーテキストダミーテキストダミ<br>ダミーテキ、ストダミーテキストダミーテキストダ。<br>0000ダDdummydumミーテキスト。</div>
+    <div class="edu" style="left:489px">ダミーテキストダミーテキストダミーテキス<br>ダミーテキストダミーテキ(DUM)</div>
+
+    <div class="nm" style="left:894px">ダミ ーテ</div>
+    <div class="ro" style="left:894px">Dd-Uummydu / Mmmydu Mmydumm</div>
+    <div class="bio" style="left:894px">ダミーテキスト、ダミーテキストダミーテキストダミ、<br>ダミーテキストダミーテキストダミ00ーテキス。0000<br>ダミーテキストダミーテキストダミーテキストダミーテ<br>ダミーテキストダミーテ、キストダミーテキストダミ<br>ダミー。DdUu（テキストダ）、MMY（ミーテキスト<br>ダ）ミーテキストダミーテキス、0000トダミーテキス<br>ダミーテキストダミーテDUMdMキストダミ。0000ー<br>Ddummydumダミーテキス。</div>
+    <div class="edu" style="left:894px">ダミーテキストダミーテ</div>
+
+    <div class="copy">© 20XX Company.</div>
+    <div class="num">(05)</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
