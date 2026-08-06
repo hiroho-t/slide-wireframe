@@ -20,21 +20,13 @@
   .cap{position:absolute;top:229px;height:61px;padding:0 26px;transform:translateX(-50%);background:#262626;display:grid;place-items:center;
     font-size:19px;font-weight:700;letter-spacing:.02em;color:#fff;white-space:nowrap}
 
-  /* 左：ポートフォリオカード */
-  .pc{position:absolute;top:323px;width:177px;height:211px;background:#fff;border-radius:12px}
-  .pav{position:absolute;width:22px;height:22px;border-radius:50%;background:#d0d0d0}
-  .pnm{position:absolute;transform:translateY(-50%);font-size:11px;font-weight:700;color:#1a1a1a}
-  .ppc{position:absolute;transform:translateY(-50%);font-size:11px;font-weight:700;color:#8c8c8c}
-  .tile{position:absolute;width:64px;height:68px;background:#f7f7f7;border-radius:8px}
-  .tlg{position:absolute;width:34px;height:34px;border-radius:50%;background:#d0d0d0}
-  .tcp{position:absolute;width:64px;transform:translateY(-50%);text-align:center;font-size:8px;font-weight:700;color:#1a1a1a}
-
-  /* 右：AIチャット */
-  .b1{position:absolute;left:858px;top:326px;width:307px;height:58px;background:#fff;border-radius:14px}
-  .b2{position:absolute;left:751px;top:415px;width:357px;height:123px;background:#fff;border:1px solid #ddd;border-radius:14px}
-  .bav{position:absolute;border-radius:50%;background:#d0d0d0}
-  .bt1{position:absolute;left:912px;top:355px;transform:translateY(-50%);font-size:13px;font-weight:700;color:#1a1a1a}
-  .bt2{position:absolute;left:810px;top:429px;font-size:12.5px;font-weight:700;line-height:20.5px;color:#1a1a1a;white-space:nowrap}
+  /* 各パネル：左に画像／右にリスト */
+  .pimg{position:absolute;top:318px;width:230px;height:198px;background:#dcdcdc;border-radius:10px;
+    display:grid;place-items:center;font-size:13px;letter-spacing:.2em;color:#8c8c8c}
+  .plist{position:absolute;top:322px;width:248px;font-size:13px;line-height:38px;color:#1a1a1a;white-space:nowrap}
+  .plist div{position:relative;padding-left:16px;border-bottom:1px solid #e2e2e2}
+  .plist div:last-child{border-bottom:none}
+  .plist div:before{content:"";position:absolute;left:2px;top:17px;width:5px;height:5px;border-radius:50%;background:#8c8c8c}
 
   .ds{position:absolute;width:550px;top:597px;text-align:center;font-size:14px;font-weight:700;line-height:23.6px;color:#1a1a1a}
 
@@ -55,34 +47,23 @@
     <div class="cap" style="left:341px;min-width:272px">ダミーテキストダミーテキス</div>
     <div class="cap" style="left:946px;min-width:221px">ダミー！テキDUストダミ</div>
 
-    <!-- カード1 -->
-    <div class="pc" style="left:155px"></div>
-    <div class="pav" style="left:165px;top:331px"></div>
-    <div class="pnm" style="left:201px;top:342px">Ddumダミーテキストダ</div>
-    <div class="ppc" style="left:201px;top:356px">+00.00%</div>
-    <div class="tile" style="left:170px;top:371px"></div><div class="tlg" style="left:185px;top:379px"></div><div class="tcp" style="left:170px;top:428px">DUMMYD</div>
-    <div class="tile" style="left:247px;top:371px"></div><div class="tlg" style="left:262px;top:379px"></div><div class="tcp" style="left:247px;top:428px">Ddumm</div>
-    <div class="tile" style="left:170px;top:450px"></div><div class="tlg" style="left:185px;top:458px"></div><div class="tcp" style="left:170px;top:507px">Ddummyd</div>
-    <div class="tile" style="left:247px;top:450px"></div><div class="tlg" style="left:262px;top:458px"></div><div class="tcp" style="left:247px;top:507px">Ddummydum</div>
+    <div class="pimg" style="left:91px">IMAGE</div>
+    <div class="plist" style="left:345px">
+      <div>Ddumダミーテキストダ</div>
+      <div>ダミーテキストダミー</div>
+      <div>DUMMYDダミーテキ</div>
+      <div>Ddummyダミーテキスト</div>
+      <div>ダミーテキストダミーテ</div>
+    </div>
 
-    <!-- カード2 -->
-    <div class="pc" style="left:357px"></div>
-    <div class="pav" style="left:367px;top:331px"></div>
-    <div class="pnm" style="left:403px;top:342px">ダミーテキストダミー</div>
-    <div class="ppc" style="left:403px;top:356px">+00.00%</div>
-    <div class="tile" style="left:372px;top:371px"></div><div class="tlg" style="left:387px;top:379px"></div><div class="tcp" style="left:372px;top:428px">Ddummy</div>
-    <div class="tile" style="left:449px;top:371px"></div><div class="tlg" style="left:464px;top:379px"></div><div class="tcp" style="left:449px;top:428px">Ddum</div>
-    <div class="tile" style="left:372px;top:450px"></div><div class="tlg" style="left:387px;top:458px"></div><div class="tcp" style="left:372px;top:507px">Ddummyd</div>
-    <div class="tile" style="left:449px;top:450px"></div><div class="tlg" style="left:464px;top:458px"></div><div class="tcp" style="left:449px;top:507px">Ddummy</div>
-
-    <!-- 右 -->
-    <div class="b1"></div>
-    <div class="bav" style="left:868px;top:337px;width:35px;height:35px"></div>
-    <div class="bt1">DUダミー MMYDテキストダミーテ！</div>
-
-    <div class="b2"></div>
-    <div class="bav" style="left:763px;top:428px;width:29px;height:29px"></div>
-    <div class="bt2">DUMMYD ($UMMY) ダミーテキス0000ト0ダ<br>ダ（ミ）ーテキストダミーテキストダミー！<br>ダミーテキ0ストダミーテ（DUM）キ0.0000<br>ダ、ミーテキス000.0トダミーテ。キストDUM<br>ダミーテキストダミーテキストダ。</div>
+    <div class="pimg" style="left:694px">IMAGE</div>
+    <div class="plist" style="left:948px">
+      <div>ダミーテキストダミ</div>
+      <div>Ddummydumダミーテ</div>
+      <div>ダミーテキストダミーテキ</div>
+      <div>DUMMYダミーテキス</div>
+      <div>ダミーテキストダミー</div>
+    </div>
 
     <div class="ds" style="left:67px">ダミーテキストダミーテキストダミー、<br>ダミーテキストダミーテキストダミーテ</div>
     <div class="ds" style="left:670px">ダミーテキストダミーテキスト、ダミーテキス、トダミーテキス<br>ダミ、DUーテキストダミーテキストダミーテキス（トダMdumミ）</div>
