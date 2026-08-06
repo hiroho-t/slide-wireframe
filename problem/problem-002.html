@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>problem-002</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#d5d7de;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .kicker{position:absolute;left:16px;top:22px;transform:translateY(-50%);font-size:13px;font-weight:700;letter-spacing:.06em;color:#1a1a1a}
+  .logo{position:absolute;right:18px;top:24px;transform:translateY(-50%);font-size:22px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+
+  .title{position:absolute;left:72px;top:93px;font-size:49px;font-weight:700;line-height:74px;letter-spacing:.02em;color:#3d3d3d}
+  .rule{position:absolute;left:69px;top:258px;width:389px;height:1px;background:#8c8c8c}
+  .body{position:absolute;left:70px;top:290px;font-size:15px;line-height:27.9px;color:#1a1a1a;white-space:nowrap}
+
+  .panel{position:absolute;left:481px;top:88px;width:726px;height:565px;background:#fff;border-radius:14px}
+
+  .rl{position:absolute;width:100px;transform:translate(-50%,-50%);text-align:center;font-size:12px;font-weight:700;line-height:21.5px;color:#1a1a1a}
+  .dot{position:absolute;left:497px;width:89px;height:0;border-top:2px dotted #b3b3b3}
+
+  .chip{position:absolute;background:#b0b0b0;border-radius:8px;display:grid;place-items:center;text-align:center;
+    font-size:12px;font-weight:700;line-height:16px;color:#fff}
+  .colb{position:absolute;top:216px;width:109px;height:255px;background:#8c8c8c;border-radius:10px}
+  .ch{position:absolute;top:236px;width:109px;transform:translateY(-50%);text-align:center;font-size:12px;font-weight:700;line-height:17px;color:#fff}
+  .sc{position:absolute;width:93px;height:40px;background:#fff;border-radius:8px;display:grid;place-items:center;text-align:center;
+    font-size:11px;font-weight:700;line-height:15px;color:#3d3d3d}
+  .dt{position:absolute;top:571px;transform:translateY(-50%);text-align:center;font-size:12px;font-weight:700;color:#fff}
+  .dc{position:absolute;top:592px;height:22px;background:#fff;border-radius:6px;display:grid;place-items:center;
+    font-size:10px;font-weight:700;color:#3d3d3d}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="kicker">00.ダミーテキス</div>
+    <div class="logo">LOGO</div>
+
+    <div class="title">ダミーテキスト<br>ダミーテキスト？</div>
+    <div class="rule"></div>
+    <div class="body">Dd Uummydummダ、ミーテキストダミMMーテキスト<br>ダミーテキスト、ダミーテキストダミーテキストダ<br>ダミーテキストダミーテ。</div>
+
+    <div class="panel"></div>
+
+    <div class="dot" style="top:118px"></div>
+    <div class="dot" style="top:211px"></div>
+    <div class="dot" style="top:476px"></div>
+    <div class="dot" style="top:548px"></div>
+
+    <div class="rl" style="left:543px;top:165px">DUM</div>
+    <div class="rl" style="left:543px;top:333px">ダミーテ・<br>キストダミー</div>
+    <div class="rl" style="left:543px;top:513px">ダミ</div>
+    <div class="rl" style="left:543px;top:586px">ダミー・<br>テキスト</div>
+
+    <!-- APP -->
+    <div class="chip" style="left:595px;top:119px;width:109px;height:53px">ダミーテキス<br>トダミー</div>
+    <div class="chip" style="left:714px;top:119px;width:109px;height:53px">ダミーテキス<br>トダミー</div>
+    <div class="chip" style="left:833px;top:119px;width:109px;height:53px">ダミーテ<br>キストダ</div>
+    <div class="chip" style="left:952px;top:119px;width:109px;height:53px">ダミーテキス・<br>トダミーテキス</div>
+    <div class="chip" style="left:1071px;top:119px;width:109px;height:53px">ダミーテ</div>
+
+    <div class="chip" style="left:595px;top:181px;width:585px;height:25px">ダミーテキストダミー</div>
+
+    <!-- ロジック・インベントリ -->
+    <div class="colb" style="left:595px"></div>
+    <div class="ch" style="left:595px">ダミーテ・<br>キストダミー</div>
+    <div class="sc" style="left:603px;top:275px">ダミ</div>
+    <div class="sc" style="left:603px;top:323px">Ddum<br>Umydummy</div>
+
+    <div class="colb" style="left:714px"></div>
+    <div class="ch" style="left:714px">ダミーテキス<br>トダミー</div>
+    <div class="sc" style="left:722px;top:275px">DUM</div>
+    <div class="sc" style="left:722px;top:323px">ダミーテキス</div>
+    <div class="sc" style="left:722px;top:371px">Ddummyダミ</div>
+    <div class="sc" style="left:722px;top:419px">ダミーテキストダ</div>
+
+    <div class="colb" style="left:833px"></div>
+    <div class="ch" style="left:833px">DUダミーテキス<br>トダミー</div>
+    <div class="sc" style="left:841px;top:275px">ダミーテキ</div>
+    <div class="sc" style="left:841px;top:323px">ダミーテキ</div>
+    <div class="sc" style="left:841px;top:371px">ダミーテキ</div>
+
+    <div class="colb" style="left:952px"></div>
+    <div class="ch" style="left:952px">ダミー<br>テキストダミ</div>
+    <div class="sc" style="left:960px;top:275px">ダミーテキス</div>
+    <div class="sc" style="left:960px;top:323px">ダミーテ</div>
+    <div class="sc" style="left:960px;top:371px">ダミーテキストダ</div>
+    <div class="sc" style="left:960px;top:419px">ダミーテキス</div>
+
+    <div class="colb" style="left:1071px"></div>
+    <div class="ch" style="left:1071px">DU<br>ダミーテキス</div>
+    <div class="sc" style="left:1079px;top:275px">ダミーテキ</div>
+    <div class="sc" style="left:1079px;top:323px">ダミーテキス</div>
+    <div class="sc" style="left:1079px;top:371px">ダミーテキストダミ</div>
+
+    <!-- 検索 -->
+    <div class="chip" style="left:595px;top:481px;width:288px;height:62px">ダミーテキスト</div>
+    <div class="chip" style="left:892px;top:481px;width:288px;height:62px">ダミーテキス</div>
+
+    <!-- データ・外部連携 -->
+    <div class="chip" style="left:595px;top:552px;width:173px;height:70px"></div>
+    <div class="dt" style="left:595px;width:173px">ダミーテキス</div>
+    <div class="dc" style="left:610px;width:65px">ダミーテ</div>
+    <div class="dc" style="left:688px;width:66px">ダミーテ</div>
+
+    <div class="chip" style="left:775px;top:552px;width:253px;height:70px"></div>
+    <div class="dt" style="left:775px;width:253px">DUMダミ</div>
+    <div class="dc" style="left:790px;width:66px">DUM</div>
+    <div class="dc" style="left:870px;width:65px">DUM</div>
+    <div class="dc" style="left:950px;width:64px">Ddummyd</div>
+
+    <div class="chip" style="left:1036px;top:552px;width:144px;height:70px"></div>
+    <div class="dt" style="left:1036px;width:144px">ダミーテキストダ</div>
+    <div class="dc" style="left:1058px;width:101px">ダミーテキス</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
