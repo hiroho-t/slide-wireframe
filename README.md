@@ -29,7 +29,7 @@ cd ~/.claude/skills/slide-wireframe && git pull
 
 | カテゴリ | 数 |
 |---|---|
-| `cover/` 表紙 | 19 |
+| `cover/` 表紙 | 20 |
 | `toc/` 目次 | 17 |
 | `section/` 中見出し | 18 |
 | `company/` 会社概要 | 19 |
