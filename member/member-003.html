@@ -13,9 +13,14 @@
   .stage{position:fixed;inset:0;overflow:hidden}
   .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);letter-spacing:.8px}
 
-  /* 上部：見出し＋罫線 */
-  .title{position:absolute;left:36px;top:56px;transform:translateY(-50%);font-size:40px;line-height:1;font-weight:700;color:#1a1a1a}
-  .rule{position:absolute;left:34px;top:87px;width:1209px;height:2px;background:#8c8c8c}
+  /* 上部：ヘッダー */
+  .head{position:absolute;left:30px;top:32px;transform:translateY(-50%);display:flex;align-items:center;gap:17px}
+  .h-en{font-size:22px;font-weight:700;color:#4d4d4d}
+  .h-bar{width:1px;height:23px;background:#c4c4c4}
+  .h-ja{margin-left:9px;font-size:19px;font-weight:700;color:#4d4d4d}
+  .logo{position:absolute;right:32px;top:30px;transform:translateY(-50%);font-size:26px;font-weight:700;color:#1a1a1a}
+  .copy{position:absolute;left:32px;top:693px;transform:translateY(-50%);font-size:11px;color:#666}
+  .page{position:absolute;right:29px;top:693px;transform:translateY(-50%);font-size:11px;color:#666}
 
   /* カード3枚（横並び・幅364px／間隔30px） */
   .cards{position:absolute;left:62px;top:114px;width:1153px;height:525px;display:flex;gap:30px}
@@ -32,8 +37,8 @@
 <div class="stage">
   <div class="slide">
 
-    <div class="title">ダミー項目名（名称）の紹介</div>
-    <div class="rule"></div>
+    <div class="head"><span class="h-en">Dummy 01</span><i class="h-bar"></i><span class="h-ja">ダミー項目名（名称）の紹介</span></div>
+    <div class="logo">LOGO</div>
 
     <div class="cards">
       <div class="card">
@@ -61,6 +66,9 @@
         </div>
       </div>
     </div>
+
+    <div class="copy">© 20XX Company.</div>
+    <div class="page">10</div>
 
   </div>
 </div>
