@@ -27,10 +27,10 @@
     display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;white-space:nowrap}
   .q{position:absolute;left:47px;transform:translateY(-50%);font-size:14px;color:#1a1a1a;white-space:nowrap}
 
-  .panel{position:absolute;left:38px;width:1201px;background:#f7f7f7}
-  .li{position:absolute;left:55px;font-size:13px;line-height:26px;color:#1a1a1a;white-space:nowrap}
-  .li div{position:relative}
-  .li div:before{content:"";position:absolute;left:-16px;top:11px;width:5px;height:5px;border-radius:50%;background:#1a1a1a}
+  .panel{position:absolute;left:38px;width:1201px;padding:12px 24px;background:#f7f7f7}
+  .li{font-size:13px;line-height:26px;color:#1a1a1a;white-space:nowrap}
+  .li div{position:relative;padding-left:20px}
+  .li div:before{content:"";position:absolute;left:2px;top:11px;width:5px;height:5px;border-radius:50%;background:#1a1a1a}
   .li div.c:before{display:none}
 
   .copy{position:absolute;left:0;width:1280px;top:703px;transform:translateY(-50%);text-align:center;font-size:12px;color:#c4c4c4}
@@ -54,8 +54,8 @@
     <div class="pill">ダミーテキストダミーテキストダ</div>
     <div class="q" style="top:223px">ダミーテキスト「#ダミーテキストダミーテ」キストダミーテキストダ。</div>
 
-    <div class="panel" style="top:237px;height:176px"></div>
-    <div class="li" style="top:245px">
+    <div class="panel" style="top:237px">
+    <div class="li">
       <div>ダミーテキストダ（ミー）テキストダミーテキストダミ、ーテキストダミーテキストダミーテキストダミーテキストダ。ミーテキストダミーテキストダミーテキ、ストダミーテキ</div>
       <div class="c">ダミーテキストダミーテキストダミーテキストダミーテキ。</div>
       <div>ダミーテキストダミーテ『キストダミーテキ』スト。ダミーテキストダミーテキストダミーテ、キストダミーテキス。トダミーテキストダミ。</div>
@@ -63,11 +63,12 @@
       <div>ダミーテキストダミーテキス。トダミーテキストダミーテキストダミ。ーテキストダミーテ、キストダミーテキストダミー、テキストダミーテキストダ、ミーテキストダミーテキ</div>
       <div class="c">ダミーテキストダミーテ</div>
     </div>
+    </div>
 
     <div class="q" style="top:437px">ダミーテキストダミーテキストダミー。</div>
 
-    <div class="panel" style="top:461px;height:220px"></div>
-    <div class="li" style="top:461px">
+    <div class="panel" style="top:451px">
+    <div class="li">
       <div>ダミーテキストダミーテキストダミ！ーテキストダミーテキストダミーテキ、ストダミーテキストダミーテキストダミーテキストダミー、テキストダミーテキス。トダミーテキス</div>
       <div class="c">ダミーテキストダミーテキストダミ！</div>
       <div>ダミーテキストダミーテキストダミーテキスト、ダミーテキ、ストダミーテキストダミーテキストダ。</div>
@@ -76,6 +77,7 @@
       <div>ダミーテキストダミーテキストダミー、テキストダミーテキス</div>
       <div>ダミーテキスト、ダミーテキストダミーテキストダミーテキストダミーテキスト</div>
       <div>ダミーテキストダミー。テキストダミーテキストダミーテキストダ。ミーテキストダミーテキストダミーテキストダミー。</div>
+    </div>
     </div>
 
     <div class="copy">© 20XX Company.</div>
