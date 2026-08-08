@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chart-001</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#f0f1f4;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .wm{position:absolute;right:0;top:43px;transform:translateY(-50%);font-size:72px;font-weight:700;letter-spacing:-.01em;color:#c8cddb;white-space:nowrap}
+
+  .no{position:absolute;left:34px;top:50px;transform:translateY(-50%);font-size:26px;font-weight:400;letter-spacing:.02em;color:#1a1a1a}
+  .nolb{position:absolute;left:90px;top:56px;transform:translateY(-50%);font-size:11px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .title{position:absolute;left:64px;top:121px;transform:translateY(-50%);font-size:26px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .lead{position:absolute;left:64px;top:163px;transform:translateY(-50%);font-size:14px;color:#1a1a1a}
+
+  .ln{position:absolute;background:#c4c8d2}
+  .bx{position:absolute;display:grid;place-items:center;text-align:center;color:#fff}
+  .ceo{background:#1f1f1f;font-size:20px;font-weight:700;letter-spacing:.04em}
+  .exe{background:#333;font-size:19px;font-weight:700;letter-spacing:.04em}
+  .hq{background:#4a4f5c;font-size:16px;font-weight:700;letter-spacing:.02em}
+  .dp{background:#6b7180;font-size:13px;font-weight:700;letter-spacing:.02em}
+  .wb{position:absolute;height:50px;background:#fff;display:grid;place-items:center;text-align:center;
+    font-size:13px;line-height:18px;color:#1a1a1a}
+
+  .fl{position:absolute;left:28px;top:695px;transform:translateY(-50%);font-size:11px;color:#8c96a8}
+  .fr{position:absolute;right:73px;top:695px;transform:translateY(-50%);font-size:11px;color:#8c96a8}
+  .pg{position:absolute;right:35px;top:695px;transform:translateY(-50%);font-size:11px;color:#8c96a8}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="wm">Ddummydu Uummy</div>
+
+    <div class="no">0.0</div>
+    <div class="nolb">ダミーテキストダ</div>
+    <div class="title">ミーテ</div>
+    <div class="lead">MdummMydキストダミー、テキストダミーテキストダミーテキ。</div>
+
+    <!-- 接続線 -->
+    <div class="ln" style="left:641px;top:176px;width:1px;height:69px"></div>
+    <div class="ln" style="left:641px;top:206px;width:75px;height:1px"></div>
+    <div class="ln" style="left:321px;top:245px;width:748px;height:1px"></div>
+    <div class="ln" style="left:321px;top:245px;width:1px;height:18px"></div>
+    <div class="ln" style="left:746px;top:245px;width:1px;height:18px"></div>
+    <div class="ln" style="left:1068px;top:245px;width:1px;height:18px"></div>
+
+    <div class="ln" style="left:146px;top:333px;width:347px;height:1px"></div>
+    <div class="ln" style="left:146px;top:333px;width:1px;height:22px"></div>
+    <div class="ln" style="left:320px;top:310px;width:1px;height:45px"></div>
+    <div class="ln" style="left:492px;top:333px;width:1px;height:22px"></div>
+
+    <div class="ln" style="left:663px;top:333px;width:165px;height:1px"></div>
+    <div class="ln" style="left:663px;top:333px;width:1px;height:22px"></div>
+    <div class="ln" style="left:746px;top:310px;width:1px;height:23px"></div>
+    <div class="ln" style="left:828px;top:333px;width:1px;height:22px"></div>
+
+    <div class="ln" style="left:990px;top:333px;width:155px;height:1px"></div>
+    <div class="ln" style="left:990px;top:333px;width:1px;height:22px"></div>
+    <div class="ln" style="left:1068px;top:310px;width:1px;height:23px"></div>
+    <div class="ln" style="left:1145px;top:333px;width:1px;height:22px"></div>
+
+    <!-- 経営層 -->
+    <div class="bx ceo" style="left:577px;top:140px;width:130px;height:36px">DUM</div>
+    <div class="bx exe" style="left:716px;top:188px;width:134px;height:35px">DUM</div>
+    <div class="bx exe" style="left:857px;top:188px;width:134px;height:35px">DUM</div>
+
+    <!-- 本部 -->
+    <div class="bx hq" style="left:65px;top:263px;width:512px;height:47px">YDUストダミーテキストダミ</div>
+    <div class="bx hq" style="left:584px;top:263px;width:325px;height:47px">ーテキストダ</div>
+    <div class="bx hq" style="left:917px;top:263px;width:302px;height:47px">ミーテキストダミ</div>
+
+    <!-- 部 -->
+    <div class="bx dp" style="left:65px;top:355px;width:162px;height:42px">ーテキスト</div>
+    <div class="bx dp" style="left:236px;top:355px;width:168px;height:42px">ダミーテキスト</div>
+    <div class="bx dp" style="left:411px;top:355px;width:163px;height:42px">ダミーテキスト</div>
+    <div class="bx dp" style="left:586px;top:355px;width:155px;height:42px">MMYダミーテキスト</div>
+    <div class="bx dp" style="left:751px;top:355px;width:155px;height:42px">ダミーテキ</div>
+    <div class="bx dp" style="left:916px;top:355px;width:148px;height:42px">ストダミー</div>
+    <div class="bx dp" style="left:1071px;top:355px;width:148px;height:42px">テキストダ</div>
+
+    <!-- 局（白ボックス） -->
+    <div class="wb" style="left:65px;top:405px;width:162px">ミーテ</div>
+    <div class="wb" style="left:65px;top:459px;width:162px">キストダミーテキ</div>
+
+    <div class="wb" style="left:236px;top:405px;width:168px">ストダミーテキ<br>ストダミーテ</div>
+    <div class="wb" style="left:236px;top:459px;width:168px">キスト</div>
+    <div class="wb" style="left:236px;top:513px;width:168px">ダミー</div>
+    <div class="wb" style="left:236px;top:567px;width:168px">テキス</div>
+
+    <div class="wb" style="left:411px;top:405px;width:163px">トダミーテキストダミー</div>
+    <div class="wb" style="left:411px;top:459px;width:163px">テキスト<br>ダミーテキストダミ</div>
+    <div class="wb" style="left:411px;top:513px;width:163px">DumUmyー</div>
+    <div class="wb" style="left:411px;top:567px;width:163px">Mdummydumテ</div>
+    <div class="wb" style="left:411px;top:621px;width:163px">MmyYdumキ</div>
+
+    <div class="wb" style="left:586px;top:405px;width:155px">ストダミーテ</div>
+    <div class="wb" style="left:586px;top:459px;width:155px">キストダミーテ</div>
+
+    <div class="wb" style="left:751px;top:405px;width:155px">キストダ</div>
+    <div class="wb" style="left:751px;top:459px;width:155px">ミーテキストダミー</div>
+
+    <div class="wb" style="left:916px;top:405px;width:148px">テキ</div>
+    <div class="wb" style="left:916px;top:459px;width:148px">スト</div>
+    <div class="wb" style="left:916px;top:513px;width:148px">ダミーテ</div>
+    <div class="wb" style="left:916px;top:567px;width:148px">キス</div>
+    <div class="wb" style="left:916px;top:621px;width:148px">トダ</div>
+
+    <div class="wb" style="left:1071px;top:405px;width:148px">ミーテキ</div>
+    <div class="wb" style="left:1071px;top:459px;width:148px">スト</div>
+    <div class="wb" style="left:1071px;top:513px;width:148px">DmU</div>
+
+    <div class="fl">MydumMmy Ydu. Dmmydum Umyd 0000</div>
+    <div class="fr">© 20XX Company.</div>
+    <div class="pg">57</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
