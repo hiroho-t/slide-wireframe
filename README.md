@@ -38,7 +38,7 @@ cd ~/.claude/skills/slide-wireframe && git pull
 | `service/` サービス紹介 | 14 |
 | `problem/` 課題提起 | 4 |
 | `chart/` 組織図・チャート | 1 |
-| `flow/` フロー・体制 | 8 |
+| `flow/` フロー・体制 | 9 |
 | `price/` 料金 | 3 |
 | `clients/` 導入企業・実績 | 9 |
 | `voc/` お客様の声 | 4 |
