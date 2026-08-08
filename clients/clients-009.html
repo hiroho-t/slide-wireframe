@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clients-009</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .panel{position:absolute;left:0;top:0;width:637px;height:720px;background:#f0f1f4}
+
+  .no{position:absolute;left:30px;top:48px;transform:translateY(-50%);font-size:26px;letter-spacing:.02em;color:#1a1a1a}
+  .nolb{position:absolute;left:86px;top:53px;transform:translateY(-50%);font-size:11px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .ttl{position:absolute;left:66px;top:100px;font-size:26px;font-weight:700;line-height:40.8px;letter-spacing:.02em;color:#1a1a1a}
+
+  .lead{position:absolute;left:0;width:637px;top:295px;transform:translateY(-50%);text-align:center;font-size:26px;font-weight:700;letter-spacing:.02em;color:#8c8c8c}
+  .big1{position:absolute;left:0;width:637px;top:354px;transform:translateY(-50%);text-align:center;font-size:72px;font-weight:700;letter-spacing:.02em;color:#8c8c8c}
+  .big1 i{font-style:normal;font-size:34px;line-height:36px;display:inline-block;vertical-align:middle;text-align:left}
+  .big2{position:absolute;left:0;width:637px;top:441px;transform:translateY(-50%);text-align:center;font-size:78px;font-weight:700;letter-spacing:.01em;color:#4d4d4d}
+
+  .sh{position:absolute;left:713px;transform:translateY(-50%);font-size:14px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .lg{position:absolute;transform:translate(-50%,-50%);height:36px;background:#ececec;border-radius:4px;
+    display:grid;place-items:center;font-size:11px;font-weight:700;letter-spacing:.14em;color:#8c8c8c}
+
+  .fl{position:absolute;left:32px;top:697px;transform:translateY(-50%);font-size:11px;color:#98a0b0}
+  .fr{position:absolute;right:74px;top:696px;transform:translateY(-50%);font-size:11px;color:#98a0b0}
+  .pg{position:absolute;right:35px;top:696px;transform:translateY(-50%);font-size:11px;color:#98a0b0}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="panel"></div>
+
+    <div class="no">0.0</div>
+    <div class="nolb">ダミーテキス</div>
+    <div class="ttl">トダミー00テキストダミ<br>DUMーテキストダミーテキ</div>
+
+    <div class="lead">ストダミー0テキ、ストダミーテキストダ</div>
+    <div class="big1">ミーテキ<i>スト<br>ダミ</i></div>
+    <div class="big2">000ダミー!</div>
+
+    <div class="sh" style="top:100px">テキストダミーテキストダミーテキ</div>
+    <div class="lg" style="left:797px;top:168px;width:95px">LOGO</div>
+    <div class="lg" style="left:941px;top:168px;width:96px">LOGO</div>
+    <div class="lg" style="left:1095px;top:168px;width:125px">LOGO</div>
+    <div class="lg" style="left:842px;top:242px;width:195px">LOGO</div>
+    <div class="lg" style="left:1064px;top:242px;width:182px">LOGO</div>
+
+    <div class="sh" style="top:335px">ストダミー</div>
+    <div class="lg" style="left:759px;top:394px;width:93px">LOGO</div>
+    <div class="lg" style="left:938px;top:394px;width:154px">LOGO</div>
+    <div class="lg" style="left:1131px;top:394px;width:143px">LOGO</div>
+
+    <div class="lg" style="left:750px;top:460px;width:73px">LOGO</div>
+    <div class="lg" style="left:880px;top:460px;width:88px">LOGO</div>
+    <div class="lg" style="left:1022px;top:460px;width:118px">LOGO</div>
+    <div class="lg" style="left:1164px;top:460px;width:73px">LOGO</div>
+
+    <div class="lg" style="left:764px;top:528px;width:108px">LOGO</div>
+    <div class="lg" style="left:895px;top:528px;width:88px">LOGO</div>
+    <div class="lg" style="left:1035px;top:528px;width:121px">LOGO</div>
+    <div class="lg" style="left:1166px;top:528px;width:72px">LOGO</div>
+
+    <div class="lg" style="left:771px;top:590px;width:115px">LOGO</div>
+    <div class="lg" style="left:946px;top:590px;width:129px">LOGO</div>
+    <div class="lg" style="left:1128px;top:590px;width:147px">LOGO</div>
+
+    <div class="fl">MdummYyd Dum. Umydumm Mydu 0000</div>
+    <div class="fr">© 20XX Company.</div>
+    <div class="pg">38</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
