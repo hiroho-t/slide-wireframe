@@ -32,7 +32,7 @@ cd ~/.claude/skills/slide-wireframe && git pull
 | `cover/` 表紙 | 20 |
 | `toc/` 目次 | 17 |
 | `section/` 中見出し | 19 |
-| `company/` 会社概要 | 19 |
+| `company/` 会社概要 | 21 |
 | `message/` 社長挨拶・メッセージ | 12 |
 | `member/` メンバー紹介 | 14 |
 | `service/` サービス紹介 | 14 |
