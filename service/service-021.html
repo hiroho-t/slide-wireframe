@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>service-021</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#f0f1f4;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .wm{position:absolute;left:780px;top:48px;transform:translateY(-50%);font-size:110px;font-weight:700;letter-spacing:-.01em;color:#c7c7c7;white-space:nowrap}
+
+  .no{position:absolute;left:30px;top:47px;transform:translateY(-50%);font-size:28px;letter-spacing:.01em;color:#1a1a1a}
+  .nolb{position:absolute;left:93px;top:57px;transform:translateY(-50%);font-size:11px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .ttl{position:absolute;left:66px;top:98px;font-size:27px;font-weight:700;line-height:41.1px;letter-spacing:.01em;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+
+  .cir{position:absolute;top:274px;width:300px;height:300px;border-radius:50%}
+  .t1{position:absolute;transform:translateY(-50%);width:300px;text-align:center;color:#fff;white-space:nowrap;font-weight:700;font-feature-settings:"palt" 1}
+  .big{font-size:36px;letter-spacing:.02em}
+  .md{font-size:16px}
+  .sm{font-size:12px;font-weight:400}
+  .hd2{font-size:26px}
+  .bd2{font-size:17px}
+
+  .fl{position:absolute;left:31px;top:696px;transform:translateY(-50%);font-size:11px;color:#98a0b0}
+  .fr{position:absolute;right:71px;top:696px;transform:translateY(-50%);font-size:11px;color:#98a0b0}
+  .pg{position:absolute;right:33px;top:696px;transform:translateY(-50%);font-size:11px;color:#98a0b0}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="wm">Dum Umydum</div>
+
+    <div class="no">0.0</div>
+    <div class="nolb">ダミーテ</div>
+    <div class="ttl">DdummUydキストダミ、ーテキMMYスト<br>ミ々ー "テキストダミーテキ" ストダミーテキス</div>
+
+    <div class="cir" style="left:97px;background:#4d4d4d"></div>
+    <div class="t1 big" style="left:97px;top:356px">MMY</div>
+    <div class="t1 md" style="left:97px;top:392px">トダミーテキスト</div>
+    <div class="t1 sm" style="left:97px;top:411px">（ダミーDUM）</div>
+    <div class="t1 md" style="left:97px;top:439px">テキ</div>
+    <div class="t1 sm" style="left:97px;top:458px">（MYDストダミーテキ）</div>
+    <div class="t1 md" style="left:97px;top:485px">スト</div>
+    <div class="t1 sm" style="left:97px;top:504px">（UMMダミーテ）</div>
+
+    <svg style="position:absolute;left:423px;top:404px;width:40px;height:41px" viewBox="0 0 40 41">
+      <path d="M6,0 L20,14 L34,0 L40,7 L27,20.5 L40,34 L34,41 L20,27 L6,41 L0,34 L13,20.5 L0,7 Z" fill="#4d4d4d"/>
+    </svg>
+
+    <div class="cir" style="left:489px;background:#9a9a9a"></div>
+    <div class="t1 hd2" style="left:489px;top:398px">キストダ</div>
+    <div class="t1 bd2" style="left:489px;top:436px">ミーテ/キスト/ダミ/ーテ</div>
+    <div class="t1 bd2" style="left:489px;top:465px">キストダ/ミーテキ</div>
+
+    <svg style="position:absolute;left:815px;top:404px;width:40px;height:41px" viewBox="0 0 40 41">
+      <path d="M6,0 L20,14 L34,0 L40,7 L27,20.5 L40,34 L34,41 L20,27 L6,41 L0,34 L13,20.5 L0,7 Z" fill="#4d4d4d"/>
+    </svg>
+
+    <div class="cir" style="left:881px;background:#9a9a9a"></div>
+    <div class="t1 hd2" style="left:881px;top:398px">スト</div>
+    <div class="t1 bd2" style="left:881px;top:436px">ダミ/ーテ/キス/トダミ/ーテ</div>
+    <div class="t1 bd2" style="left:881px;top:465px">キス/トダ/ミーテキ/スト</div>
+    <div class="t1 bd2" style="left:881px;top:493px">myd…</div>
+
+    <div class="fl">YummyDdu Umm. Mydummy 0000</div>
+    <div class="fr">© 20XX Company.</div>
+    <div class="pg">09</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

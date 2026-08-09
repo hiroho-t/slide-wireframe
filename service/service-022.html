@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>service-022</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#f2f2f4;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .no{position:absolute;left:50px;top:62px;transform:translateY(-50%);font-size:28px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .hd{position:absolute;left:173px;top:62px;transform:translateY(-50%);font-size:38px;font-weight:700;letter-spacing:.01em;color:#1a1a1a;font-feature-settings:"palt" 1}
+  .logo{position:absolute;right:58px;top:62px;transform:translateY(-50%);font-size:30px;font-weight:700;letter-spacing:.08em;color:#1a1a1a}
+
+  .lead{position:absolute;left:0;width:1280px;top:157px;transform:translateY(-50%);text-align:center;font-size:35px;font-weight:700;letter-spacing:.01em;color:#1a1a1a;font-feature-settings:"palt" 1}
+  .ul{position:absolute;left:321px;top:184px;width:615px;height:3px;background:#1a1a1a}
+
+  .bx{position:absolute;top:251px;height:378px;border:2px solid #1a1a1a}
+  .tab{position:absolute;top:224px;height:58px;background:#1a1a1a;display:grid;place-items:center;
+    font-size:22px;font-weight:700;letter-spacing:.02em;color:#fff;white-space:nowrap;font-feature-settings:"palt" 1}
+  .w{position:absolute;transform:translateY(-50%);font-size:20px;letter-spacing:.01em;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+
+  .foot{position:absolute;left:49px;top:683px;transform:translateY(-50%);font-size:11px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="no">00 ダミ</div>
+    <div class="hd">ーテキストダミーテキ</div>
+    <div class="logo">LOGO</div>
+
+    <div class="lead">ストダミーテキストダミーテキストダミ。</div>
+    <div class="ul"></div>
+
+    <div class="bx" style="left:64px;width:718px"></div>
+    <div class="tab" style="left:336px;width:163px">ー々テキス</div>
+
+    <div class="w" style="left:118px;top:335px">トダミーテ</div>
+    <div class="w" style="left:118px;top:376px">キストダミ</div>
+    <div class="w" style="left:118px;top:417px">ーテキスト</div>
+    <div class="w" style="left:118px;top:458px">ダミーテキストダミ</div>
+    <div class="w" style="left:118px;top:499px">ーテキス</div>
+    <div class="w" style="left:118px;top:540px">トダミーテキストダミ</div>
+
+    <div class="w" style="left:352px;top:335px">ーテキストダミー</div>
+    <div class="w" style="left:352px;top:376px">テキストダミーテキスト</div>
+    <div class="w" style="left:352px;top:417px">ダミーテキストダミーテ</div>
+    <div class="w" style="left:352px;top:458px">キストダミーテキストダ</div>
+    <div class="w" style="left:352px;top:499px">ミーテキストダ</div>
+    <div class="w" style="left:352px;top:540px">DdUミーテキストダミ</div>
+
+    <div class="w" style="left:607px;top:335px">MMY</div>
+    <div class="w" style="left:607px;top:376px">ーテDUMキス</div>
+    <div class="w" style="left:607px;top:417px">トダミ</div>
+    <div class="w" style="left:607px;top:458px">ーテキスト</div>
+
+    <div class="bx" style="left:820px;width:393px"></div>
+    <div class="tab" style="left:903px;width:227px">ト々ダミーテキス</div>
+
+    <div class="w" style="left:868px;top:337px">ダミーテキ</div>
+    <div class="w" style="left:868px;top:377px">ストダミ</div>
+    <div class="w" style="left:868px;top:419px">ーテキ</div>
+    <div class="w" style="left:868px;top:460px">スト</div>
+    <div class="w" style="left:868px;top:501px">ダミーテ</div>
+    <div class="w" style="left:868px;top:542px">キストダミーテキス</div>
+
+    <div class="w" style="left:1079px;top:337px">トダミ</div>
+    <div class="w" style="left:1079px;top:377px">ーテキ</div>
+    <div class="w" style="left:1079px;top:419px">ストダミ</div>
+    <div class="w" style="left:1079px;top:460px">ーテキ</div>
+    <div class="w" style="left:1079px;top:501px">ストダ</div>
+
+    <div class="foot">Mummydumm © YDUM Myd. Yum Dm.</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

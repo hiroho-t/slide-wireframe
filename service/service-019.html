@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>service-019</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#f0f1f4;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .wm{position:absolute;left:965px;top:37px;transform:translateY(-50%);font-size:105px;font-weight:700;letter-spacing:-.01em;color:#c7c7c7;white-space:nowrap}
+
+  .no{position:absolute;left:29px;top:46px;transform:translateY(-50%);font-size:29px;letter-spacing:.01em;color:#1a1a1a}
+  .nolb{position:absolute;left:91px;top:56px;transform:translateY(-50%);font-size:11px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .big{position:absolute;left:63px;top:132px;transform:translateY(-50%);font-size:46px;font-weight:700;letter-spacing:.01em;color:#1a1a1a}
+  .sub{position:absolute;left:65px;top:161px;transform:translateY(-50%);font-size:14px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .lead{position:absolute;left:64px;top:183px;transform:translateY(-50%);font-size:15px;font-weight:700;letter-spacing:.01em;color:#1a1a1a}
+
+  .lb{position:absolute;left:400px;width:339px;text-align:right;transform:translateY(-50%);font-size:29px;font-weight:700;letter-spacing:.01em;color:#6b6b6b;white-space:nowrap;font-feature-settings:"palt" 1}
+  .bd{position:absolute;left:744px;font-size:11.5px;line-height:17.6px;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+
+  .fl{position:absolute;left:30px;top:696px;transform:translateY(-50%);font-size:11px;color:#98a0b0}
+  .fr{position:absolute;right:72px;top:696px;transform:translateY(-50%);font-size:11px;color:#98a0b0}
+  .pg{position:absolute;right:35px;top:696px;transform:translateY(-50%);font-size:11px;color:#98a0b0}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="wm">Mummyd</div>
+
+    <div class="no">0.0</div>
+    <div class="nolb">ダミーテキストダ</div>
+    <div class="big">ミーテキ</div>
+    <div class="sub">ストダミーテキストダミーテ</div>
+    <div class="lead">DdummUydキストダミーテキスト。</div>
+
+    <div class="lb" style="top:279px">テキストダミーテ</div>
+    <div class="bd" style="top:262px">ダミーテキストダミ、ーテキストダミーテキストダ。ミーテキストダミーテキストダミーテキスト<br>ダミーテキスト、ダミーテキストダミーテキストダミーテキストダミ。ーテキストダミーテキスト<br>ダミ、ーテキストダミーテキ。ストダミーテキ、ストダミーテキストダミ。ーテキ。</div>
+
+    <div class="lb" style="top:365px">キストダミ</div>
+    <div class="bd" style="top:349px">ストダミ、ーテキストダ。ミーテキストダミーテキ、ストダミーテキストダミーテキストダミ<br>ー。"Mumm yd ummydu mmyd ummydum."テキスト、ダミーテキストダミーテキストダミ、ーテ<br>トダミーテキス。トダミーテ、キストダミ、ーテキストダミーテキスト。</div>
+
+    <div class="lb" style="top:452px">ーテキストダミ</div>
+    <div class="bd" style="top:435px">ダミーテキストダミーテキ、ストダミーテキス。トダミーテキストダミーテキストダミ、ーテキス<br>トダミーテキストダミ。ーテキストダミーテキストダミーテキストダミー、テキストダミーテキス<br>トダミ。ーテキス、トダミーテ、キストダミーテキ、ストダミーテキスト。</div>
+
+    <div class="lb" style="top:539px">ーテキスト</div>
+    <div class="bd" style="top:522px">ダミーテキストダミー、テキストダミーテ。キストダミーテキストダミー、テキストダミーテキ<br>ス、トダミーテキストダミーテキストダミーテキストダ。ミーテキストダミーテキスト、ダミーテ<br>キス、トダミーテキ。ストダミーテキストダミー、テキストダミーテキスト。</div>
+
+    <div class="lb" style="top:626px">ダミーテキスト</div>
+    <div class="bd" style="top:609px">ダミーテキストダミ、ーテキストダミ。ーテキストダミーテキス、トダミーテキストダミーテキス<br>トダミーテキ。ストダミーテキストダミーテキス、トダミーテキストダミーテキストダミー、テキ<br>ストダミーテキストダミーテキスト。ダミーテキストダミーテ、キストダミー。</div>
+
+    <div class="fl">YmyduDmm Uyd. Mummy 0000</div>
+    <div class="fr">© 20XX Company.</div>
+    <div class="pg">60</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

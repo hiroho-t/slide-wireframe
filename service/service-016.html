@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>service-016</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .hero{position:absolute;left:0;top:0;width:1280px;height:369px;background:#dcdcdc;
+    display:grid;place-items:center;font-size:13px;letter-spacing:.2em;color:#8c8c8c}
+  .vr{position:absolute;left:50px;top:40px;width:3px;height:76px;background:#1a1a1a}
+  .h1{position:absolute;left:74px;top:67px;transform:translateY(-50%);font-size:30px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .h2{position:absolute;left:71px;top:102px;transform:translateY(-50%);font-size:13px;font-weight:700;letter-spacing:.06em;color:#1a1a1a}
+
+  .card{position:absolute;top:425px;width:375px;height:251px;background:#f1f1f1}
+  .ct{position:absolute;transform:translateY(-50%);top:475px;font-size:30px;font-weight:700;letter-spacing:.01em;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+  .ce{position:absolute;transform:translateY(-50%);top:510px;font-size:12px;font-weight:700;letter-spacing:.06em;color:#b3b3b3;white-space:nowrap}
+  .dv{position:absolute;top:547px;width:375px;height:1px;background:#dddddd}
+  .cb{position:absolute;top:573px;font-size:13px;line-height:21.3px;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+  .qi{margin-left:-.5em}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="hero">IMAGE</div>
+    <div class="vr"></div>
+    <div class="h1">ダミーテキス</div>
+    <div class="h2">DUMM Y</div>
+
+    <div class="card" style="left:49px"></div>
+    <div class="dv" style="left:49px"></div>
+    <div class="ct" style="left:74px">トダミーテキストダミ</div>
+    <div class="ce" style="left:74px">UMMYDUMMY</div>
+    <div class="cb" style="left:74px">YDUーテキストダミーテキストダミーテキストダミーテ<br>キストダミーテキストダミーテキ「MMYストダミー」テ、<br>キストダミDUーテキスト、ダミーテキストダミーテキス<br>トダミーテキ。</div>
+
+    <div class="card" style="left:451px"></div>
+    <div class="dv" style="left:451px"></div>
+    <div class="ct" style="left:475px">ストダミ&ーテキストダ</div>
+    <div class="ce" style="left:475px">MMYDUMMYDUMMYD & UMMYD</div>
+    <div class="cb" style="left:475px">UMMミーテキストダミーテキストダミーテキ、ス々ト<br>ダミーテキス、トダミーテキストダ。</div>
+
+    <div class="card" style="left:853px"></div>
+    <div class="dv" style="left:853px"></div>
+    <div class="ct" style="left:877px">ミーテキ</div>
+    <div class="ce" style="left:877px">YDUMMYDU MMYDUM MY</div>
+    <div class="cb" style="left:877px"><span class="qi">「</span>ストダミーテキストダ」ミーテキストダミーテキスト<br>ダ、ミーテキストダミーテキスト。</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
