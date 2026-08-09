@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>media-004</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .hd{position:absolute;left:52px;top:57px;transform:translateY(-50%);font-size:14px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+
+  .ph{position:absolute;width:333px;height:215px;background:#dcdcdc;display:grid;place-items:center;
+    font-size:12px;letter-spacing:.2em;color:#8c8c8c}
+
+  .tt{position:absolute;font-size:19px;font-weight:700;line-height:25.5px;letter-spacing:.01em;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+  .tg{position:absolute;transform:translateY(-50%);font-size:11px;font-weight:700;letter-spacing:.02em;color:#1a1a1a;white-space:nowrap}
+  .tb{position:absolute;transform:translateY(-50%);width:81px;height:20px;background:#ececec;display:grid;place-items:center;
+    font-size:11px;font-weight:700;letter-spacing:.02em;color:#1a1a1a;white-space:nowrap}
+  .rl{position:absolute;height:1px;background:#b3b3b3}
+  .bd{position:absolute;font-size:12.5px;line-height:17px;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+
+  .big{position:absolute;left:0;width:1280px;top:648px;transform:translateY(-50%);text-align:center;font-size:40px;font-weight:700;letter-spacing:.01em;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="hd">ダミーテキス —— トダミーテキスト</div>
+
+    <!-- A: 左上 -->
+    <div class="ph" style="left:50px;top:116px">IMAGE</div>
+    <div class="tt" style="left:396px;top:117px">ーテキストダミーテ<br>『キストダミーテキスト』ダ<br>ミーテキストダミー</div>
+    <div class="tg" style="left:395px;top:207px">［DUM dum］</div>
+    <div class="tb" style="left:546px;top:207px">テキストダミー</div>
+    <div class="rl" style="left:395px;top:224px;width:232px"></div>
+    <div class="bd" style="left:396px;top:233px">テキストダミーテキスト「MYD mydum」<br>ーテキUMストダ『ミーテキストダミーテ』キ<br>00トダミーテキストダミーテキ」ストダミー<br>キストダミーテキストダミーテキス。トダ、<br>MYDUMMYD UMMYD UMMYDU 00<br>キストダミーテキストダミーテ0キストダ。</div>
+
+    <!-- B: 右上 -->
+    <div class="ph" style="left:651px;top:116px">IMAGE</div>
+    <div class="tt" style="left:998px;top:116px">Mum M.Yミーテキス<br>DUMトダミ、ーテキストダ<br>ーテキストダミ</div>
+    <div class="tg" style="left:997px;top:207px">［ーテキMYD］</div>
+    <div class="tb" style="left:1148px;top:207px">テキストダミー</div>
+    <div class="rl" style="left:997px;top:224px;width:232px"></div>
+    <div class="bd" style="left:998px;top:232px">トダミーテキストダミーテキストダ、ミーテ<br>ストダミーテキストUdummydumm M.M<br>テキストダミーテキ、「ストダミーテ」キスト<br>ミーテキストダミーテキ、ストダミーテキス<br>ダミーテキストダミーテキストダミーテキス<br>トダミYDUーテキ。</div>
+
+    <!-- C: 左下 -->
+    <div class="ph" style="left:50px;top:364px">IMAGE</div>
+    <div class="tt" style="left:396px;top:366px">ダミーテキストダミーテキ！<br>ストダミーテキストダミー</div>
+    <div class="tg" style="left:395px;top:431px">［DUM MY］</div>
+    <div class="tb" style="left:546px;top:431px">テキストダミー</div>
+    <div class="rl" style="left:395px;top:447px;width:232px"></div>
+    <div class="bd" style="left:396px;top:457px">テキストダミーテキス『トダミーテキストダ<br>ーテ、キストダミー0000テキストダミーテ<br>ストダミー。テキストダミーテキストダミー<br>テキストダミーテキス。</div>
+
+    <!-- D: 右下 -->
+    <div class="ph" style="left:651px;top:364px">IMAGE</div>
+    <div class="tt" style="left:998px;top:366px">トダ00ミーテキス。トダ<br>ミーテキストダミーテキス<br>トダミーテキストダミ</div>
+    <div class="tg" style="left:997px;top:457px">［DUMーテキス］</div>
+    <div class="tb" style="left:1148px;top:457px">テキストダミー</div>
+    <div class="rl" style="left:997px;top:473px;width:232px"></div>
+    <div class="bd" style="left:998px;top:482px">トダミーテキストダミーテキストダミーテキ<br>ストダミ。MYDーテキス00トダミーテキ、<br>スト00ダミーテキストダミーテキストダ。<br>ミーテキストダミーテキスUMMトダミーテ<br>ストダミーテキストダミーテキストダミーテ<br>ストダミーテキスト。</div>
+
+    <div class="big">ダミーテキストダ —— "ミーテキストダミーテ"キストダ</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
