@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chart-004</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .no{position:absolute;left:56px;top:50px;transform:translateY(-50%);font-size:28px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .noul{position:absolute;left:56px;top:70px;width:41px;height:3px;background:#1a1a1a}
+  .nolb{position:absolute;left:114px;top:50px;transform:translateY(-50%);font-size:16.5px;font-weight:700;letter-spacing:.02em;color:#1a1a1a;font-feature-settings:"palt" 1}
+  .hr{position:absolute;right:55px;top:67px;transform:translateY(-50%);font-size:13.4px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .ttl{position:absolute;left:0;width:1280px;top:145px;transform:translateY(-50%);text-align:center;font-size:40.5px;font-weight:700;letter-spacing:.02em;color:#1a1a1a;font-feature-settings:"palt" 1}
+
+  .pn{position:absolute;border:2.5px solid #1a1a1a;border-radius:14px}
+  .tab{position:absolute;top:228px;height:29px;background:#1a1a1a;border-radius:4px;display:grid;place-items:center;
+    color:#fff;font-weight:700;white-space:nowrap;font-feature-settings:"palt" 1}
+  .bx{position:absolute;border-radius:6px;display:grid;place-items:center;text-align:center;
+    color:#1a1a1a;font-weight:700;line-height:1.25;white-space:nowrap;font-feature-settings:"palt" 1}
+  .eng{position:absolute;left:99px;top:230px;width:145px;height:60px;border:2.5px solid #1a1a1a;border-radius:10px}
+
+  .ck{position:absolute;left:849px;transform:translateY(-50%);font-size:17.5px;font-weight:700;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+  .ckm{position:absolute;left:825px;transform:translateY(-50%);font-size:15px;font-weight:700;color:#8c8c8c}
+
+  .rl{position:absolute;left:54px;top:665px;width:1174px;height:2px;background:#1a1a1a}
+  .fl{position:absolute;left:54px;top:687px;transform:translateY(-50%);font-size:11px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .pg{position:absolute;right:52px;top:687px;transform:translateY(-50%);font-size:11px;font-weight:700;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="no">00</div><div class="noul"></div>
+    <div class="nolb">ダミーテキストダミーテキストダミー</div>
+    <div class="hr">Ddummydu'm Umydummy</div>
+    <div class="ttl">テキストダミー ＆ テキストダミー</div>
+
+    <!-- 左：エンジニア -->
+    <div class="eng"></div>
+    <div class="bx" style="left:109px;top:242px;width:124px;height:35px;background:#c4c4c4;font-size:15px">テキストダ</div>
+    <div class="bx" style="left:109px;top:299px;width:126px;height:38px;background:#c4c4c4;font-size:14px">ミー</div>
+    <div class="bx" style="left:109px;top:341px;width:126px;height:38px;background:#c4c4c4;font-size:14px">テキスト</div>
+    <div class="bx" style="left:109px;top:381px;width:126px;height:38px;background:#c4c4c4;font-size:13px">ダミーテキスト</div>
+    <div class="bx" style="left:109px;top:422px;width:126px;height:38px;background:#c4c4c4;font-size:14px">ダミ</div>
+    <div class="bx" style="left:109px;top:462px;width:126px;height:38px;background:#c4c4c4;font-size:14px">ーテキストダ</div>
+    <div class="bx" style="left:109px;top:503px;width:126px;height:38px;background:#c4c4c4;font-size:14px">MM</div>
+    <div class="bx" style="left:109px;top:543px;width:126px;height:38px;background:#c4c4c4;font-size:14px">YD</div>
+
+    <!-- Delivery Teams -->
+    <div class="pn" style="left:266px;top:227px;width:334px;height:367px"></div>
+    <div class="tab" style="left:263px;width:174px;font-size:11.4px">Udummydu Mmmyd</div>
+    <div class="bx" style="left:279px;top:277px;width:154px;height:96px;background:#cfcfcf;font-size:21px">Mummydu</div>
+    <div class="bx" style="left:441px;top:277px;width:147px;height:96px;background:#cfcfcf;font-size:21px">Ymmyd</div>
+    <div class="bx" style="left:279px;top:381px;width:154px;height:96px;background:#cfcfcf;font-size:17.3px">Dummydumm</div>
+    <div class="bx" style="left:441px;top:381px;width:147px;height:96px;background:#cfcfcf;font-size:19.9px">Uydummyd</div>
+    <div class="bx" style="left:279px;top:485px;width:154px;height:95px;background:#a8a8a8;font-size:18.8px">Mumm Mydu</div>
+    <div class="bx" style="left:441px;top:485px;width:147px;height:95px;background:#a8a8a8;font-size:21px">YmD Umy</div>
+
+    <!-- Tech Teams -->
+    <div class="pn" style="left:620px;top:227px;width:153px;height:367px"></div>
+    <div class="tab" style="left:612px;width:136px;font-size:12px">Mdum Mmydu</div>
+    <div class="bx" style="left:635px;top:277px;width:123px;height:96px;background:#d8d8d8;font-size:14px">ミーテキスト<br>ダミ</div>
+    <div class="bx" style="left:635px;top:382px;width:123px;height:94px;background:#bfbfbf;font-size:14px">ーテキス<br>トダ</div>
+    <div class="bx" style="left:635px;top:486px;width:123px;height:94px;background:#bfbfbf;font-size:14px">ミーテキス</div>
+
+    <!-- Guilds -->
+    <div class="pn" style="left:825px;top:230px;width:359px;height:261px"></div>
+    <div class="tab" style="left:818px;width:227px;font-size:10.4px">Ymmydu</div>
+    <div class="bx" style="left:841px;top:267px;width:104px;height:65px;background:#cfcfcf;font-size:16px">mDU</div>
+    <div class="bx" style="left:953px;top:267px;width:104px;height:65px;background:#cfcfcf;font-size:14px">Mmydumm</div>
+    <div class="bx" style="left:1065px;top:267px;width:104px;height:65px;background:#cfcfcf;font-size:16px">Mydum</div>
+    <div class="bx" style="left:841px;top:339px;width:104px;height:66px;background:#cfcfcf;font-size:14px">トダミー</div>
+    <div class="bx" style="left:953px;top:339px;width:104px;height:66px;background:#d8d8d8;font-size:14px">テキスト<br>ダミー</div>
+    <div class="bx" style="left:1065px;top:339px;width:104px;height:66px;background:#d8d8d8;font-size:14px">テキストダミ</div>
+    <div class="bx" style="left:841px;top:413px;width:159px;height:64px;background:#bfbfbf;font-size:14px">ーテキス<br>トダミーテキス</div>
+    <div class="bx" style="left:1009px;top:413px;width:161px;height:64px;background:#b8b8b8;font-size:14px">トダミーテキ<br>スト</div>
+
+    <div class="ckm" style="top:523px">✔</div>
+    <div class="ck" style="top:523px">ダミーテキストダミーテキストダミーテキス</div>
+    <div class="ckm" style="top:553px">✔</div>
+    <div class="ck" style="top:553px">トダミーテキストダミ</div>
+    <div class="ckm" style="top:581px">✔</div>
+    <div class="ck" style="top:581px">ーテキストダミーテキストダミー</div>
+
+    <div class="rl"></div>
+    <div class="fl">© 0000 Ymydummy, Ddu.</div>
+    <div class="pg">00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

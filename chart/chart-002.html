@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chart-002</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .logo{position:absolute;left:37px;top:55px;transform:translateY(-50%);font-size:26px;font-weight:700;letter-spacing:.06em;color:#1a1a1a}
+  .ttl{position:absolute;left:95px;top:139px;transform:translateY(-50%);font-size:31px;font-weight:700;letter-spacing:.01em;color:#6b6b6b;font-feature-settings:"palt" 1}
+  .lead{position:absolute;left:96px;top:195px;font-size:16.8px;line-height:26.4px;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+
+  .bx{position:absolute;background:#fff;border:1px solid #d5d5d5}
+  .bt{position:absolute;transform:translateY(-50%);white-space:nowrap;color:#1a1a1a;font-feature-settings:"palt" 1}
+  .lb{position:absolute;background:#fff;border:1px solid #c4c4c4;display:grid;place-items:center;font-weight:700;color:#6b6b6b;white-space:nowrap;font-feature-settings:"palt" 1}
+  .cn{position:absolute;background:#c4c4c4}
+
+  .fl{position:absolute;left:45px;top:697px;transform:translateY(-50%);font-size:11px;color:#1a1a1a}
+  .fr{position:absolute;right:31px;top:697px;transform:translateY(-50%);font-size:9.4px;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="logo">LOGO</div>
+    <div class="ttl">DdummUダミーテキス</div>
+    <div class="lead">MydumMトダミーテキストダミー、テキストダミーテキストダミーテキストダミーテ。<br>0キストダミ、ーテキス、トダミーテキストダミーテキストダミーテキストダミーテ。</div>
+
+    <div class="lb" style="left:94.7px;top:283px;width:112.6px;height:33px"><span style="font-size:14.4px">キストダミーテ</span></div>
+    <div class="cn" style="left:207.3px;top:299.5px;width:21.7px;height:1px"></div>
+    <div class="cn" style="left:229.0px;top:299.5px;width:1px;height:325.7px"></div>
+    <div class="cn" style="left:229.0px;top:299.5px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:250.7px;top:283px;width:186.6px;height:33px"></div>
+    <div class="bt" style="left:260.7px;top:299.5px;font-size:14.0px">キストダミーテ</div>
+    <div class="cn" style="left:229.0px;top:340.8px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:250.7px;top:324.3px;width:186.6px;height:33px"></div>
+    <div class="bt" style="left:260.7px;top:340.8px;font-size:9.7px">キストダミーテキストダミーテキストダミ</div>
+    <div class="cn" style="left:229.0px;top:381.8px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:250.7px;top:365.3px;width:186.6px;height:33px"></div>
+    <div class="bt" style="left:260.7px;top:381.8px;font-size:13.7px">ーテキストダミーテキス</div>
+    <div class="cn" style="left:229.0px;top:422.2px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:250.7px;top:405.7px;width:186.6px;height:33px"></div>
+    <div class="bt" style="left:260.7px;top:422.2px;font-size:14.0px">トダミーテキストダ</div>
+    <div class="cn" style="left:229.0px;top:462.2px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:250.7px;top:445.7px;width:186.6px;height:33px"></div>
+    <div class="bt" style="left:260.7px;top:462.2px;font-size:13.4px">YDミーテキス</div>
+    <div class="cn" style="left:229.0px;top:502.8px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:250.7px;top:486.3px;width:186.6px;height:33px"></div>
+    <div class="bt" style="left:260.7px;top:502.8px;font-size:13.5px">トダミーテキストダミーテ</div>
+    <div class="cn" style="left:229.0px;top:543.8px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:250.7px;top:527.3px;width:186.6px;height:33px"></div>
+    <div class="bt" style="left:260.7px;top:543.8px;font-size:13.8px">キストダミーテキストダミ</div>
+    <div class="cn" style="left:229.0px;top:584.2px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:250.7px;top:567.7px;width:186.6px;height:33px"></div>
+    <div class="bt" style="left:260.7px;top:584.2px;font-size:11.7px">ーテキストダミーテUMM</div>
+    <div class="cn" style="left:229.0px;top:625.2px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:250.7px;top:608.7px;width:186.6px;height:33px"></div>
+    <div class="bt" style="left:260.7px;top:625.2px;font-size:13.4px">キストダミ</div>
+
+    <div class="lb" style="left:462.7px;top:283px;width:142px;height:33px"><span style="font-size:10.2px">Ym Dydummyduーテキ</span></div>
+    <div class="cn" style="left:604.7px;top:299.5px;width:21.7px;height:1px"></div>
+    <div class="cn" style="left:626.4px;top:299.5px;width:1px;height:122.0px"></div>
+    <div class="cn" style="left:626.4px;top:299.5px;width:21.6px;height:1px"></div>
+    <div class="bx" style="left:648px;top:283px;width:201px;height:33px"></div>
+    <div class="bt" style="left:658px;top:299.5px;font-size:10.9px">ストダミーテキストダミーテキストダミ</div>
+    <div class="cn" style="left:626.4px;top:340.5px;width:21.6px;height:1px"></div>
+    <div class="bx" style="left:648px;top:324px;width:201px;height:33px"></div>
+    <div class="bt" style="left:658px;top:340.5px;font-size:13.8px">ーテキストダミーテキスト</div>
+    <div class="cn" style="left:626.4px;top:380.8px;width:21.6px;height:1px"></div>
+    <div class="bx" style="left:648px;top:364.3px;width:201px;height:33px"></div>
+    <div class="bt" style="left:658px;top:380.8px;font-size:13.2px">ダミーテキストダU&M</div>
+    <div class="cn" style="left:626.4px;top:421.5px;width:21.6px;height:1px"></div>
+    <div class="bx" style="left:648px;top:405px;width:201px;height:33px"></div>
+    <div class="bt" style="left:658px;top:421.5px;font-size:10.2px">Mmmydu Ymmydumm Dydummyd</div>
+
+    <div class="lb" style="left:462.7px;top:461.3px;width:142px;height:33px"><span style="font-size:11.3px">Uummyduミーテ</span></div>
+    <div class="cn" style="left:604.7px;top:477.8px;width:21.7px;height:1px"></div>
+    <div class="cn" style="left:626.4px;top:477.8px;width:1px;height:121.7px"></div>
+    <div class="cn" style="left:626.4px;top:477.8px;width:21.6px;height:1px"></div>
+    <div class="bx" style="left:648px;top:461.3px;width:201px;height:33px"></div>
+    <div class="bt" style="left:658px;top:477.8px;font-size:13.8px">キストダミーテキストダミ</div>
+    <div class="cn" style="left:626.4px;top:518.2px;width:21.6px;height:1px"></div>
+    <div class="bx" style="left:648px;top:501.7px;width:201px;height:33px"></div>
+    <div class="bt" style="left:658px;top:518.2px;font-size:14.3px">ーテキストダミーテキスト</div>
+    <div class="cn" style="left:626.4px;top:559.2px;width:21.6px;height:1px"></div>
+    <div class="bx" style="left:648px;top:542.7px;width:201px;height:33px"></div>
+    <div class="bt" style="left:658px;top:559.2px;font-size:12.5px">ダミーテキストダミーテキストダ</div>
+    <div class="cn" style="left:626.4px;top:599.5px;width:21.6px;height:1px"></div>
+    <div class="bx" style="left:648px;top:583px;width:201px;height:33px"></div>
+    <div class="bt" style="left:658px;top:599.5px;font-size:13.0px">ミーテキストダミーテキストダミ</div>
+
+    <div class="lb" style="left:876.7px;top:283px;width:112.6px;height:33px"><span style="font-size:12.3px">ーテキストダミー</span></div>
+    <div class="cn" style="left:989.3000000000001px;top:299.5px;width:21.7px;height:1px"></div>
+    <div class="cn" style="left:1011.0px;top:299.5px;width:1px;height:81.3px"></div>
+    <div class="cn" style="left:1011.0px;top:299.5px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:1032.7px;top:283px;width:153.3px;height:33px"></div>
+    <div class="bt" style="left:1042.7px;top:299.5px;font-size:14.4px">テキストダ</div>
+    <div class="cn" style="left:1011.0px;top:340.5px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:1032.7px;top:324px;width:153.3px;height:33px"></div>
+    <div class="bt" style="left:1042.7px;top:340.5px;font-size:14.2px">ミーテキストダミ</div>
+    <div class="cn" style="left:1011.0px;top:380.8px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:1032.7px;top:364.3px;width:153.3px;height:33px"></div>
+    <div class="bt" style="left:1042.7px;top:380.8px;font-size:9.7px">ーテキストダミーテキストダミー</div>
+
+    <div class="lb" style="left:876.7px;top:433px;width:112.6px;height:33px"><span style="font-size:11.3px">MMYテキ</span></div>
+    <div class="cn" style="left:989.3000000000001px;top:449.5px;width:21.7px;height:1px"></div>
+    <div class="cn" style="left:1011.0px;top:449.5px;width:1px;height:41.0px"></div>
+    <div class="cn" style="left:1011.0px;top:449.5px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:1032.7px;top:433px;width:153.3px;height:33px"></div>
+    <div class="bt" style="left:1042.7px;top:449.5px;font-size:16.0px">ストダミ</div>
+    <div class="cn" style="left:1011.0px;top:490.5px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:1032.7px;top:474px;width:153.3px;height:33px"></div>
+    <div class="bt" style="left:1042.7px;top:490.5px;font-size:12.6px">DU MMYーテ</div>
+
+    <div class="lb" style="left:876.7px;top:542.7px;width:112.6px;height:33px"><span style="font-size:11.6px">DUMキス</span></div>
+    <div class="cn" style="left:989.3000000000001px;top:559.2px;width:21.7px;height:1px"></div>
+    <div class="cn" style="left:1011.0px;top:559.2px;width:1px;height:40.3px"></div>
+    <div class="cn" style="left:1011.0px;top:559.2px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:1032.7px;top:542.7px;width:153.3px;height:33px"></div>
+    <div class="bt" style="left:1042.7px;top:559.2px;font-size:10.5px">トダミーテキストダミーテキス</div>
+    <div class="cn" style="left:1011.0px;top:599.5px;width:21.7px;height:1px"></div>
+    <div class="bx" style="left:1032.7px;top:583px;width:153.3px;height:33px"></div>
+    <div class="bt" style="left:1042.7px;top:599.5px;font-size:12.2px">トダミーテキストダミーテ</div>
+
+    <div class="fl">00 | MmmydYキストダミー</div>
+    <div class="fr">※テキスト、ダミーテキストダミーテキストダミーテキ ©DummyU Mdu.</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

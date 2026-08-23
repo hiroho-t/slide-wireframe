@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chart-003</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  .kicker{position:absolute;left:75px;top:84px;transform:translateY(-50%);font-size:10px;font-weight:700;letter-spacing:.04em;color:#8c8c8c}
+  .ttl{position:absolute;left:77px;top:130px;transform:translateY(-50%);font-size:25px;font-weight:700;letter-spacing:.01em;color:#1a1a1a;font-feature-settings:"palt" 1}
+
+  .bar{position:absolute;background:#6b6b6b;display:grid;place-items:center;color:#fff;font-weight:700;white-space:nowrap;font-feature-settings:"palt" 1}
+  .chev{position:absolute;background:#b0b0b0}
+  .cht{position:absolute;transform:translate(-50%,-50%);color:#fff;font-weight:700;font-size:13px;white-space:nowrap;font-feature-settings:"palt" 1}
+
+  .bx{position:absolute;background:#fff;border:1px solid #d5d5d5;display:grid;place-items:center;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+
+  .al{position:absolute;transform:translate(-50%,-50%);font-size:11px;color:#1a1a1a;white-space:nowrap;font-feature-settings:"palt" 1}
+  .mark{position:absolute;left:601px;top:260px;width:78px;height:43px;background:#dcdcdc;display:grid;place-items:center;
+    font-size:10px;font-weight:700;letter-spacing:.16em;color:#8c8c8c}
+
+  .fl{position:absolute;left:21px;top:693px;transform:translateY(-50%);font-size:20px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .pg{position:absolute;right:23px;top:693px;transform:translateY(-50%);font-size:11px;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="kicker">Ddu Ummydum</div>
+    <div class="ttl">mydummyduダミ</div>
+
+    <!-- 左グループ -->
+    <div class="bar" style="left:75px;top:206px;width:386px;height:37px;font-size:14px">Ddu</div>
+    <div class="chev" style="left:75px;top:261px;width:386px;height:37px"></div>
+    <svg style="position:absolute;left:258px;top:261px;width:26px;height:37px" viewBox="0 0 26 37"><polyline points="2,3 20,18.5 2,34" fill="none" stroke="#fff" stroke-width="5"/></svg>
+    <div class="cht" style="left:161px;top:280px">ーテキ</div>
+    <div class="cht" style="left:358px;top:280px">ストダミー</div>
+    <div class="bx" style="left:75px;top:317px;width:121px;height:45px;font-size:13.5px">ミーテキ</div>
+    <div class="bx" style="left:207px;top:317px;width:121px;height:45px;font-size:12px">ydMストダ</div>
+    <div class="bx" style="left:339px;top:317px;width:122px;height:45px;font-size:12.7px">ミーテキストダミー</div>
+
+    <!-- 中央 -->
+    <div class="al" style="left:530px;top:254px">トダ</div>
+    <svg style="position:absolute;left:481px;top:270px;width:99px;height:22px" viewBox="0 0 99 22">
+      <line x1="6" y1="5" x2="99" y2="5" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polyline points="14,0 5,5 14,10" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+      <line x1="0" y1="18" x2="93" y2="18" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polyline points="85,13 94,18 85,23" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    </svg>
+    <div class="al" style="left:530px;top:309px">ミーテ</div>
+
+    <div class="mark">LOGO</div>
+
+    <div class="al" style="left:749px;top:254px">キストダミー</div>
+    <svg style="position:absolute;left:699px;top:270px;width:100px;height:22px" viewBox="0 0 100 22">
+      <line x1="6" y1="5" x2="100" y2="5" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polyline points="14,0 5,5 14,10" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+      <line x1="0" y1="18" x2="94" y2="18" stroke="#1a1a1a" stroke-width="1.5"/>
+      <polyline points="86,13 95,18 86,23" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    </svg>
+    <div class="al" style="left:749px;top:309px">テキストダミ</div>
+
+    <!-- 右グループ -->
+    <div class="bar" style="left:819px;top:206px;width:386px;height:37px;font-size:14px">Ddu</div>
+    <div class="chev" style="left:819px;top:261px;width:386px;height:37px"></div>
+    <svg style="position:absolute;left:1076px;top:261px;width:26px;height:37px" viewBox="0 0 26 37"><polyline points="2,3 20,18.5 2,34" fill="none" stroke="#fff" stroke-width="5"/></svg>
+    <div class="cht" style="left:943px;top:280px">ーテキ</div>
+    <div class="cht" style="left:1147px;top:280px">テキストダ</div>
+    <div class="bx" style="left:819px;top:317px;width:121px;height:45px;font-size:14px">YDUテキスト</div>
+    <div class="bx" style="left:951px;top:317px;width:121px;height:45px;font-size:11.2px">umMダミー</div>
+    <div class="bx" style="left:1084px;top:317px;width:121px;height:45px;font-size:12.7px">MYテキス</div>
+
+    <!-- プロダクト開発 -->
+    <div class="bar" style="left:75px;top:385px;width:1130px;height:37px;font-size:16px">ーテキストダミ</div>
+    <div class="bx" style="left:75px;top:438px;width:559px;height:47px;font-size:16.7px">ーテキスト</div>
+    <div class="bx" style="left:645px;top:438px;width:560px;height:47px;font-size:16.6px">ダミーテキ</div>
+
+    <!-- ビジネスインフラ -->
+    <div class="bar" style="left:75px;top:513px;width:1130px;height:37px;font-size:16px">ストダミーテキス</div>
+    <div class="bx" style="left:75px;top:566px;width:274px;height:47px;font-size:17.5px">トダミ</div>
+    <div class="bx" style="left:360px;top:566px;width:274px;height:47px;font-size:16px">ーテキ</div>
+    <div class="bx" style="left:645px;top:566px;width:274px;height:47px;font-size:17.1px">ストダミーテ</div>
+    <div class="bx" style="left:931px;top:566px;width:274px;height:47px;font-size:11.5px">DUM</div>
+
+    <div class="fl">LOGO</div>
+    <div class="pg">00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
