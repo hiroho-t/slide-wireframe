@@ -10,73 +10,62 @@
   .stage{position:fixed;inset:0;overflow:hidden}
   .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
 
-  .hn{position:absolute;left:45px;top:49px;transform:translateY(-50%);font-size:20px;font-weight:700;color:#1a1a1a}
-  .hl{position:absolute;left:93px;top:49px;transform:translateY(-50%);font-size:17px;font-weight:700;letter-spacing:.06em;color:#1a1a1a}
+  .tab{position:absolute;left:64px;top:0;width:166px;height:6px;background:#4d4d4d}
+  .sec{position:absolute;left:64px;top:22px;transform:translateY(-50%);font-size:11px;font-weight:700;letter-spacing:.06em;color:#4d4d4d}
+  .r1{position:absolute;left:64px;top:62px;width:963px;height:1px;background:#b3b3b3}
+  .hd{position:absolute;left:64px;top:79px;transform:translateY(-50%);font-size:20px;font-weight:700;letter-spacing:.06em;color:#4d4d4d}
+  .r2{position:absolute;left:64px;top:96px;width:963px;height:1px;background:#b3b3b3}
+  .photo{position:absolute;left:67px;top:122px;width:474px;height:249px;background:#8c8c8c}
+  .photo span{position:absolute;right:14px;bottom:10px;font-size:11px;letter-spacing:.2em;color:#e0e0e0}
+  .qb{position:absolute;height:22px;padding:0 10px;background:#fff;display:inline-flex;align-items:center;
+    font-size:12px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .ch{position:absolute;font-size:13.5px;font-weight:700;line-height:22px;letter-spacing:.02em;color:#4d4d4d;
+    border-left:4px solid #4d4d4d;padding-left:10px}
+  .col{position:absolute;font-size:10px;line-height:18px;letter-spacing:.01em;color:#1a1a1a;text-align:justify;overflow:hidden}
 
-  .bn{position:absolute;left:46px;top:93px;width:1190px;height:211px;background:#8c8c8c}
-  .bn span{position:absolute;right:16px;bottom:10px;font-size:11px;letter-spacing:.2em;color:#d5d5d5}
-  .bt{position:absolute;left:76px;top:159px;transform:translateY(-50%);font-size:28px;font-weight:700;letter-spacing:.02em;color:#fff}
-  .bl{position:absolute;left:76px;top:204px;font-size:13.5px;font-weight:700;line-height:32px;letter-spacing:.02em;color:#fff}
-  .blg{position:absolute;right:89px;top:242px;transform:translateY(-50%);font-size:24px;font-weight:700;letter-spacing:.06em;color:#fff}
-
-  .cd{position:absolute;top:323px;width:376px;height:327px;border:1px solid #1a1a1a;border-radius:12px;overflow:hidden}
-  .cn{position:absolute;top:323px;width:36px;height:36px;background:#6b6b6b;
-    clip-path:polygon(0 0,100% 0,0 100%)}
-  .ct{position:absolute;top:366px;width:376px;text-align:center;transform:translateY(-50%);font-size:19px;font-weight:700;letter-spacing:.04em;color:#6b6b6b}
-  .cs{position:absolute;top:397px;width:376px;text-align:center;transform:translateY(-50%);font-size:13px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
-  .no{position:absolute;top:422px;transform:translateY(-50%);font-size:17px;letter-spacing:.02em;color:#1a1a1a}
-  .ru{position:absolute;top:428px;width:281px;height:1px;background:#d5d5d5}
-  .bh{position:absolute;font-size:13px;font-weight:700;letter-spacing:.02em;color:#6b6b6b}
-  .bb{position:absolute;font-size:12px;font-weight:700;line-height:20px;letter-spacing:.02em;color:#1a1a1a}
-
-  .fg{position:absolute;left:45px;top:683px;transform:translateY(-50%);font-size:17px;font-weight:700;letter-spacing:.06em;color:#6b6b6b}
-  .fc{position:absolute;right:58px;top:683px;transform:translateY(-50%);font-size:10px;color:#4d4d4d}
+  .side{position:absolute;left:1035px;top:0;width:245px;height:720px;background:#ededed}
+  .nv{position:absolute;left:1043px;width:229px;display:flex;align-items:center;gap:8px}
+  .nv.on{background:#fff}
+  .nb{width:26px;height:calc(100% - 8px);margin:4px 0 4px 4px;background:#b3b3b3;flex:none;
+    display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff}
+  .nl{font-size:11px;line-height:15px;letter-spacing:.02em;color:#4d4d4d}
+  .nv.on .nl{color:#1a1a1a;font-weight:700;padding-left:34px}
+  .nv.on::before{content:"";position:absolute;left:4px;top:4px;width:26px;height:calc(100% - 8px);background:#4d4d4d}
+  .pn{position:absolute;left:1035px;top:640px;width:245px;text-align:center;font-size:26px;font-weight:700;color:#1a1a1a}
+  .rp{position:absolute;left:1035px;top:672px;width:245px;text-align:center;font-size:10px;letter-spacing:.06em;color:#4d4d4d}
 </style>
 </head>
 <body>
 <div class="stage">
   <div class="slide">
-    <div class="hn">00</div>
-    <div class="hl">ダミーテキ②　ダミーテキストダ</div>
+    <div class="tab"></div>
+    <div class="sec">Dummy Dummydum</div>
+    <div class="r1"></div>
+    <div class="hd">DUM MESSAGE</div>
+    <div class="r2"></div>
 
-    <div class="bn"><span>IMAGE</span></div>
-    <div class="bt">ダミーテキストダミーテキストダ、ダミーテキ（ダミ）ダミーテキストダ。</div>
-    <div class="bl">00年ダミーテキDUダミーテキストダ、ダミーテキストダ、DUM、<br>ダミーテキストダミーテキストダミ、ダミーテキストダミーテキストダミーテ。</div>
-    <div class="blg">LOGO</div>
+    <div class="photo"><span>IMAGE</span></div>
+    <div class="qb" style="left:290px;top:200px">ダミーテキストダ、ダミーテキストダ。</div>
+    <div class="qb" style="left:290px;top:228px">ダミーテキストダミーテ</div>
+    <div class="qb" style="left:290px;top:256px">ダミーテキストダミーテキ、</div>
+    <div class="qb" style="left:290px;top:284px">ダミーテキストダミーテ。</div>
 
-    <div class="cd" style="left:46px"></div>
-    <div class="cn" style="left:46px"></div>
-    <div class="ct" style="left:46px">ダミーテキストダミ</div>
-    <div class="cs" style="left:46px">000年ダミーテキ「ダミ」</div>
-    <div class="no" style="left:76px">01</div>
-    <div class="ru" style="left:111px"></div>
-    <div class="bh" style="left:76px;top:463px">ダミーテキストダミ</div>
-    <div class="bb" style="left:76px;top:480px;width:316px">DUM後ダミ、ダミーテキストダミーテキストダミーテキ<br>ダミーテキストダ。ダミーテキストダミーテキストダミ<br>ダミ、ダミーテキストダミーテキストダ。</div>
-    <div class="bh" style="left:76px;top:545px">ダミーテキストダ</div>
-    <div class="bb" style="left:76px;top:562px;width:316px">000周年ダミーテキ。ダミーテキストダミーテキストダ<br>ダミーテキ「ダミーテキストダミーテ」ダミーテ、<br>ダミーテキストダミーテキストダミーテ。</div>
-    <div class="cd" style="left:451px"></div>
-    <div class="cn" style="left:451px"></div>
-    <div class="ct" style="left:451px">ダミー・ダミーテキ</div>
-    <div class="cs" style="left:451px">ダミーテキストダミーテキストダ</div>
-    <div class="no" style="left:481px">02</div>
-    <div class="ru" style="left:516px"></div>
-    <div class="bh" style="left:481px;top:463px">ダミーテキ</div>
-    <div class="bb" style="left:481px;top:480px;width:316px">DummydummyダミーDummy Dummydummyダミーテキ「ダミ<br>ダミ」ダミーテキ。ダミーテキストダミーテキストダミ<br>ダミーテキストダミーテキストダ。</div>
-    <div class="bh" style="left:481px;top:545px">ダミーテキストダ DUダミーテキストダミーテ</div>
-    <div class="bb" style="left:481px;top:562px;width:316px">ダミーテキストダミーテキストダミーテキストダミーテ<br>ダミーテ。ダミーDUダミーテキストダ、ダミーテキスト<br>ダミーテキストダミーテキストダミ。</div>
-    <div class="cd" style="left:856px"></div>
-    <div class="cn" style="left:856px"></div>
-    <div class="ct" style="left:856px">ダミーテキ・ダミーテキ</div>
-    <div class="cs" style="left:856px">DUMダミーテDUMダミーテキ</div>
-    <div class="no" style="left:886px">03</div>
-    <div class="ru" style="left:921px"></div>
-    <div class="bh" style="left:886px;top:463px">ダミーテキストダ</div>
-    <div class="bb" style="left:886px;top:480px;width:316px">ダミーテキストダミーテキストダミーテキストダミーテ<br>ダミーテキストダ、ダミーテキ「ダミーテキ」ダミ「ダ<br>ダミーテキ」ダミーテキストダミ。</div>
-    <div class="bh" style="left:886px;top:545px">ダミーテDUM</div>
-    <div class="bb" style="left:886px;top:562px;width:316px">ダミーテキストダミーテキストダミーテキ、「ダミ<br>ダミーテキストダミーテキストダ」ダミーテキストダ<br>ダミー。ダミーテキストダミーテキストダミ。</div>
-
-    <div class="fg">LOGO</div>
-    <div class="fc">© 20XX Company.　00</div>
+    <div class="ch" style="left:67px;top:398px;width:221px">ダミーテキストダミ<br>ダミーテキストダ</div>
+    <div class="col" style="left:67px;top:450px;width:221px;height:250px">ダミーテキストダミーテキストダミーテキストダミーテキストダ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。</div>
+    <div class="col" style="left:317px;top:398px;width:224px;height:302px">ダミーテキストダミーテキストダミーテキストダミーテキストダ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。</div>
+    <div class="col" style="left:570px;top:122px;width:224px;height:300px">ダミーテキストダミーテキストダミーテキストダミーテキストダ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。</div>
+    <div class="ch" style="left:570px;top:440px;width:224px">DUMMY 0ダミーテキストダミ<br>ダミーテキストダミーテ</div>
+    <div class="col" style="left:570px;top:496px;width:224px;height:204px">ダミーテキストダミーテキストダミーテキストダミーテキストダ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。</div>
+    <div class="col" style="left:822px;top:122px;width:205px;height:578px">ダミーテキストダミーテキストダミーテキストダミーテキストダ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキストダミーテキストダ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダ。</div>
+    <div class="side"></div>
+    <div class="nv" style="top:80px;height:30px"><span class="nl">Introduction</span></div>
+    <div class="nv on" style="top:114px;height:40px"><span class="nb">1</span><span class="nl">Value<br>Creation</span></div>
+    <div class="nv" style="top:158px;height:40px"><span class="nb">2</span><span class="nl">Management<br>Plan</span></div>
+    <div class="nv" style="top:202px;height:40px"><span class="nb">3</span><span class="nl">Core<br>Strategies</span></div>
+    <div class="nv" style="top:246px;height:40px"><span class="nb">4</span><span class="nl">Management<br>Foundation</span></div>
+    <div class="nv" style="top:290px;height:30px"><span class="nl">Data Section</span></div>
+    <div class="pn">00</div>
+    <div class="rp">DUMMY REPORT 20XX</div>
   </div>
 </div>
 <script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mission-008</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1;
+    background:linear-gradient(135deg,#e4e4e4 0%,#f2f2f2 35%,#e0e0e0 70%,#d5d5d5 100%)}
+
+  .logo{position:absolute;left:150px;top:355px;transform:translateY(-50%);font-size:64px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+
+  .lb{position:absolute;left:640px;top:152px;transform:translateY(-50%);font-size:24px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .ttl{position:absolute;left:640px;transform:translateY(-50%);font-size:38px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .bd{position:absolute;left:640px;top:430px;font-size:13px;line-height:29px;letter-spacing:.02em;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="logo">LOGO</div>
+
+    <div class="lb">Mission</div>
+    <div class="ttl" style="top:256px">ダミーテキストダミーテ</div>
+    <div class="ttl" style="top:330px">ダミーテキDummydu</div>
+
+    <div class="bd">ダミーテキストダミーテキストダ、ダミーテキストダミーテキ<br>ダミーテキストダミーテキ、ダミーテキストダミーテキストダ<br>ダミーテキストダDummyduダ、ダミーテキストダミーテキストダミ<br>ダミーテキストダミーテ<br>ダミーテキストダミーテ、ダミーテキストダミーテキ<br>ダミーテキストダミ、ダミーテキストダDummyduダミーテキストダ</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
