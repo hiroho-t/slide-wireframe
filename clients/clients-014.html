@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>clients-014</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .lb{position:absolute;left:60px;top:58px;transform:translateY(-50%);font-size:14px;font-weight:700;letter-spacing:.04em;color:#6b6b6b}
+  .ttl{position:absolute;left:59px;top:105px;transform:translateY(-50%);font-size:23px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .lead{position:absolute;left:59px;top:139px;font-size:14px;line-height:25px;letter-spacing:.02em;color:#4d4d4d}
+
+  .tab{position:absolute;height:26px;background:#1a1a1a;border-radius:13px;display:grid;place-items:center;
+    font-size:12px;font-weight:700;letter-spacing:.06em;color:#fff;white-space:nowrap}
+  .panel{position:absolute;background:#e8e8e8;border-radius:8px}
+  .card{position:absolute;background:#fff;border-radius:4px}
+  .h{position:absolute;height:1px;background:#e4e4e4}
+  .v{position:absolute;width:1px;background:#e4e4e4}
+  .lg{position:absolute;height:30px;background:#ededed;
+    display:grid;place-items:center;font-size:10px;letter-spacing:.18em;color:#8c8c8c}
+
+  .fl{position:absolute;left:41px;top:692px;transform:translateY(-50%);font-size:10px;letter-spacing:.04em;color:#8c8c8c}
+  .note{position:absolute;right:73px;top:692px;transform:translateY(-50%);font-size:10px;letter-spacing:.04em;color:#4d4d4d}
+  .pn{position:absolute;right:39px;top:702px;transform:translateY(-50%);font-size:11px;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="lb">ダミーテキストダ</div>
+    <div class="ttl">ダミーテキ</div>
+    <div class="lead">「ダミーテキストダミー」ダミーテキストダミーテキストダミーテキストダ、ダミーテキストダミーテキストダミーテキストダミーテキ、<br>ダミーテキストダミーテ。ダミーテキストダミーテ・ダミーテキ・DU・DUM・ダミーテキ・DUM、ダミーテキストダミーテキストダ。</div>
+
+    <div class="tab" style="left:76px;top:213px;width:165px">ダミーテキ・ダミーテキ</div>
+    <div class="panel" style="left:62px;top:237px;width:376px;height:193px"></div>
+    <div class="card" style="left:83px;top:257px;width:334px;height:151px"></div>
+    <div class="v" style="left:250.0px;top:257.0px;height:50.3px"></div>
+    <div class="lg" style="left:98.0px;top:267.2px;width:137.0px">LOGO</div>
+    <div class="lg" style="left:265.0px;top:267.2px;width:137.0px">LOGO</div>
+    <div class="h" style="left:83px;top:307.3px;width:334px"></div>
+    <div class="v" style="left:250.0px;top:307.3px;height:50.3px"></div>
+    <div class="lg" style="left:98.0px;top:317.5px;width:137.0px">LOGO</div>
+    <div class="lg" style="left:265.0px;top:317.5px;width:137.0px">LOGO</div>
+    <div class="h" style="left:83px;top:357.7px;width:334px"></div>
+    <div class="v" style="left:250.0px;top:357.7px;height:50.3px"></div>
+    <div class="lg" style="left:98.0px;top:367.8px;width:137.0px">LOGO</div>
+    <div class="lg" style="left:265.0px;top:367.8px;width:137.0px">LOGO</div>
+    <div class="tab" style="left:466px;top:213px;width:80px">DU</div>
+    <div class="panel" style="left:452px;top:237px;width:376px;height:193px"></div>
+    <div class="card" style="left:471px;top:257px;width:337px;height:151px"></div>
+    <div class="lg" style="left:564.5px;top:267.2px;width:150.0px">LOGO</div>
+    <div class="h" style="left:471px;top:307.3px;width:337px"></div>
+    <div class="lg" style="left:564.5px;top:317.5px;width:150.0px">LOGO</div>
+    <div class="h" style="left:471px;top:357.7px;width:337px"></div>
+    <div class="lg" style="left:564.5px;top:367.8px;width:150.0px">LOGO</div>
+    <div class="tab" style="left:856px;top:213px;width:151px">ダミーテキ・DUM</div>
+    <div class="panel" style="left:842px;top:237px;width:381px;height:193px"></div>
+    <div class="card" style="left:863px;top:257px;width:337px;height:151px"></div>
+    <div class="lg" style="left:956.5px;top:267.2px;width:150.0px">LOGO</div>
+    <div class="h" style="left:863px;top:307.3px;width:337px"></div>
+    <div class="v" style="left:1031.5px;top:307.3px;height:50.3px"></div>
+    <div class="lg" style="left:878.0px;top:317.5px;width:138.5px">LOGO</div>
+    <div class="lg" style="left:1046.5px;top:317.5px;width:138.5px">LOGO</div>
+    <div class="h" style="left:863px;top:357.7px;width:337px"></div>
+    <div class="v" style="left:1031.5px;top:357.7px;height:50.3px"></div>
+    <div class="lg" style="left:878.0px;top:367.8px;width:138.5px">LOGO</div>
+    <div class="lg" style="left:1046.5px;top:367.8px;width:138.5px">LOGO</div>
+    <div class="tab" style="left:76px;top:445px;width:157px">ダミー・ダミーテ</div>
+    <div class="panel" style="left:62px;top:469px;width:570px;height:194px"></div>
+    <div class="card" style="left:83px;top:489px;width:537px;height:153px"></div>
+    <div class="v" style="left:351.5px;top:489.0px;height:51.0px"></div>
+    <div class="lg" style="left:142.2px;top:499.5px;width:150.0px">LOGO</div>
+    <div class="lg" style="left:410.8px;top:499.5px;width:150.0px">LOGO</div>
+    <div class="h" style="left:83px;top:540.0px;width:537px"></div>
+    <div class="v" style="left:351.5px;top:540.0px;height:51.0px"></div>
+    <div class="lg" style="left:142.2px;top:550.5px;width:150.0px">LOGO</div>
+    <div class="lg" style="left:410.8px;top:550.5px;width:150.0px">LOGO</div>
+    <div class="h" style="left:83px;top:591.0px;width:537px"></div>
+    <div class="v" style="left:351.5px;top:591.0px;height:51.0px"></div>
+    <div class="lg" style="left:142.2px;top:601.5px;width:150.0px">LOGO</div>
+    <div class="lg" style="left:410.8px;top:601.5px;width:150.0px">LOGO</div>
+    <div class="tab" style="left:663px;top:445px;width:83px">DUM</div>
+    <div class="panel" style="left:649px;top:469px;width:574px;height:194px"></div>
+    <div class="card" style="left:669px;top:489px;width:537px;height:153px"></div>
+    <div class="v" style="left:937.5px;top:489.0px;height:76.5px"></div>
+    <div class="lg" style="left:728.2px;top:512.2px;width:150.0px">LOGO</div>
+    <div class="lg" style="left:996.8px;top:512.2px;width:150.0px">LOGO</div>
+    <div class="h" style="left:669px;top:565.5px;width:537px"></div>
+    <div class="v" style="left:937.5px;top:565.5px;height:76.5px"></div>
+    <div class="lg" style="left:728.2px;top:588.8px;width:150.0px">LOGO</div>
+    <div class="lg" style="left:996.8px;top:588.8px;width:150.0px">LOGO</div>
+
+    <div class="fl">LOGO　|　© 20XX Company.</div>
+    <div class="note">※ ダミーテキ（ダミーテ）　※ ダミーテキストダミーテキ（ダミーテ・ダミーテキ）・ダミーテキストダミーテキ</div>
+    <div class="pn">00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
