@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>service-034</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .lb{position:absolute;left:52px;top:41px;transform:translateY(-50%);font-size:11px;letter-spacing:.1em;color:#8c8c8c}
+  .vb{position:absolute;left:52px;top:70px;width:5px;height:37px;background:#6b6b6b}
+  .ttl{position:absolute;left:73px;top:89px;transform:translateY(-50%);font-size:27px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .lead{position:absolute;left:90px;top:141px;font-size:15px;line-height:37px;letter-spacing:.02em;color:#1a1a1a}
+
+  .tag{position:absolute;top:237px;height:25px;background:#6b6b6b;display:grid;place-items:center;
+    font-size:11px;font-weight:700;letter-spacing:.02em;color:#fff}
+  .tr{position:absolute;top:250px;height:1px;background:#6b6b6b}
+  .dv{position:absolute;left:841px;top:237px;width:1px;height:216px;
+    background:repeating-linear-gradient(to bottom,#c4c4c4 0 3px,transparent 3px 7px)}
+
+  .sl{position:absolute;top:287px;width:150px;text-align:center;transform:translateY(-50%);font-size:11px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .lg{position:absolute;top:307px;width:150px;height:36px;background:#e4e4e4;display:grid;place-items:center;
+    font-size:9px;letter-spacing:.16em;color:#8c8c8c}
+  .band{position:absolute;left:177px;top:380px;width:643px;height:57px;background:#e4e4e4;
+    clip-path:polygon(0 0,calc(100% - 26px) 0,100% 50%,calc(100% - 26px) 100%,0 100%)}
+  .pi{position:absolute;top:373px;width:45px;height:60px;background:#d5d5d5;display:grid;place-items:center;
+    font-size:8px;letter-spacing:.12em;color:#8c8c8c}
+  .ci{position:absolute;top:377px;width:63px;height:63px;border-radius:50%;background:#4d4d4d;
+    display:grid;place-items:center;font-size:11px;letter-spacing:.02em;color:#fff}
+
+  .bx{position:absolute;left:87px;top:503px;width:1113px;height:160px;border:1px solid #4d4d4d;border-radius:8px}
+  .bl{position:absolute;left:400px;top:503px;width:480px;transform:translateY(-50%);background:#fff;text-align:center;
+    font-size:17px;font-weight:700;letter-spacing:.02em;color:#4d4d4d}
+  .bt{position:absolute;font-size:12px;font-weight:700;line-height:22px;letter-spacing:.02em;color:#4d4d4d}
+  .bg2{position:absolute;top:527px;width:130px;height:90px;background:#ededed;display:grid;place-items:center;
+    font-size:9px;letter-spacing:.14em;color:#8c8c8c}
+
+  .fl{position:absolute;left:27px;top:692px;transform:translateY(-50%);font-size:10px;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="lb">ダミーテキ</div>
+    <div class="vb"></div>
+    <div class="ttl">ダミーテキストダミDUダミーテキ</div>
+    <div class="lead">ダミーテキストダミーテキストダミーテキストダミーテキ「ダミーテキストダミDUダミーテキ」ダミーテ<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ</div>
+
+    <div class="tag" style="left:89px;width:105px">ダミーテキDU</div>
+    <div class="tr" style="left:194px;width:626px"></div>
+    <div class="tag" style="left:870px;width:103px">ダミーテキDU</div>
+    <div class="tr" style="left:973px;width:294px"></div>
+    <div class="dv"></div>
+
+    <div class="sl" style="left:146px">ダミーDU</div>
+    <div class="lg" style="left:146px">SERVICE LOGO</div>
+    <div class="sl" style="left:368px">ダミーDU</div>
+    <div class="lg" style="left:368px">SERVICE LOGO</div>
+    <div class="sl" style="left:575px">ダミーDU</div>
+    <div class="lg" style="left:575px">SERVICE LOGO</div>
+    <div class="sl" style="left:985px">ダミーDU</div>
+    <div class="lg" style="left:985px">SERVICE LOGO</div>
+
+    <div class="band"></div>
+    <div class="pi" style="left:105px">GRAPHIC</div>
+    <div class="ci" style="left:190px">ダミー</div>
+    <div class="ci" style="left:412px">ダミー</div>
+    <div class="ci" style="left:619px">ダミー</div>
+    <div class="pi" style="left:930px">GRAPHIC</div>
+    <div class="ci" style="left:1029px">ダミーテ</div>
+
+    <div class="bx"></div>
+    <div class="bl">DUMMYのDUダミーテキストダミーテキストダ</div>
+    <div class="bt" style="left:148px;top:566px">ダミーテキストダ<br>ダミーテキストダミ</div>
+    <div class="bg2" style="left:287px">GRAPHIC</div>
+    <div class="bt" style="left:467px;top:566px">ダミーテキストダミーテ<br>ダミーテキストダ</div>
+    <div class="bg2" style="left:633px">GRAPHIC</div>
+    <div class="bt" style="left:793px;top:566px">ダミーテキ・ダミーテキストダ<br>ダミーテキストダミーテキ</div>
+    <div class="bg2" style="left:1013px">GRAPHIC</div>
+
+    <div class="fl">© 20XX Company.</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
