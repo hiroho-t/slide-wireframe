@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>problem-007</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#f5f5f5;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .ttl{position:absolute;left:70px;top:60px;transform:translateY(-50%);font-size:27px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .logo{position:absolute;right:60px;top:60px;transform:translateY(-50%);font-size:20px;font-weight:700;letter-spacing:.16em;color:#1a1a1a}
+  .ac{position:absolute;left:59px;top:91px;width:106px;height:4px;background:#4d4d4d}
+  .al{position:absolute;left:165px;top:92px;width:1056px;height:2px;background:#dcdcdc}
+  .lead{position:absolute;left:70px;top:114px;font-size:17px;line-height:33px;letter-spacing:.06em;color:#1a1a1a}
+
+  .cl{position:absolute;top:222px;transform:translateY(-50%);font-size:13px;letter-spacing:.06em;color:#8c8c8c}
+  .bx{position:absolute;height:60px;background:#fff;border:1px solid #b3b3b3;border-radius:6px;
+    display:flex;align-items:center;padding-left:28px}
+  .bx span{font-size:15px;letter-spacing:.04em;color:#1a1a1a}
+  .pl{position:absolute;left:527px;width:173px;height:42px;border-radius:21px;background:#3a3a3a;
+    display:grid;place-items:center;font-size:11px;font-weight:700;letter-spacing:.06em;color:#fff}
+  .cn{position:absolute;background:#1a1a1a}
+  .ar{position:absolute;width:0;height:0;border-left:12px solid #1a1a1a;border-top:7px solid transparent;border-bottom:7px solid transparent}
+
+  .pn{position:absolute;right:47px;top:683px;transform:translateY(-50%);font-size:11px;color:#b3b3b3}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="ttl">ダミーテキストダミーテキ</div>
+    <div class="logo">LOGO</div>
+    <div class="ac"></div>
+    <div class="al"></div>
+    <div class="lead">ダミーテキストダミ、000年ダミーテキストダミーテキストダミーテキストダミーテキ。<br>ダミーテキストダミーテ、ダミーテキストダミーテキストダミーテキストダミーテキ。</div>
+
+    <div class="cl" style="left:89px">ダミー</div>
+    <div class="cl" style="left:772px">ダミーテキストダミーテ</div>
+
+    <div class="bx" style="left:80px;top:257px;width:418px"><span>ダミーテキストダミーテキストダミーテキ</span></div>
+    <div class="cn" style="left:498px;top:287px;width:29px;height:1px"></div>
+    <div class="pl" style="top:266px">ダミーテキ</div>
+    <div class="cn" style="left:700px;top:287px;width:53px;height:1px"></div>
+    <div class="ar" style="left:753px;top:280px"></div>
+    <div class="bx" style="left:765px;top:257px;width:418px"><span>ダミー・ダミーテキ</span></div>
+    <div class="bx" style="left:80px;top:330px;width:418px"><span>ダミーテキストダミーテキ</span></div>
+    <div class="cn" style="left:498px;top:360px;width:29px;height:1px"></div>
+    <div class="pl" style="top:339px">ダミーテキ</div>
+    <div class="cn" style="left:700px;top:360px;width:53px;height:1px"></div>
+    <div class="ar" style="left:753px;top:353px"></div>
+    <div class="bx" style="left:765px;top:330px;width:418px"><span>ダミーテキストダミーテキストダ</span></div>
+    <div class="bx" style="left:80px;top:403px;width:418px"><span>ダミーテキストダミーテキスト</span></div>
+    <div class="cn" style="left:498px;top:433px;width:29px;height:1px"></div>
+    <div class="pl" style="top:412px">ダミーテキ</div>
+    <div class="cn" style="left:700px;top:433px;width:53px;height:1px"></div>
+    <div class="ar" style="left:753px;top:426px"></div>
+    <div class="bx" style="left:765px;top:403px;width:418px"><span>ダミーテキストダ（0〜0年）ダミ</span></div>
+    <div class="bx" style="left:80px;top:476px;width:418px"><span>ダミーテキストダミーテキストダミ</span></div>
+    <div class="cn" style="left:498px;top:506px;width:29px;height:1px"></div>
+    <div class="pl" style="top:485px">ダミーテキス</div>
+    <div class="cn" style="left:700px;top:506px;width:53px;height:1px"></div>
+    <div class="ar" style="left:753px;top:499px"></div>
+    <div class="bx" style="left:765px;top:476px;width:418px"><span>ダミーテキストダミーテキスト</span></div>
+    <div class="bx" style="left:80px;top:549px;width:418px"><span>ダミーテキストダミーテキ</span></div>
+    <div class="cn" style="left:498px;top:579px;width:29px;height:1px"></div>
+    <div class="pl" style="top:558px">ダミーテキ</div>
+    <div class="cn" style="left:700px;top:579px;width:53px;height:1px"></div>
+    <div class="ar" style="left:753px;top:572px"></div>
+    <div class="bx" style="left:765px;top:549px;width:418px"><span>ダミーテキストダミーテキ</span></div>
+
+    <div class="pn">00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
