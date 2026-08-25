@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>message-014</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#6b6b6b;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .ttl{position:absolute;left:106px;transform:translateY(-50%);font-size:40px;font-weight:500;letter-spacing:.06em;color:#fff}
+  .lead{position:absolute;left:106px;top:390px;font-size:13.5px;line-height:32px;letter-spacing:.04em;color:#fff}
+  .bd{position:absolute;left:608px;font-size:13.5px;line-height:32px;letter-spacing:.04em;color:#fff}
+  .logo{position:absolute;right:58px;top:624px;transform:translateY(-50%);font-size:26px;font-weight:700;letter-spacing:.06em;color:#fff}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="ttl" style="top:259px">ダミーテキストダミ</div>
+    <div class="ttl" style="top:320px">ダミーテキストダ。</div>
+    <div class="lead">ダミーテキストダミーテキストダ。<br>ダミーテキストダミ。<br>ダミーの000年をダミーテキ、ダミーテキストダミーテキ。</div>
+
+    <div class="bd" style="top:104px">ダミーテキ「ダミーテキ」ダミーテキストダミーテ。<br>ダミーテキストダミーテキストダミーテ。<br>ダミーテキストダミ。<br>ダミーテ、ダミーテキストダミーテキ。</div>
+    <div class="bd" style="top:264px">ダミーテキストダミーテキストダミーテキストダ、ダミーテキストダミーテキストダミ。<br>ダミーテキストダミーテキストダ、ダミーテキストダミーテキストダミーテキストダミーテ。</div>
+    <div class="bd" style="top:362px">000年ダミーテキ「ダミー・ダミー・ダミ」ダミーテキストダミーテキストダ<br>ダミーテキストダ、ダミーテキストダミーテキストダミーテキストダ。<br>ダミーテキストダミーテキストダミーテ、<br>ダミーテキストダミーテキストダミーテキストダミーテキストダ。</div>
+    <div class="bd" style="top:506px">ダミーテキストの000年も、<br>ダミーテ、ダミーテキストダミーテ<br>ダミーテキ、ダミーテキストダミーテ。</div>
+
+    <div class="logo">LOGO</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
