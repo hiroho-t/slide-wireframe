@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>service-025</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .lb{position:absolute;left:80px;top:65px;transform:translateY(-50%);font-size:12px;font-weight:700;letter-spacing:.06em;color:#8c8c8c}
+  .ttl{position:absolute;left:75px;top:105px;transform:translateY(-50%);font-size:27px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .lead{position:absolute;left:80px;top:177px;transform:translateY(-50%);font-size:13px;letter-spacing:.02em;color:#1a1a1a}
+
+  .cd{position:absolute;top:220px;width:367px;height:317px;border:1px solid #c4c4c4;border-radius:10px}
+  .hd{position:absolute;top:220px;width:367px;height:103px;background:#6b6b6b;border-radius:9px 9px 0 0}
+  .ic{position:absolute;top:242px;width:59px;height:59px;border-radius:50%;background:#fff}
+  .ht{position:absolute;top:248px;font-size:15px;font-weight:700;line-height:24px;letter-spacing:.02em;color:#fff}
+  .br{position:absolute;width:293px;height:34px;background:#f0f0f0;display:flex;align-items:center;padding-left:16px;
+    font-size:12px;letter-spacing:.02em;color:#1a1a1a}
+
+  .sum{position:absolute;left:70px;top:567px;width:1147px;height:60px;border-radius:30px;background:#ededed;
+    display:grid;place-items:center;font-size:18px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .fr{position:absolute;right:53px;top:690px;transform:translateY(-50%);font-size:10px;letter-spacing:.02em;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="lb">ダミーテキストダ</div>
+    <div class="ttl">ダミーテキDUダミーテキ・ダミーテキストダミ、ダミーテキストダミーテ</div>
+    <div class="lead">ダミーテキDUダミーテキストダミーテキストダミーテキストダ、ダミーテキストダミ、ダミー・ダミーテキストダ、ダミーテキストダミーテキストダ。</div>
+
+    <div class="cd" style="left:70px"></div>
+    <div class="hd" style="left:70px"></div>
+    <div class="ic" style="left:108px"></div>
+    <div class="ht" style="left:182px">ダミーテキストDUダミ<br>ダミーテキストダミーテキ</div>
+    <div class="br" style="left:108px;top:340px">DUダミーテキストダミーテ</div>
+    <div class="br" style="left:108px;top:391px">ダミーテキストダミーテキ</div>
+    <div class="br" style="left:108px;top:442px">ダミーテキストダミーテ</div>
+    <div class="br" style="left:108px;top:493px">00h/000日ダミーテキ</div>
+    <div class="cd" style="left:460px"></div>
+    <div class="hd" style="left:460px"></div>
+    <div class="ic" style="left:498px"></div>
+    <div class="ht" style="left:572px">ダミーテキストダ<br>ダミー・ダミー</div>
+    <div class="br" style="left:498px;top:340px">ダミーテキストダ/ダミ</div>
+    <div class="br" style="left:498px;top:391px">ダミーテキストダミーテキ</div>
+    <div class="br" style="left:498px;top:442px">ダミーテキストダミーテ</div>
+    <div class="br" style="left:498px;top:493px">ダミーテキストDUダミーテ</div>
+    <div class="cd" style="left:850px"></div>
+    <div class="hd" style="left:850px"></div>
+    <div class="ic" style="left:888px"></div>
+    <div class="ht" style="left:962px">ダミーテキスト<br>ダミーテキ</div>
+    <div class="br" style="left:888px;top:340px">ダミーテキストダミーテキ</div>
+    <div class="br" style="left:888px;top:391px">ダミーテダミーテキ</div>
+    <div class="br" style="left:888px;top:442px">ダミーテキストダミーテキス</div>
+    <div class="br" style="left:888px;top:493px">ダミーテキストダミーテキストダミーテ</div>
+
+    <div class="sum">DUダミーテキストダミーテ。ダミーテキストダミーテキストダ、ダミーテキストダミーテキストダ</div>
+    <div class="fr">ダミーテキストダ｜ダミーテキ</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
