@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>flow-010</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .hl{position:absolute;left:60px;top:67px;transform:translateY(-50%);font-size:13px;letter-spacing:.08em;color:#4d4d4d}
+  .ttl{position:absolute;left:59px;top:120px;transform:translateY(-50%);font-size:23px;font-weight:700;letter-spacing:.1em;color:#1a1a1a}
+  .logo{position:absolute;right:73px;top:80px;transform:translateY(-50%);font-size:17px;font-weight:700;letter-spacing:.08em;color:#1a1a1a}
+
+  .cd{position:absolute;border-radius:10px}
+  .ti{position:absolute;transform:translateX(-50%);font-size:20px;font-weight:700;letter-spacing:.1em;color:#fff;white-space:nowrap}
+  .ds{position:absolute;transform:translateX(-50%);font-size:13px;line-height:21px;letter-spacing:.04em;color:#fff;text-align:center;white-space:nowrap}
+  .bg{position:absolute;width:54px;height:54px;border-radius:50%;background:#fff;border:3px solid #8c8c8c;
+    display:grid;place-items:center;font-size:24px;font-weight:700;color:#4d4d4d}
+  .ar{position:absolute;width:0;height:0;border-left:15px solid #d5d5d5;border-top:13px solid transparent;border-bottom:13px solid transparent}
+
+  .pn{position:absolute;left:60px;top:651px;transform:translateY(-50%);font-size:17px;color:#b3b3b3}
+  .fr{position:absolute;right:73px;top:651px;transform:translateY(-50%);font-size:11px;letter-spacing:.06em;color:#b3b3b3}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="hl">00.ダミーテキスト</div>
+    <div class="ttl">ダミーテキ</div>
+    <div class="logo">LOGO</div>
+
+    <div class="cd" style="left:247px;top:178px;width:220px;height:190px;background:#a8a8a8"></div>
+    <div class="ti" style="left:357.0px;top:250px">ダミーテキ</div>
+    <div class="ds" style="left:357.0px;top:281px">ダミーテキスト<br>ダミーテキストダミー<br>ダミーテキス</div>
+    <div class="bg" style="left:330.0px;top:151px">1</div>
+    <div class="cd" style="left:522px;top:178px;width:222px;height:190px;background:#9a9a9a"></div>
+    <div class="ti" style="left:633.0px;top:250px">ダミーテキ</div>
+    <div class="ds" style="left:633.0px;top:281px">ダミーテキストダ<br>（ダミーテキスト）</div>
+    <div class="bg" style="left:606.0px;top:151px">2</div>
+    <div class="cd" style="left:797px;top:178px;width:221px;height:190px;background:#8c8c8c"></div>
+    <div class="ti" style="left:907.5px;top:250px">ダミーテキ</div>
+    <div class="ds" style="left:907.5px;top:281px">ダミー・ダミーテキ<br>ダミーテ</div>
+    <div class="bg" style="left:880.5px;top:151px">3</div>
+    <div class="cd" style="left:247px;top:420px;width:220px;height:188px;background:#7e7e7e"></div>
+    <div class="ti" style="left:357.0px;top:492px">ダミーテキ</div>
+    <div class="ds" style="left:357.0px;top:523px">ダミーテキストダミーテ<br>（ダミーテキスト）</div>
+    <div class="bg" style="left:330.0px;top:393px">4</div>
+    <div class="cd" style="left:522px;top:420px;width:222px;height:188px;background:#6e6e6e"></div>
+    <div class="ti" style="left:633.0px;top:492px">ダミーテキ</div>
+    <div class="ds" style="left:633.0px;top:523px">ダミーテ・ダミーテキ<br>ダミーテ</div>
+    <div class="bg" style="left:606.0px;top:393px">5</div>
+    <div class="cd" style="left:797px;top:420px;width:221px;height:188px;background:#5c5c5c"></div>
+    <div class="ti" style="left:907.5px;top:492px">ダミーテキ</div>
+    <div class="ds" style="left:907.5px;top:523px">ダミーテキ ダミー<br>ダミーテ</div>
+    <div class="bg" style="left:880.5px;top:393px">6</div>
+    <div class="ar" style="left:493px;top:280px"></div>
+    <div class="ar" style="left:768px;top:280px"></div>
+    <div class="ar" style="left:220px;top:513px"></div>
+    <div class="ar" style="left:493px;top:513px"></div>
+    <div class="ar" style="left:768px;top:513px"></div>
+
+    <div class="pn">00</div>
+    <div class="fr">DUMMYTEXT - Dummy Dummytext Dummytextd</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

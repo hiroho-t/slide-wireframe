@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>company-023</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .ttl{position:absolute;left:73px;top:97px;transform:translateY(-50%);font-size:45px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+  .logo{position:absolute;right:70px;top:59px;transform:translateY(-50%);font-size:20px;font-weight:700;letter-spacing:.14em;color:#1a1a1a}
+
+  .lb{position:absolute;left:72px;transform:translateY(-50%);font-size:13px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .vl{position:absolute;left:298px;transform:translateY(-50%);font-size:13px;font-weight:500;letter-spacing:.04em;color:#1a1a1a}
+  .rd{position:absolute;left:72px;width:185px;height:1px;background:#8c8c8c}
+  .rl{position:absolute;left:257px;width:951px;height:1px;background:#dcdcdc}
+
+  .fl{position:absolute;left:73px;top:650px;transform:translateY(-50%);font-size:10px;font-weight:700;letter-spacing:.1em;color:#1a1a1a}
+  .fr{position:absolute;right:48px;top:650px;transform:translateY(-50%);font-size:11px;font-weight:700;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="ttl">ダミーテキ</div>
+    <div class="logo">LOGO</div>
+
+    <div class="lb" style="top:179px">ダミーテ</div>
+    <div class="vl" style="top:179px">ダミーテキストDUMMY</div>
+    <div class="rd" style="top:199px"></div><div class="rl" style="top:199px"></div>
+
+    <div class="lb" style="top:225px">ダミー</div>
+    <div class="vl" style="top:225px">ダミー　テキ</div>
+    <div class="rd" style="top:244px"></div><div class="rl" style="top:244px"></div>
+
+    <div class="lb" style="top:270px">ダミーテキ</div>
+    <div class="vl" style="top:270px">20XX年X月XX日</div>
+    <div class="rd" style="top:289px"></div><div class="rl" style="top:289px"></div>
+
+    <div class="lb" style="top:314px">ダミーテキ</div>
+    <div class="vl" style="top:314px">0名（20XX年X月時点）</div>
+    <div class="rd" style="top:334px"></div><div class="rl" style="top:334px"></div>
+
+    <div class="lb" style="top:359px">ダミーテ</div>
+    <div class="vl" style="top:359px">〒000-0000　ダミーテキストダミーテキ0-00-00-0Ｆ</div>
+    <div class="rd" style="top:379px"></div><div class="rl" style="top:379px"></div>
+
+    <div class="lb" style="top:405px">ダミーテ</div>
+    <div class="vl" style="top:405px">ダミーテ</div>
+    <div class="rd" style="top:425px"></div><div class="rl" style="top:425px"></div>
+
+    <div class="lb" style="top:449px">ダミーテキ</div>
+    <div class="vl" style="top:449px">・ダミーテキストダミーテ</div>
+    <div class="vl" style="top:481px">・ダミーテキストダミーテキスト</div>
+    <div class="vl" style="top:512px">・ダミーテキストダ</div>
+    <div class="vl" style="top:545px">・ダミーテキストダミーテキ</div>
+    <div class="rd" style="top:572px"></div><div class="rl" style="top:572px"></div>
+
+    <div class="fl">© 20XX Company.</div>
+    <div class="fr">00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

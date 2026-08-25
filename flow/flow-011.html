@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>flow-011</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .hl{position:absolute;left:59px;top:47px;transform:translateY(-50%);font-size:13px;letter-spacing:.04em;color:#4d4d4d}
+  .ttl{position:absolute;left:59px;top:82px;font-size:27px;font-weight:700;line-height:36px;letter-spacing:.01em;color:#1a1a1a}
+
+  /* シェブロン帯 */
+  .cv{position:absolute;top:177px;height:58px;display:grid;place-items:center;text-align:center;
+    font-size:13px;font-weight:700;line-height:19px;letter-spacing:.04em;
+    clip-path:polygon(0 0,calc(100% - 24px) 0,100% 50%,calc(100% - 24px) 100%,0 100%)}
+  .cv.l{background:#d9d9d9;color:#1a1a1a}
+  .cv.d{background:#1a1a1a;color:#fff}
+  .cv b{font-size:15px}
+
+  /* 左のラベル列 */
+  .lb{position:absolute;left:63px;width:140px;background:#ededed;display:grid;place-items:center;
+    font-size:13px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .ru{position:absolute;left:224px;width:984px;height:1px;background:#d5d5d5}
+  .tx{position:absolute;font-size:13px;line-height:20px;letter-spacing:.02em;color:#1a1a1a}
+  .bl{position:absolute;font-size:13px;line-height:20px;letter-spacing:.02em;color:#1a1a1a;text-indent:-12px;padding-left:12px}
+
+  .pn{position:absolute;right:47px;top:675px;transform:translateY(-50%);font-size:11px;font-weight:700;color:#b3b3b3}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="hl">ダミーテキ②：ダミー・ダミーテキストダミーテキ</div>
+    <div class="ttl">DUMダミーテキスト、ダミーテキストダミーテキストダミーテキストダDU/DUダミーテキ<br>ダミーテ、0~0年でのダミーテキストダミーテキ。ダミーテキストダミーテキストダ</div>
+
+    <div class="cv l" style="left:221px;width:275px">ダミーテ<br><b>（0~0か月）</b></div>
+    <div class="cv l" style="left:505px;width:429px">ダミーテ<br><b>（0年程度）</b></div>
+    <div class="cv d" style="left:941px;width:267px">ダミーテキ・ダミ<br><b>（ダミーテキストダ）</b></div>
+
+    <div class="lb" style="top:245px;height:82px">ダミ</div>
+    <div class="tx" style="left:239px;top:261px">DUMダミーテキストダミーテ<br>ダミーテキ・ダミーテキス</div>
+    <div class="tx" style="left:520px;top:261px">DUMダミーテキストダミーテキ。ダミーテキ<br>ダミーテキストダミーテキストダミーテキ</div>
+    <div class="tx" style="left:952px;top:261px">ダミーテキストダミーテキストダ<br>ダミーテキストダ。ダミーテキ</div>
+    <div class="ru" style="top:331px"></div>
+
+    <div class="lb" style="top:337px;height:48px">ダミーテキ</div>
+    <div class="tx" style="left:239px;top:352px">ダミーテキストダ</div>
+    <div class="tx" style="left:520px;top:352px">ダミーテキストダミーテキ</div>
+    <div class="tx" style="left:952px;top:352px">ダミーテキストダミーテキ</div>
+    <div class="ru" style="top:390px"></div>
+
+    <div class="lb" style="top:395px;height:197px">ダミーテキスト</div>
+    <div class="bl" style="left:239px;top:407px">・DUMダミーテキ<br>　ダミーテキストダミーテ<br>　ダミー、ダミーテキ</div>
+    <div class="bl" style="left:239px;top:497px">・DUMダミーテキ<br>　DUMダミーテキストダミーテ<br>　ダミーテキストダミーテキス<br>　ダミー、ダミーテキストダ</div>
+    <div class="bl" style="left:520px;top:407px">・DUMダミーテキストダミーテキ<br>・DU/DUダミーテキストダミーテキストダミ<br>　ダミーテキ<br>・DUダミーテキストダミーテ<br>・ダミーテキストダミーテキスト<br>・ダミー・ダミーテキ</div>
+    <div class="bl" style="left:952px;top:407px">・ダミーテキストダミーテキストダ<br>　ダミーテキ<br>　ダミーテキ、DUダミーテキストダ<br>　ダミーテキ、ダミーテキ、<br>　DUM</div>
+    <div class="ru" style="top:598px"></div>
+
+    <div class="lb" style="top:603px;height:49px">ダミーテキ</div>
+    <div class="tx" style="left:239px;top:620px">0,000~0,000万円</div>
+    <div class="tx" style="left:520px;top:620px">0~0億円</div>
+    <div class="tx" style="left:952px;top:620px">ダミーテ~0億円</div>
+    <div class="ru" style="top:657px"></div>
+
+    <div class="pn">00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
