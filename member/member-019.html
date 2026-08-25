@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>member-019</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .vt{position:absolute;left:70px;top:73px;transform:rotate(90deg);transform-origin:0 0;
+    font-size:35px;font-weight:700;letter-spacing:.01em;color:#1a1a1a;white-space:nowrap}
+
+  .av{position:absolute;top:117px;width:200px;height:200px;border-radius:50%;background:#d5d5d5;
+    display:grid;place-items:center;font-size:11px;letter-spacing:.2em;color:#8c8c8c}
+  .rl{position:absolute;top:380px;transform:translateY(-50%);font-size:13px;font-weight:700;letter-spacing:.04em;color:#6b6b6b}
+  .en{position:absolute;top:405px;transform:translateY(-50%);font-size:20px;font-weight:700;letter-spacing:.01em;color:#1a1a1a}
+  .jp{position:absolute;top:432px;transform:translateY(-50%);font-size:14px;font-weight:700;letter-spacing:.06em;color:#1a1a1a}
+  .bd{position:absolute;top:465px;font-size:12px;line-height:24px;letter-spacing:.02em;color:#1a1a1a}
+
+  .fl{position:absolute;right:75px;top:667px;transform:translateY(-50%);font-size:10px;font-weight:700;letter-spacing:.06em;color:#1a1a1a}
+  .fb{position:absolute;right:60px;top:657px;width:1px;height:20px;background:#c4c4c4}
+  .pn{position:absolute;right:38px;top:667px;transform:translateY(-50%);font-size:12px;font-weight:700;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="vt">Dummydumm dummydu</div>
+
+    <div class="av" style="left:315px">IMAGE</div>
+    <div class="rl" style="left:265px">ダミー</div>
+    <div class="en" style="left:265px">Dummydu Dummyd</div>
+    <div class="jp" style="left:265px">ダミー ダミテ</div>
+    <div class="bd" style="left:265px">20XX年にダミーテキストダミー・ダミーテ<br>（ダミ、ダミーテキストDUMM）ダミーテ。20XX年からは<br>ダミーテキストダミーテキストダミー、ダミーテ<br>ダミーテキ00のダミーテキ。<br>ダミーテキストDUMMYTEXTBANK 000%ダミー。</div>
+    <div class="av" style="left:638px">IMAGE</div>
+    <div class="rl" style="left:588px">ダミーテキストダ</div>
+    <div class="en" style="left:588px">Dummyd Dummydu</div>
+    <div class="jp" style="left:588px">ダミー ダミテ</div>
+    <div class="bd" style="left:588px">ダミーテキストDUMMYTEXTBANKダミーテキストダミ、<br>ダミーテキDUダミーテキストダミーテキストDUMダミ<br>ダミーテキストダミーテキ。ダミーテキストダミー<br>ダミーテキストダ、DUmobile、DUMMYダミー、<br>DUMMYダミーテキストダ。</div>
+    <div class="av" style="left:961px">IMAGE</div>
+    <div class="rl" style="left:911px">ダミーテキストダミ</div>
+    <div class="en" style="left:911px">Dummy Dummydud</div>
+    <div class="jp" style="left:911px">ダミー ダミ</div>
+    <div class="bd" style="left:911px">ダミーテキストDUMMYTEXTBANKダミーテキストダミーテ、<br>ダミーテキストダミーテキストダミーテキDummyduのダミー<br>ダミーテキ・ダミーテキストダミーテキDUMのダミー<br>ダミーテキストダミーテキストダミーテキストダミー<br>ダミーテキ。</div>
+
+    <div class="fl">ダミーテキスト</div>
+    <div class="fb"></div>
+    <div class="pn">00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
