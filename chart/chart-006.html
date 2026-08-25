@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chart-006</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .ttl{position:absolute;left:41px;top:44px;transform:translateY(-50%);font-size:16px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .logo{position:absolute;right:39px;top:44px;transform:translateY(-50%);font-size:17px;font-weight:700;letter-spacing:.08em;color:#1a1a1a}
+  .hr{position:absolute;left:37px;top:81px;width:1206px;height:2px;background:#1a1a1a}
+
+  .col{position:absolute;top:123px;transform:translateY(-50%);font-size:14px;font-weight:700;letter-spacing:.04em;color:#1a1a1a}
+  .sep{position:absolute;top:110px;width:1px;height:517px;
+    background:repeating-linear-gradient(to bottom,#c4c4c4 0 3px,transparent 3px 7px)}
+  .base{position:absolute;top:627px;height:1px;background:#d5d5d5}
+
+  .hb{position:absolute;height:40px;background:#6b6b6b;display:flex;align-items:center;justify-content:center;text-align:center;
+    font-size:12px;font-weight:700;line-height:1.35;letter-spacing:.02em;color:#fff}
+  .sb,.lf{position:absolute;height:37px;display:flex;align-items:center;justify-content:center;text-align:center;
+    line-height:1.3;letter-spacing:.02em}
+  .sb{background:#d9d9d9;font-size:11.5px;font-weight:700;color:#4d4d4d}
+  .lf{background:#f0f0f0;font-size:11px;color:#1a1a1a}
+  .cn{position:absolute;background:#b3b3b3}
+
+  .fl{position:absolute;left:41px;top:687px;transform:translateY(-50%);font-size:11px;color:#1a1a1a}
+  .fr{position:absolute;right:39px;top:687px;transform:translateY(-50%);font-size:11px;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="ttl">ダミーテキ</div>
+    <div class="logo">LOGO</div>
+    <div class="hr"></div>
+
+    <div class="col" style="left:79px">ダミーテキ</div>
+    <div class="col" style="left:652px">ダミテ</div>
+    <div class="col" style="left:943px">ダミーテキスト</div>
+    <div class="sep" style="left:633px"></div>
+    <div class="sep" style="left:930px"></div>
+    <div class="base" style="left:76px;width:547px"></div>
+    <div class="base" style="left:647px;width:269px"></div>
+    <div class="base" style="left:943px;width:257px"></div>
+
+    <div class="hb" style="left:76px;top:148px;width:127px">ダミーテキ</div>
+    <div class="sb" style="left:95px;top:203px;width:108px">Dummy Text 1</div>
+    <div class="lf" style="left:114px;top:245px;width:89px">ダミーテキス</div>
+    <div class="sb" style="left:95px;top:287px;width:108px">Dummy Text 2</div>
+    <div class="lf" style="left:114px;top:329px;width:89px">ダミー・<br>テキストダ</div>
+    <div class="lf" style="left:114px;top:371px;width:89px">ダミーテ<br>キストダ</div>
+    <div class="lf" style="left:114px;top:413px;width:89px">ダミテ</div>
+    <div class="lf" style="left:95px;top:455px;width:108px">Dummy<br>Textdum</div>
+    <div class="lf" style="left:95px;top:497px;width:108px">ダミーテキ<br>ストダミーテ</div>
+    <div class="lf" style="left:95px;top:539px;width:108px">ダミーテキ</div>
+    <div class="lf" style="left:95px;top:581px;width:108px">ダミーテキ</div>
+    <div class="cn" style="left:85px;top:188px;width:1px;height:411.5px"></div>
+    <div class="cn" style="left:85px;top:221.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:85px;top:305.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:85px;top:473.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:85px;top:515.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:85px;top:557.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:85px;top:599.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:104px;top:240px;width:1px;height:23.5px"></div>
+    <div class="cn" style="left:104px;top:263.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:104px;top:324px;width:1px;height:107.5px"></div>
+    <div class="cn" style="left:104px;top:347.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:104px;top:389.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:104px;top:431.5px;width:10px;height:1px"></div>
+    <div class="hb" style="left:216px;top:148px;width:127px">ダミーテ<br>ダミーテキスト</div>
+    <div class="sb" style="left:235px;top:203px;width:108px">ダミーテキスト部</div>
+    <div class="lf" style="left:254px;top:245px;width:89px">ダミーテキスト</div>
+    <div class="lf" style="left:254px;top:287px;width:89px">ダミーテ<br>キストダ</div>
+    <div class="sb" style="left:235px;top:329px;width:108px">Dummytext1部</div>
+    <div class="sb" style="left:235px;top:371px;width:108px">Dummytext2部</div>
+    <div class="sb" style="left:235px;top:413px;width:108px">Dummyd部</div>
+    <div class="lf" style="left:254px;top:455px;width:89px">dummyte</div>
+    <div class="cn" style="left:225px;top:188px;width:1px;height:243.5px"></div>
+    <div class="cn" style="left:225px;top:221.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:225px;top:347.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:225px;top:389.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:225px;top:431.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:244px;top:240px;width:1px;height:65.5px"></div>
+    <div class="cn" style="left:244px;top:263.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:244px;top:305.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:244px;top:450px;width:1px;height:23.5px"></div>
+    <div class="cn" style="left:244px;top:473.5px;width:10px;height:1px"></div>
+    <div class="hb" style="left:356px;top:148px;width:127px">ダミーテ<br>ミーテキストダ</div>
+    <div class="sb" style="left:375px;top:203px;width:108px">ダミーテキスト部</div>
+    <div class="lf" style="left:394px;top:245px;width:89px">dummytext</div>
+    <div class="lf" style="left:394px;top:287px;width:89px">dummyte</div>
+    <div class="lf" style="left:394px;top:329px;width:89px">dum</div>
+    <div class="lf" style="left:394px;top:371px;width:89px">dummyt</div>
+    <div class="lf" style="left:394px;top:413px;width:89px">dummyte<br>Dummytext</div>
+    <div class="lf" style="left:394px;top:455px;width:89px">dummyte<br>Dummyte</div>
+    <div class="lf" style="left:394px;top:497px;width:89px">dumm</div>
+    <div class="sb" style="left:375px;top:539px;width:108px">ダミーテキストダ<br>DUM部</div>
+    <div class="lf" style="left:394px;top:581px;width:89px">ダミーテキストダ</div>
+    <div class="cn" style="left:365px;top:188px;width:1px;height:369.5px"></div>
+    <div class="cn" style="left:365px;top:221.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:365px;top:557.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:384px;top:240px;width:1px;height:275.5px"></div>
+    <div class="cn" style="left:384px;top:263.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:384px;top:305.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:384px;top:347.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:384px;top:389.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:384px;top:431.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:384px;top:473.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:384px;top:515.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:384px;top:576px;width:1px;height:23.5px"></div>
+    <div class="cn" style="left:384px;top:599.5px;width:10px;height:1px"></div>
+    <div class="hb" style="left:496px;top:148px;width:127px">Dummy<br>Dummydu室</div>
+    <div class="lf" style="left:515px;top:203px;width:108px">Dummy Dummyd</div>
+    <div class="cn" style="left:505px;top:188px;width:1px;height:33.5px"></div>
+    <div class="cn" style="left:505px;top:221.5px;width:10px;height:1px"></div>
+    <div class="hb" style="left:647px;top:148px;width:127px">ダミーテ<br>キストダミ</div>
+    <div class="lf" style="left:666px;top:203px;width:108px">ダミーテキ／<br>dumm開発</div>
+    <div class="lf" style="left:666px;top:245px;width:108px">ダミテ</div>
+    <div class="lf" style="left:666px;top:287px;width:108px">ダミーテキ<br>ストダ</div>
+    <div class="lf" style="left:666px;top:329px;width:108px">ダミーテキス<br>トダミ</div>
+    <div class="lf" style="left:666px;top:371px;width:108px">Dummytextd</div>
+    <div class="lf" style="left:666px;top:413px;width:108px">ダミー／テキスト</div>
+    <div class="cn" style="left:656px;top:188px;width:1px;height:243.5px"></div>
+    <div class="cn" style="left:656px;top:221.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:656px;top:263.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:656px;top:305.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:656px;top:347.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:656px;top:389.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:656px;top:431.5px;width:10px;height:1px"></div>
+    <div class="hb" style="left:789px;top:148px;width:127px">ダミーテキストダミ<br>ーテキスト</div>
+    <div class="lf" style="left:808px;top:203px;width:108px">ダミテ</div>
+    <div class="lf" style="left:808px;top:245px;width:108px">ダミーテキス</div>
+    <div class="lf" style="left:808px;top:287px;width:108px">DU</div>
+    <div class="lf" style="left:808px;top:329px;width:108px">DU</div>
+    <div class="cn" style="left:798px;top:188px;width:1px;height:159.5px"></div>
+    <div class="cn" style="left:798px;top:221.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:798px;top:263.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:798px;top:305.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:798px;top:347.5px;width:10px;height:1px"></div>
+    <div class="hb" style="left:943px;top:148px;width:120px">ダミーテキスト</div>
+    <div class="lf" style="left:962px;top:203px;width:101px">ダミーテキ<br>ダミー</div>
+    <div class="lf" style="left:962px;top:245px;width:101px">DU&A</div>
+    <div class="cn" style="left:952px;top:188px;width:1px;height:75.5px"></div>
+    <div class="cn" style="left:952px;top:221.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:952px;top:263.5px;width:10px;height:1px"></div>
+    <div class="hb" style="left:1080px;top:148px;width:120px">ダミーテキスト<br>ダミ</div>
+    <div class="hb" style="left:943px;top:327px;width:120px">DUダミ</div>
+    <div class="lf" style="left:962px;top:382px;width:101px">ダミー</div>
+    <div class="lf" style="left:962px;top:424px;width:101px">ダミー</div>
+    <div class="lf" style="left:962px;top:466px;width:101px">ダミーテキ</div>
+    <div class="cn" style="left:952px;top:367px;width:1px;height:117.5px"></div>
+    <div class="cn" style="left:952px;top:400.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:952px;top:442.5px;width:10px;height:1px"></div>
+    <div class="cn" style="left:952px;top:484.5px;width:10px;height:1px"></div>
+    <div class="hb" style="left:1080px;top:327px;width:120px">ダミー・<br>テキストダミーテキ</div>
+    <div class="lf" style="left:1099px;top:382px;width:101px">ダミー・<br>テキストダミー</div>
+    <div class="cn" style="left:1089px;top:367px;width:1px;height:33.5px"></div>
+    <div class="cn" style="left:1089px;top:400.5px;width:10px;height:1px"></div>
+    <div class="hb" style="left:1080px;top:451px;width:120px">DUMダ</div>
+    <div class="lf" style="left:1099px;top:506px;width:101px">ダミーテキストダ<br>ダミー</div>
+    <div class="cn" style="left:1089px;top:491px;width:1px;height:33.5px"></div>
+    <div class="cn" style="left:1089px;top:524.5px;width:10px;height:1px"></div>
+
+    <div class="fl">© 20XX Company.</div>
+    <div class="fr">00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
