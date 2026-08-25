@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>toc-018</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1;border:14px solid #6b6b6b}
+
+  .tab{position:absolute;left:388px;top:-14px;width:476px;height:67px;background:#6b6b6b;border-radius:0 0 26px 26px;
+    display:grid;place-items:center;font-size:22px;font-weight:700;letter-spacing:.3em;color:#fff}
+
+  .rw{position:absolute;left:154px;width:1003px;height:58px;background:#f7f7f7}
+  .nb{position:absolute;left:95px;width:59px;height:58px;background:#6b6b6b;
+    display:grid;place-items:center;font-size:22px;font-weight:700;color:#fff}
+  .it{position:absolute;left:178px;transform:translateY(-50%);font-size:19px;letter-spacing:.02em;color:#1a1a1a}
+  .ar{position:absolute;left:1045px;width:29px;height:1px;background:#1a1a1a}
+  .ar::after{content:"";position:absolute;right:-1px;top:-4px;width:0;height:0;
+    border-left:8px solid #1a1a1a;border-top:4.5px solid transparent;border-bottom:4.5px solid transparent}
+  .pg{position:absolute;left:1080px;transform:translateY(-50%);font-size:19px;letter-spacing:.02em;color:#1a1a1a}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="tab">目次</div>
+    <div class="rw" style="top:136px"></div>
+    <div class="nb" style="top:136px">1</div>
+    <div class="it" style="top:165px">ダミーテキ（ダミーテ、ダミーテキストダミ）</div>
+    <div class="ar" style="top:164px"></div>
+    <div class="pg" style="top:165px">P.00</div>
+    <div class="rw" style="top:224px"></div>
+    <div class="nb" style="top:224px">2</div>
+    <div class="it" style="top:253px">ダミーテキストダ（ダミー、ダミーテ）</div>
+    <div class="ar" style="top:252px"></div>
+    <div class="pg" style="top:253px">P.00</div>
+    <div class="rw" style="top:312px"></div>
+    <div class="nb" style="top:312px">3</div>
+    <div class="it" style="top:341px">ダミーテキストダ（ダミーテキストダ、ダミーテキストダミ）</div>
+    <div class="ar" style="top:340px"></div>
+    <div class="pg" style="top:341px">P.00</div>
+    <div class="rw" style="top:400px"></div>
+    <div class="nb" style="top:400px">4</div>
+    <div class="it" style="top:429px">ダミーテキストダミーテ（ダミーテキ、ダミーテキ、ダミーテキストダミ）</div>
+    <div class="ar" style="top:428px"></div>
+    <div class="pg" style="top:429px">P.00</div>
+    <div class="rw" style="top:488px"></div>
+    <div class="nb" style="top:488px">5</div>
+    <div class="it" style="top:517px">ダミー・ダミーテキストダ</div>
+    <div class="ar" style="top:516px"></div>
+    <div class="pg" style="top:517px">P.00</div>
+    <div class="rw" style="top:576px"></div>
+    <div class="nb" style="top:576px">6</div>
+    <div class="it" style="top:605px">ダミーDUMMYTEXTダミーテキストダミーテキ？</div>
+    <div class="ar" style="top:604px"></div>
+    <div class="pg" style="top:605px">P.00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

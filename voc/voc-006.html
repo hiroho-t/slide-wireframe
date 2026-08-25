@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>voc-006</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%;background:#e9e9e9;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+  .stage{position:fixed;inset:0;overflow:hidden}
+  .slide{position:relative;width:1280px;height:720px;background:#f2f2f2;overflow:hidden;left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center;box-shadow:0 4px 24px rgba(0,0,0,.18);font-feature-settings:"palt" 1}
+
+  .lb{position:absolute;left:52px;top:39px;transform:translateY(-50%);font-size:12px;font-weight:700;letter-spacing:.06em;color:#4d4d4d}
+  .logo{position:absolute;right:53px;top:37px;transform:translateY(-50%);font-size:17px;font-weight:700;letter-spacing:.06em;color:#1a1a1a}
+  .hr{position:absolute;left:52px;top:59px;width:1175px;height:1px;background:#c4c4c4}
+  .ttl{position:absolute;left:60px;top:92px;transform:translateY(-50%);font-size:23px;font-weight:700;letter-spacing:.06em;color:#1a1a1a}
+
+  .av{position:absolute;top:152px;width:88px;height:88px;border-radius:50%;background:#c9c9c9;
+    display:grid;place-items:center;font-size:9px;letter-spacing:.14em;color:#8c8c8c}
+  .af{position:absolute;top:171px;transform:translateY(-50%);font-size:11px;letter-spacing:.02em;color:#4d4d4d}
+  .ah{position:absolute;top:203px;transform:translateY(-50%);font-size:16px;font-weight:700;letter-spacing:.02em;color:#1a1a1a}
+
+  .cd{position:absolute;top:243px;height:400px;background:#fff;border-radius:14px}
+  .tip{position:absolute;top:233px;width:0;height:0;border-bottom:12px solid #fff;border-left:11px solid transparent;border-right:11px solid transparent}
+  .q{position:absolute;font-size:14px;font-weight:700;line-height:24px;letter-spacing:.02em;color:#6b6b6b}
+  .a{position:absolute;font-size:12px;line-height:22px;letter-spacing:.02em;color:#1a1a1a}
+  .a em{font-style:normal;background:#ededed}
+
+  .lk{position:absolute;top:672px;transform:translateY(-50%);font-size:11px;letter-spacing:.02em;color:#4d4d4d}
+  .lk u{text-underline-offset:3px}
+  .pn{position:absolute;right:47px;top:683px;transform:translateY(-50%);font-size:12px;color:#8c8c8c}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide">
+    <div class="lb">0　ダミーテキ</div>
+    <div class="logo">LOGO</div>
+    <div class="hr"></div>
+    <div class="ttl">ダミーテキ</div>
+
+    <!-- 左 -->
+    <div class="av" style="left:95px">IMAGE</div>
+    <div class="af" style="left:200px">［ダミーテキ］ダミーテキ</div>
+    <div class="ah" style="left:200px">ダミーテキストダミ、ダミーテキストダミーテキストダ</div>
+    <div class="tip" style="left:330px"></div>
+    <div class="cd" style="left:87px;width:530px"></div>
+    <div class="q" style="left:117px;top:270px">DUMMY for Dummyダミーテキストダミーテキストダミ？</div>
+    <div class="a" style="left:117px;top:300px;width:470px">ダミーテキストダミーテキストダ。ダミーテキストダミーテキストダミ<br>ダミーテキストダミーテキストダミーテキ、ダミーテキストダミーテキ<br>ダミーテキストダミーテキストダ。ダミーテキ、ダミーテキストダミー<br>ダミーテキストダミーテキ。ダミーテ・ダミーテキストダミーテ<br>ダ、<em>ダミーテキストダミーテキ・ダミーテキストダミーテキ。</em></div>
+    <div class="q" style="left:117px;top:425px">ダミーテキストダミーテキストダミーテキ。</div>
+    <div class="a" style="left:117px;top:455px;width:470px">ダミーテ、ダミーテキストダ0回ダミーテキストダミーテキストダミーテ<br>ダ、ダミーテキストダミーテキストダ。ダミーテキストダミーテキスト<br>ダミーテキストダミーテキ、ダミーテキストダミーテキストダミーテ<br>ダ。ダミーテキ、DUMMYダミーテキストDUMダミーテキストダミーテ<br>ダミーテ。ダミーテキストダミーテキストダミーテキストダミーテキ<br><em>ダミーテキストダミーテキストダミーテキストダミーテキストダ。</em></div>
+    <div class="lk" style="left:97px"><u>ダミーテキストダミーテキ</u>（https://dummytext.com/n/dummy0000）</div>
+
+    <!-- 右 -->
+    <div class="av" style="left:675px">IMAGE</div>
+    <div class="af" style="left:780px">［ダミーテキストダミーテキ・ダミーテキ］ダミーテ</div>
+    <div class="ah" style="left:780px">DUMMYダミーテキストダミーテ</div>
+    <div class="tip" style="left:910px"></div>
+    <div class="cd" style="left:667px;width:530px"></div>
+    <div class="q" style="left:697px;top:270px">ダミーテキストダミーテキDUMMYダミーテキストダミ？</div>
+    <div class="a" style="left:697px;top:300px;width:470px">ダミーテ0回ダミーテキDUMMYダミーテキストダミーテキストダミーテ。<br>ダミーテキストダミーテキ00分ダミーテキストダミーテキストダ。</div>
+    <div class="q" style="left:697px;top:365px;width:470px">DUMMYダミーテキストダ、ダミーテキストダミーテキストダミ<br>ダ？</div>
+    <div class="a" style="left:697px;top:425px;width:470px">ダミーテキストダ、中0のダミーテキストダミーテ0級ダミーテキストダ<br>ダミーテキ00％ダミーテキストダミーテキ。ダミーテキストダミーテキ<br>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテ<br>ダ、ダミーテキストダミーテキストダ。<em>ダミーテキストダミーテ<br>ダミーテキ、DUMMYダミーテキストダミーテ。</em>DUMMYダミーテキ<br>ダミ0級ダミーテキ0、0級やDUMMY（ダミーテキ）ダミーテキストダ<br>ダミーテキストダミーテキストダ。ダミーテキストダミーテキストダ0<br>ダミーテキストダミーテキ、ダミーテキ0がダミ0のダミーテキストダ<br>ダ、ダミーテキストダミーテキストダミーテキ。</div>
+    <div class="lk" style="left:677px"><u>ダミーテキストダミーテキ</u>（https://dummytext.com/n/dummy0000）</div>
+
+    <div class="pn">00</div>
+  </div>
+</div>
+<script>
+  const fit=()=>document.documentElement.style.setProperty('--s',Math.min(innerWidth/1280,innerHeight/720));
+  addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
